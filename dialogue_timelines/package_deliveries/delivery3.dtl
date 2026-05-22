@@ -1,4 +1,4 @@
-join bex left
+join bex left [animation="Bounce In"]
 join orion_von_doom center
 orion_von_doom: HAHA you've fallen into my trap.
 join delivery3 center [animation="Slide In Up" length="0.8"]
@@ -7,3 +7,4 @@ bex: What if I don't?
 orion_von_doom: LOOK!
 join delivery3 (Open) center
 orion_von_doom: This is the end!
+[signal arg="package_delivered"]

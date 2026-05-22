@@ -16,6 +16,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Global="*uid://dfbeopvl8332c"
 Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
@@ -54,6 +55,7 @@ layout/style_directory={
 }
 layout/style_list=["res://styles/prototype_style.tres"]
 layout/default_style="res://styles/prototype_style.tres"
+variables={}
 
 [display]
 

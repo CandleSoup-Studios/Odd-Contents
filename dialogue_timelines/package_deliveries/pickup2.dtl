@@ -5,3 +5,4 @@ bex: ...hi?
 bex: Do you have a package for me? Mr. Santana said you did...
 join delivery2 center [animation="Slide In Up" length="0.8"]
 remington_holloway: ...take it and go.
+[signal arg="package_pickup"]
