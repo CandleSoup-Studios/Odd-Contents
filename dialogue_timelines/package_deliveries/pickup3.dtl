@@ -1,0 +1,7 @@
+join bex left
+join lucille_pope center
+lucille_pope: I was expecting you!
+lucille_pope: Look!
+join delivery3 center [animation="Slide In Up" length="0.8"]
+bex: I will get right on this!
+[signal arg="package_pickup"]

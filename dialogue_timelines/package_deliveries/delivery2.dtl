@@ -1,0 +1,9 @@
+join bex left
+join harvey_jakes center
+bex: Hi, are you expecting a package?
+bex: I have this!
+join delivery2 center [animation="Slide In Up" length="0.8"]
+harvey_jakes: ...what could this be?
+join delivery2 (Open) center
+harvey_jakes: Oh look!
+[signal arg="package_delivered"]

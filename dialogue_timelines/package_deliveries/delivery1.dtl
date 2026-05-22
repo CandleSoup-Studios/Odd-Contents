@@ -1,0 +1,11 @@
+join bex left
+join granny_lou right
+bex: Hi, it's Bex. lorem ipsum...
+bex: I have this for you!
+join delivery1 center [animation="Slide In Up" length="0.8"]
+granny_lou: Oh! What a delight.
+granny_lou: Do you want to see what's inside?
+update delivery1 (Open) center [length="0.8"]
+granny_lou: Bear claws!!
+leave delivery1 [animation="Slide Out Down" length="0.8"]
+[signal arg="package_delivered"]
