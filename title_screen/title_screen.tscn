@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://bjwj5sciktmb5"]
+
+[ext_resource type="Script" uid="uid://3kcbvl4wl58" path="res://title_screen/title_screen.gd" id="1_g2mvh"]
+
+[node name="MarginContainer" type="MarginContainer" unique_id=771204177]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+script = ExtResource("1_g2mvh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=399666480]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1592198483]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1078278133]
+layout_mode = 2
+theme_override_font_sizes/font_size = 88
+text = "Odd Contents"
+
+[node name="Options" type="VBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1800729133]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/separation = 7
+alignment = 1
+
+[node name="NewGame" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=1622619758]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "New Game"
+flat = true
+alignment = 0
+
+[node name="LoadGame" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=1097631217]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Load Game"
+flat = true
+alignment = 0
+
+[node name="Settings" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=479577202]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Settings
+"
+flat = true
+alignment = 0
+
+[node name="Exit" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=1481454162]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Exit
+"
+flat = true
+alignment = 0
+
+[node name="TheStudio" type="VBoxContainer" parent="HBoxContainer" unique_id=782863240]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = -6
+alignment = 2
+
+[node name="StudioName" type="Label" parent="HBoxContainer/TheStudio" unique_id=1167445852]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "CandleSoup Studios"
+horizontal_alignment = 2
+
+[node name="Credits" type="Button" parent="HBoxContainer/TheStudio" unique_id=359475258]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Credits"
+flat = true
+alignment = 2
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/LoadGame" to="." method="_on_load_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="HBoxContainer/TheStudio/Credits" to="." method="_on_credits_pressed"]
