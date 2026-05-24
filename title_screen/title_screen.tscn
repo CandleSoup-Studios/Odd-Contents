@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bjwj5sciktmb5"]
 
 [ext_resource type="Script" uid="uid://3kcbvl4wl58" path="res://title_screen/title_screen.gd" id="1_g2mvh"]
+[ext_resource type="PackedScene" uid="uid://bibot7a8xxw8j" path="res://animations/title_screen_scene_transition_animation.tscn" id="2_dxpbd"]
 
 [node name="MarginContainer" type="MarginContainer" unique_id=771204177]
 anchors_preset = 15
@@ -81,6 +82,9 @@ theme_override_font_sizes/font_size = 18
 text = "Credits"
 flat = true
 alignment = 2
+
+[node name="TitleScreenSceneTransitionAnimation" parent="." unique_id=2063913806 instance=ExtResource("2_dxpbd")]
+z_index = 1
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/LoadGame" to="." method="_on_load_game_pressed"]
