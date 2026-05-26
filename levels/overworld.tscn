@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://bmletk1gt5wq5" path="res://levels/overworld.gd" id="1_5848w"]
 [ext_resource type="Texture2D" uid="uid://c1fyo84l5qcdw" path="res://art/prototype_tileset/grass.png" id="1_oehki"]
 [ext_resource type="Texture2D" uid="uid://wl46hlkenhys" path="res://art/prototype_tileset/hills.png" id="2_mdm5b"]
+[ext_resource type="Shader" uid="uid://ce4p7ewc45y5m" path="res://levels/overworld.gdshader" id="2_o8rqw"]
 [ext_resource type="Texture2D" uid="uid://dmxehdx6fb5vj" path="res://art/prototype_tileset/tilled_dirt.png" id="3_5848w"]
+[ext_resource type="Texture2D" uid="uid://c1v7rxv0784mc" path="res://art/fog_texture.png" id="3_dwypl"]
 [ext_resource type="PackedScene" uid="uid://b8bjwsjqd73le" path="res://effects/particles_effects.tscn" id="4_o8rqw"]
 [ext_resource type="PackedScene" uid="uid://cxn67o40r3tfs" path="res://player/player.tscn" id="5_mdm5b"]
 
@@ -280,6 +282,12 @@ size = Vector2(140, 60)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8rqw"]
 size = Vector2(72, 41)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dwypl"]
+shader = ExtResource("2_o8rqw")
+shader_parameter/noise_texture = ExtResource("3_dwypl")
+shader_parameter/density = 1.0
+shader_parameter/speed = Vector2(0.02, 0.01)
+
 [node name="Overworld" type="Node2D" unique_id=1724414626]
 script = ExtResource("1_5848w")
 
@@ -290,6 +298,7 @@ tile_set = SubResource("TileSet_qvumn")
 [node name="Player" parent="." unique_id=785949732 instance=ExtResource("5_mdm5b")]
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1011507913]
+zoom = Vector2(1.3, 1.3)
 process_callback = 0
 limit_left = 0
 limit_top = 0
@@ -310,6 +319,23 @@ shape = SubResource("RectangleShape2D_5848w")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Delivery1" unique_id=1769828547]
 position = Vector2(636, 378)
 shape = SubResource("RectangleShape2D_o8rqw")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1964210720]
+visibility_layer = 2
+texture_filter = 3
+texture_repeat = 2
+scale = Vector2(0.25, 0.25)
+repeat_size = Vector2(1536, 864)
+repeat_times = 9
+
+[node name="ColorRect" type="ColorRect" parent="Parallax2D" unique_id=1546859768]
+z_index = 1
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_dwypl")
+offset_right = 1536.0
+offset_bottom = 864.0
+mouse_filter = 2
 
 [connection signal="body_entered" from="Pickup1" to="." method="_on_pickup1_body_entered"]
 [connection signal="body_entered" from="Delivery1" to="." method="_on_delivery_1_body_entered"]
