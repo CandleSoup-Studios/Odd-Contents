@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const SPEED = 650.0
 var screen_size
 #const JUMP_VELOCITY = -400.0
 
