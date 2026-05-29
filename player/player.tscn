@@ -71,9 +71,12 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_knn7v"]
-size = Vector2(14, 16)
+size = Vector2(236, 593)
 
 [node name="Player" type="CharacterBody2D" unique_id=785949732]
+y_sort_enabled = true
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_qavcc")
 metadata/_edit_group_ = true
 
@@ -82,4 +85,5 @@ sprite_frames = SubResource("SpriteFrames_hoe0r")
 animation = &"idle_back"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=816424107]
+position = Vector2(-7, -27.5)
 shape = SubResource("RectangleShape2D_knn7v")

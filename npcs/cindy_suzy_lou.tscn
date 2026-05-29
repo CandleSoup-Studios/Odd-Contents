@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b8o2aied1df83"]
+
+[ext_resource type="Texture2D" uid="uid://bgx3i2je7hwwp" path="res://art/npc_sprites/sprite_cindy.png" id="1_4jsjt"]
+[ext_resource type="Script" uid="uid://cwmqoqjfo3cfm" path="res://npcs/cindy_suzy_lou.gd" id="1_6m2jr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6m2jr"]
+radius = 196.0
+height = 504.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jsjt"]
+size = Vector2(398, 222)
+
+[node name="CindySuzyLou" type="StaticBody2D" unique_id=376881671]
+script = ExtResource("1_6m2jr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=102794994]
+texture = ExtResource("1_4jsjt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=125675827]
+position = Vector2(-11, 2)
+shape = SubResource("CapsuleShape2D_6m2jr")
+
+[node name="InteractionPrompt" type="Area2D" parent="." unique_id=1624955137]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionPrompt" unique_id=813948204]
+position = Vector2(-313, 107)
+shape = SubResource("RectangleShape2D_4jsjt")
+
+[connection signal="body_entered" from="InteractionPrompt" to="." method="_on_interaction_prompt_body_entered"]
