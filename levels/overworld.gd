@@ -6,15 +6,10 @@ func _ready() -> void:
 	Dialogic.signal_event.connect(_on_signal)
 
 func _on_signal(signal_passed_in):
-	match signal_passed_in:
-		"package_pickup":
-			print("package picked up by Bex!")
-			#Global.hasDeliveryQuest = true
-			$Pickup1/CollisionShape2D.disabled = true
-			
-		"package_delivered":
-			print("package delivered by Bex!")
-			$Delivery1/CollisionShape2D.disabled = true
+	match signal_passed_in:	
+		"hud_update":
+			$CanvasLayer.visible = true
+			$CanvasLayer/HUD/HUDBackground/HUDLabel.text = Global.hud_display
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

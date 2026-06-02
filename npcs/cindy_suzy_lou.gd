@@ -1,19 +1,10 @@
-extends Sprite2D
-
-@onready var interactionPrompt = $InteractionPrompt
+extends NpcInteraction
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-func _on_interaction_area_body_entered(body: CharacterBody2D) -> void:
-	interactionPrompt.visible = true
-
-func _on_interaction_area_body_exited(body: Node2D) -> void:
-	interactionPrompt.visible = false
+func _input(event) -> void:
+	if Input.is_action_just_pressed("dialogue_interaction"):
+		#Dialogic.start()
+		print("talk talk cindy!")
