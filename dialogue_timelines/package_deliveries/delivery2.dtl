@@ -1,9 +1,30 @@
 join bex left
-join harvey_jakes center
-bex: Hi, are you expecting a package?
-bex: I have this!
+[i]*knock knock knock*[/i]
+bex: Hello? Delivery for Harvey Jakes?
+bex: ...Helloooo? Anybody home? Huh...
+join harvey_jakes right
+harvey_jakes: Who are you? What do you want?
+bex: I'm Bex with Shade Delivery Co. I've got a package for you.
+harvey_jakes: Who sent you? Did anyone see you? Were you followed?
+bex: Sir, please...
+harvey_jakes: Are you ABSOLUTELY SURE you weren't followed?
+harvey_jakes: They're watching, you know. They're always watching.
+bex: Who is they?
+harvey_jakes: The lake! And it's..... associates.
+bex: What the...? Look, I have this package for you, okay? It's from Remy and he wants me to tell you that he's remorseful. Or something.
+harvey_jakes: Remy? That rat BASTARD. He can take this package and shove it up his-
+harvey_jakes: Wait... remorseful you say? He's sorry?
+harvey_jakes: I-I suppose he does have difficulty expressing himself. With his social anxiety and whatnot.
+harvey_jakes: Perhaps this is the first step to repairing what we had...
+bex: Sign here please.
+[i]*Harvey signs his name with printed initials 'H.J.'*[/i]
 join delivery2 center [animation="Slide In Up" length="0.8"]
-harvey_jakes: ...what could this be?
-join delivery2 (Open) center
-harvey_jakes: Oh look!
+harvey_jakes: Now let's see...
 [signal arg="package_delivered"]
+update delivery2 (Open) center
+harvey_jakes: AHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+harvey_jakes: I KNEW IT! I KNEW IT!!!! THEY'RE WATCHING!!!!
+harvey_jakes: [b][i]THEY'RE ALWAYS WATCHING!!!!!!!!!!!!!!!!![/i][/b]
+leave harvey_jakes [animation="Slide To Right"]
+bex: OH GOD!!!!!
+bex: What is happening in this town?!?!?!

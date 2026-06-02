@@ -1,8 +1,35 @@
 join bex left
-join remington_holloway center
+bex: Good morning! Pickup for Har-
+join remington_holloway center [animation="Slide In Up"]
 remington_holloway: ...
-bex: ...hi?
-bex: Do you have a package for me? Mr. Santana said you did...
+bex: WHOA, WHOA, WHOA, HEY, HEY!
+bex: Chill out, dude! I'm just here to pick up a package!
+join remington_holloway right
+remington_holloway: My apologies.
+remington_holloway: I have social anxiety.
+remington_holloway: It makes me a bit... jumpy.
+bex: Yeah, no kidding. What on earth's got you so anxious?
+remington_holloway: It's none of your concern.
+bex: It's kind of my concern now since it's got you pointing a gun at my face!
+remington_holloway: That's fair, I suppose.
+remington_holloway: You're new in town, is that correct?
+bex: Yes... I'm Bex. I'm from New Lark City.
+bex: I lost my job back in the city and my ex left me, so I had to leave. My aunt let me move in with her so I'm starting fresh here.
+remington_holloway: Ah, makes sense. You still have the shimmer of innocence behind your eyes. I was like you once, Bex.
+remington_holloway: I came to The Shade in search of a new life, a new direction in lieu of the suffocating existence of city life.
+remington_holloway: Sometimes I can't tell if it was the best mistake... or the worst mistake.
+remington_holloway: I arrived here and immediately betrayed the one person I trusted.
+bex: Could that person possibly be... Harvey Jakes?
+remington_holloway: You're very intuitive, Bex. That's a good trait to have. Especially in this town.
+bex: I should probably get going... Can you sign here please?
+remington_holloway: Right, right. You've got a job to do.
+[i]*Remy signs his name as 'Remington H.'*[/i]
 join delivery2 center [animation="Slide In Up" length="0.8"]
-remington_holloway: ...take it and go.
+remington_holloway: Take this. Take it to him.
 [signal arg="package_pickup"]
+remington_holloway: And let him know that I'm..... remorseful.
+bex: .....
+remington_holloway: And Bex. One last thing.
+remington_holloway: It would be wise if you stayed away from the lake.
+leave remington_holloway
+bex: .....?
