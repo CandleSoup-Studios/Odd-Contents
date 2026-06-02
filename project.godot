@@ -37,15 +37,15 @@ directories/dch_directory={
 "waylon_santana": "res://dialogue_timelines/characters/waylon_santana.dch"
 }
 directories/dtl_directory={
-"act1/dialogue1": "res://dialogue_timelines/npc_interactions/act1/dialogue1.dtl",
-"act1/dialogue2": "res://dialogue_timelines/npc_interactions/act1/dialogue2.dtl",
-"act1/dialogue3": "res://dialogue_timelines/npc_interactions/act1/dialogue3.dtl",
 "act2/dialogue1": "res://dialogue_timelines/npc_interactions/act2/dialogue1.dtl",
 "act2/dialogue2": "res://dialogue_timelines/npc_interactions/act2/dialogue2.dtl",
 "act3/dialogue1": "res://dialogue_timelines/npc_interactions/act3/dialogue1.dtl",
 "delivery1": "res://dialogue_timelines/package_deliveries/delivery1.dtl",
 "delivery2": "res://dialogue_timelines/package_deliveries/delivery2.dtl",
 "delivery3": "res://dialogue_timelines/package_deliveries/delivery3.dtl",
+"dialogue1": "res://dialogue_timelines/npc_interactions/act1/dialogue1.dtl",
+"dialogue2": "res://dialogue_timelines/npc_interactions/act1/dialogue2.dtl",
+"dialogue3": "res://dialogue_timelines/npc_interactions/act1/dialogue3.dtl",
 "pickup1": "res://dialogue_timelines/package_deliveries/pickup1.dtl",
 "pickup2": "res://dialogue_timelines/package_deliveries/pickup2.dtl",
 "pickup3": "res://dialogue_timelines/package_deliveries/pickup3.dtl"

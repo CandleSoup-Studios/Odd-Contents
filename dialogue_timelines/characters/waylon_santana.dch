@@ -12,10 +12,10 @@
 },
 &"default_portrait": "Neutral",
 &"description": "",
-&"display_name": "Waylon Santana",
+&"display_name": "Mr. Santana",
 &"mirror": false,
-&"nicknames": [""],
-&"offset": Vector2(0, 0),
+&"nicknames": ["Waylon"],
+&"offset": Vector2(90, 120),
 &"portraits": {
 "Neutral": {
 "export_overrides": {
