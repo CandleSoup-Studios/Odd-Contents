@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b8o2aied1df83"]
+
+[ext_resource type="Texture2D" uid="uid://bgx3i2je7hwwp" path="res://art/npc_sprites/sprite_cindy.png" id="1_4jsjt"]
+[ext_resource type="Script" uid="uid://b4ox6b1kafmem" path="res://npcs/cindy_suzy_lou.gd" id="2_6m2jr"]
+[ext_resource type="Texture2D" uid="uid://di7elypk4q6oj" path="res://art/ui/cindy_dialogue.png" id="3_02c80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jsjt"]
+size = Vector2(612, 403)
+
+[node name="CindySuzyLou" type="Sprite2D" unique_id=24121360]
+texture = ExtResource("1_4jsjt")
+script = ExtResource("2_6m2jr")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1219129422]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1601463132]
+position = Vector2(-1, 200)
+shape = SubResource("RectangleShape2D_4jsjt")
+
+[node name="InteractionPrompt" type="TextureRect" parent="." unique_id=2102994864]
+visible = false
+offset_left = -592.0
+offset_top = -347.0
+offset_right = -182.0
+offset_bottom = -122.0
+texture = ExtResource("3_02c80")
+
+[node name="PromptLabel" type="RichTextLabel" parent="InteractionPrompt" unique_id=340524515]
+layout_mode = 0
+offset_right = 410.0
+offset_bottom = 176.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 36
+bbcode_enabled = true
+text = "Hi, I'm Cindy!
+[i]press [e] to talk[/i]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]

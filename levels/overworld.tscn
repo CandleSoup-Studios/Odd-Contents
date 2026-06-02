@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dmxehdx6fb5vj" path="res://art/prototype_tileset/tilled_dirt.png" id="3_5848w"]
 [ext_resource type="PackedScene" uid="uid://b8bjwsjqd73le" path="res://effects/particles_effects.tscn" id="4_o8rqw"]
 [ext_resource type="PackedScene" uid="uid://cxn67o40r3tfs" path="res://player/player.tscn" id="5_mdm5b"]
+[ext_resource type="PackedScene" uid="uid://b8o2aied1df83" path="res://npcs/cindy_suzy_lou.tscn" id="7_o8rqw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwypl"]
 texture = ExtResource("1_oehki")
@@ -310,6 +311,10 @@ shape = SubResource("RectangleShape2D_5848w")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Delivery1" unique_id=1769828547]
 position = Vector2(636, 378)
 shape = SubResource("RectangleShape2D_o8rqw")
+
+[node name="CindySuzyLou" parent="." unique_id=24121360 instance=ExtResource("7_o8rqw")]
+position = Vector2(400, 175)
+scale = Vector2(0.5, 0.5)
 
 [connection signal="body_entered" from="Pickup1" to="." method="_on_pickup1_body_entered"]
 [connection signal="body_entered" from="Delivery1" to="." method="_on_delivery_1_body_entered"]
