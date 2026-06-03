@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const SPEED = 750.0
 var screen_size
 #const JUMP_VELOCITY = -400.0
 
@@ -38,6 +38,5 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	velocity = direction * SPEED
-	position = position.clamp(Vector2.ZERO, screen_size)
 
 	move_and_slide()
