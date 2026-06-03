@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join granny_lou right
 bex: Delivery for Granny Lou!
@@ -28,3 +29,6 @@ granny_lou: We usually have a party by the lake.
 granny_lou: You know, so it doesn't feel so lonely.
 bex: I... I need to go.
 granny_lou: Have a lovely day, Bex, dear!
+set {Global.hud_display_title} = "Check In"
+set {Global.hud_display_location} = "Shade Delivery Co."
+[signal arg="hud_update"]

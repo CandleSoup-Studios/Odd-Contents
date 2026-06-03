@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://cxn67o40r3tfs" path="res://player/player.tscn" id="5_mdm5b"]
 [ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="7_o8rqw"]
 [ext_resource type="PackedScene" uid="uid://cpxfiu0cd88ux" path="res://ui/hud.tscn" id="8_dwypl"]
+[ext_resource type="PackedScene" uid="uid://bwiqwml40a6xe" path="res://npcs/waylon_santana.tscn" id="8_n7mjo"]
+[ext_resource type="PackedScene" uid="uid://bk5o4df2vefse" path="res://npcs/cindy_suzy_lou.tscn" id="9_r0i1i"]
+[ext_resource type="PackedScene" uid="uid://xhuelwx6bvwn" path="res://npcs/granny_lou.tscn" id="10_ehwj1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwypl"]
 texture = ExtResource("1_oehki")
@@ -296,11 +299,22 @@ position_smoothing_speed = 10.0
 position = Vector2(186, 167)
 
 [node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
-position = Vector2(282.99997, 121.000015)
+position = Vector2(116.999985, 32)
 scale = Vector2(0.16025642, 0.1602564)
+
+[node name="WaylonSantana" parent="." unique_id=898210345 instance=ExtResource("8_n7mjo")]
+position = Vector2(271, 70)
+scale = Vector2(0.16, 0.16)
+
+[node name="CindySuzyLou" parent="." unique_id=471262130 instance=ExtResource("9_r0i1i")]
+position = Vector2(236, 213)
+scale = Vector2(0.16, 0.16)
+
+[node name="GrannyLou" parent="." unique_id=1706835608 instance=ExtResource("10_ehwj1")]
+position = Vector2(350, 310)
+scale = Vector2(0.16, 0.16)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1912757507]
 visible = false
 
 [node name="HUD" parent="CanvasLayer" unique_id=1778549976 instance=ExtResource("8_dwypl")]
-anchors_preset = 6

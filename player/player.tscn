@@ -275,6 +275,8 @@ animations = [{
 size = Vector2(14, 16)
 
 [node name="Player" type="CharacterBody2D" unique_id=785949732 groups=["player"]]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_qavcc")
 metadata/_edit_group_ = true
 

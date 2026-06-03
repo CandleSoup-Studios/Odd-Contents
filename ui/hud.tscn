@@ -10,10 +10,12 @@ curve = SubResource("Curve_pv4sj")
 [node name="HUD" type="Control" unique_id=1778549976]
 layout_mode = 3
 anchor_left = 1.0
-anchor_top = 0.5
+anchor_top = 0.344
 anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -260.0
+anchor_bottom = 0.344
+offset_left = -230.0
+offset_top = 0.08799744
+offset_bottom = 0.08799744
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_horizontal = 8
@@ -21,13 +23,32 @@ size_flags_vertical = 8
 
 [node name="HUDBackground" type="TextureRect" parent="." unique_id=519292585]
 layout_mode = 0
-offset_right = 260.0
-offset_bottom = 133.0
+offset_right = 230.0
+offset_bottom = 65.0
 texture = SubResource("CurveTexture_rbyyf")
+expand_mode = 1
 
-[node name="HUDLabel" type="RichTextLabel" parent="HUDBackground" unique_id=1154894269]
+[node name="HUDLabelTitle" type="RichTextLabel" parent="HUDBackground" unique_id=1154894269]
 layout_mode = 0
-offset_right = 265.0
-offset_bottom = 131.0
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 34.0
+offset_top = 5.0
+offset_right = 214.0
+offset_bottom = 39.0
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+bbcode_enabled = true
+text = "[i]"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="HUDLabelLocation" type="RichTextLabel" parent="HUDBackground" unique_id=1552022625]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 39.0
+offset_right = 214.0
+offset_bottom = 64.0
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+bbcode_enabled = true
+text = "[i]Head to "
+horizontal_alignment = 2

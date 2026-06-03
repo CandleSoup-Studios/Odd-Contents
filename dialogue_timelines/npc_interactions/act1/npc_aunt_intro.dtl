@@ -13,5 +13,6 @@ great_aunt_lourde: There's also the Gas Station but I don't think I want you ass
 great_aunt_lourde: Oh, I know! Head over to [b]Shade Delivery Co.[/b] and ask Waylon for a job. He's always looking for new couriers.
 bex: A courier, huh? That doesn't sound so difficult.
 bex: I'll head over there right now!
-set {Global.hud_display} = "Shade Delivery Co."
+set {Global.hud_display_title} = "The Job Hunt"
+set {Global.hud_display_location} = "Shade Delivery Co."
 [signal arg="hud_update"]

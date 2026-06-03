@@ -12,6 +12,8 @@ texture = ExtResource("1_ddhi6")
 script = ExtResource("2_qhffw")
 
 [node name="InteractionArea" type="Area2D" parent="." unique_id=1143388956]
+collision_layer = 4
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1324285685]
 position = Vector2(-1, 200)
@@ -27,6 +29,7 @@ texture = ExtResource("2_i67id")
 
 [node name="PromptLabel" type="RichTextLabel" parent="InteractionPrompt" unique_id=462666762]
 layout_mode = 0
+offset_left = 4.0
 offset_right = 410.0
 offset_bottom = 176.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)

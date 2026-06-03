@@ -6,20 +6,13 @@ var npc_data = {
 	"quest_role": Global.QuestRole.NONE
 }
 
-var has_interacted = false
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
 func _input(event) -> void:
-	if Input.is_action_just_pressed("dialogue_interaction") and !has_interacted:
-		has_interacted = true
-		
-		print(Global.hud_display) 
-		
+	if player_in_range and Input.is_action_just_pressed("dialogue_interaction"):
 		if !npc_data.get("met"):
 			Dialogic.start("npc_aunt_intro")
 			npc_data.set("met", true)
+			Global.current_quest_state = Global.QuestState.NOT_STARTED
 			
 			await Dialogic.timeline_ended
+		else: # delete if we don't implement 
+			print("generic dialogue!")
