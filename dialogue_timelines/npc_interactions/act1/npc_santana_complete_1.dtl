@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join waylon_santana right
 bex: Mr. Santana! S-something happened!
@@ -16,3 +17,6 @@ waylon_santana: Ya should be.
 waylon_santana: I'll let this one slide since it's your first delivery. But I don't wanna hear anymore outbursts, ya hear?
 waylon_santana: Now go home, that's all I had for you today.
 bex: Thank you, Mr. Santana... See you tomorrow.
+set {Global.hud_display_title} = "It's Finally Over"
+set {Global.hud_display_location} = "Aunt Lourde's House"
+[signal arg="hud_update"]

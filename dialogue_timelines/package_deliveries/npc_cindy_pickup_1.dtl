@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join cindy_suzy_lou right
 bex: Hi there. I'm here to pick up a delivery from a Cindy Suzy Lou.
@@ -32,3 +33,6 @@ bex: Well, I should get going now.
 bex: You, uh, stay safe out there.
 cindy_suzy_lou: Bye, Bex!
 cindy_suzy_lou: Tell Granny I said hiiiieee!
+set {Global.hud_display_title} = "The First Delivery"
+set {Global.hud_display_location} = "Granny Lou's House"
+[signal arg="hud_update"]

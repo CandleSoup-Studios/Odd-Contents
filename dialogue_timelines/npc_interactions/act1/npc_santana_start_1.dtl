@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join waylon_santana right
 bex: Hi there! Are you Waylon?
@@ -19,3 +20,6 @@ waylon_santana: Rule numero uno of this business, kid. Don't ask a bunch of ques
 waylon_santana: One thing I learned after moving to this dump is that people in this town are incredibly lazy.
 waylon_santana: It doesn't bother me at all because it keeps me in business.
 waylon_santana: Now get moving!
+set {Global.hud_display_title} = "The First Pickup"
+set {Global.hud_display_location} = "Cindy Suzy Lou's House"
+[signal arg="hud_update"]

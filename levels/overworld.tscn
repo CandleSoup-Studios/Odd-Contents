@@ -6,6 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://dmxehdx6fb5vj" path="res://art/prototype_tileset/tilled_dirt.png" id="3_5848w"]
 [ext_resource type="PackedScene" uid="uid://b8bjwsjqd73le" path="res://effects/particles_effects.tscn" id="4_o8rqw"]
 [ext_resource type="PackedScene" uid="uid://cxn67o40r3tfs" path="res://player/player.tscn" id="5_mdm5b"]
+[ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="7_o8rqw"]
+[ext_resource type="PackedScene" uid="uid://cpxfiu0cd88ux" path="res://ui/hud.tscn" id="8_dwypl"]
+[ext_resource type="PackedScene" uid="uid://bwiqwml40a6xe" path="res://npcs/waylon_santana.tscn" id="8_n7mjo"]
+[ext_resource type="PackedScene" uid="uid://bk5o4df2vefse" path="res://npcs/cindy_suzy_lou.tscn" id="9_r0i1i"]
+[ext_resource type="PackedScene" uid="uid://xhuelwx6bvwn" path="res://npcs/granny_lou.tscn" id="10_ehwj1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwypl"]
 texture = ExtResource("1_oehki")
@@ -274,12 +279,6 @@ sources/2 = SubResource("TileSetAtlasSource_n7mjo")
 sources/3 = SubResource("TileSetAtlasSource_r0i1i")
 sources/7 = SubResource("TileSetScenesCollectionSource_ehwj1")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5848w"]
-size = Vector2(140, 60)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8rqw"]
-size = Vector2(72, 41)
-
 [node name="Overworld" type="Node2D" unique_id=1724414626]
 script = ExtResource("1_5848w")
 
@@ -297,19 +296,25 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=441596443]
-position = Vector2(213, 91)
+position = Vector2(186, 167)
 
-[node name="Pickup1" type="Area2D" parent="." unique_id=1567754009]
+[node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
+position = Vector2(116.999985, 32)
+scale = Vector2(0.16025642, 0.1602564)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickup1" unique_id=1949410221]
-position = Vector2(271, 34)
-shape = SubResource("RectangleShape2D_5848w")
+[node name="WaylonSantana" parent="." unique_id=898210345 instance=ExtResource("8_n7mjo")]
+position = Vector2(271, 70)
+scale = Vector2(0.16, 0.16)
 
-[node name="Delivery1" type="Area2D" parent="." unique_id=451548407]
+[node name="CindySuzyLou" parent="." unique_id=471262130 instance=ExtResource("9_r0i1i")]
+position = Vector2(236, 213)
+scale = Vector2(0.16, 0.16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Delivery1" unique_id=1769828547]
-position = Vector2(636, 378)
-shape = SubResource("RectangleShape2D_o8rqw")
+[node name="GrannyLou" parent="." unique_id=1706835608 instance=ExtResource("10_ehwj1")]
+position = Vector2(350, 310)
+scale = Vector2(0.16, 0.16)
 
-[connection signal="body_entered" from="Pickup1" to="." method="_on_pickup1_body_entered"]
-[connection signal="body_entered" from="Delivery1" to="." method="_on_delivery_1_body_entered"]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1912757507]
+visible = false
+
+[node name="HUD" parent="CanvasLayer" unique_id=1778549976 instance=ExtResource("8_dwypl")]

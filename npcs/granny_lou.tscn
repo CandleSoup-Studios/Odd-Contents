@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://xhuelwx6bvwn"]
+
+[ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_dupcw"]
+[ext_resource type="Texture2D" uid="uid://drp6eav2l64em" path="res://art/npc_sprites/sprite_granny.png" id="2_s3nyx"]
+[ext_resource type="Script" uid="uid://bydd04c47y6h3" path="res://npcs/granny_lou.gd" id="3_s3nyx"]
+
+[node name="GrannyLou" unique_id=318230135 instance=ExtResource("1_dupcw")]
+texture = ExtResource("2_s3nyx")
+script = ExtResource("3_s3nyx")
+
+[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+text = "Hi, I'm Granny Lou!
+[i]press [e] to talk[/i]"
