@@ -1,0 +1,18 @@
+join bex left
+join great_aunt_lourde right
+bex: Gee, thanks for letting me move in with you, Aunt Lourde.
+bex: I really appreciate it.
+great_aunt_lourde: It's no problem at all, dear. That's what family is for.
+great_aunt_lourde: I may be letting you stay here for free, but that doesn't mean this is an all-inclusive resort.
+bex: Right, of course. I never expected anything more than a room anyways.
+bex: What are the jobs like out here?
+great_aunt_lourde: To be honest with you, there's not much.
+great_aunt_lourde: Let's see... there's the General Store.
+great_aunt_lourde: I assumed there would've been a position open since Lucille's wife's... departure. But it seems like Lucille doesn't want any help these days.
+great_aunt_lourde: There's also the Gas Station but I don't think I want you associating too much with that Remy fella.
+great_aunt_lourde: Oh, I know! Head over to [b]Shade Delivery Co.[/b] and ask Waylon for a job. He's always looking for new couriers.
+bex: A courier, huh? That doesn't sound so difficult.
+bex: I'll head over there right now!
+set {Global.hud_display_title} = "The Job Hunt"
+set {Global.hud_display_location} = "Shade Delivery Co."
+[signal arg="hud_update"]

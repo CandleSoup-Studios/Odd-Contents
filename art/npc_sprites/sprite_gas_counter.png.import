@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://whnpygecq2lu"
-path="res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"
+uid="uid://cukpfr2dna0nq"
+path="res://.godot/imported/sprite_gas_counter.png-445fdc6c3bd9c1d408c9cc22a801a215.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player/sprite_bex.png"
-dest_files=["res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"]
+source_file="res://art/npc_sprites/sprite_gas_counter.png"
+dest_files=["res://.godot/imported/sprite_gas_counter.png-445fdc6c3bd9c1d408c9cc22a801a215.ctex"]
 
 [params]
 

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://xuwjymyenh6y"]
+
+[ext_resource type="Texture2D" uid="uid://b5fflncmhbwuw" path="res://art/npc_sprites/sprite_aunt.png" id="1_ddhi6"]
+[ext_resource type="Texture2D" uid="uid://di7elypk4q6oj" path="res://art/ui/cindy_dialogue.png" id="2_i67id"]
+[ext_resource type="Script" uid="uid://buup65q7yqdqy" path="res://npcs/great_aunt_lourde.gd" id="2_qhffw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhffw"]
+size = Vector2(612, 403)
+
+[node name="GreatAuntLourde" type="Sprite2D" unique_id=318230135]
+texture = ExtResource("1_ddhi6")
+script = ExtResource("2_qhffw")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1143388956]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1324285685]
+position = Vector2(-1, 200)
+shape = SubResource("RectangleShape2D_qhffw")
+
+[node name="InteractionPrompt" type="TextureRect" parent="." unique_id=1785520458]
+visible = false
+offset_left = -592.0
+offset_top = -347.0
+offset_right = -182.0
+offset_bottom = -122.0
+texture = ExtResource("2_i67id")
+
+[node name="PromptLabel" type="RichTextLabel" parent="InteractionPrompt" unique_id=462666762]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 410.0
+offset_bottom = 176.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 36
+bbcode_enabled = true
+text = "Hi, I'm Great Aunt Lourde!
+[i]press [e] to talk[/i]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]

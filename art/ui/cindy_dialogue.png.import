@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://whnpygecq2lu"
-path="res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"
+uid="uid://di7elypk4q6oj"
+path="res://.godot/imported/cindy_dialogue.png-fcafe9c26a8cb13691e27b4c6c0af60c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player/sprite_bex.png"
-dest_files=["res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"]
+source_file="res://art/ui/cindy_dialogue.png"
+dest_files=["res://.godot/imported/cindy_dialogue.png-fcafe9c26a8cb13691e27b4c6c0af60c.ctex"]
 
 [params]
 

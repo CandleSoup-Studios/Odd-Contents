@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://whnpygecq2lu"
-path="res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"
+uid="uid://bhvlot763umci"
+path="res://.godot/imported/char_harvey_bust.png-2ef5a56da6bcb0fd0a7ea018d7a588a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player/sprite_bex.png"
-dest_files=["res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"]
+source_file="res://art/dialogue/busts/char_harvey_bust.png"
+dest_files=["res://.godot/imported/char_harvey_bust.png-2ef5a56da6bcb0fd0a7ea018d7a588a9.ctex"]
 
 [params]
 

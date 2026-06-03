@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://whnpygecq2lu"
-path="res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"
+uid="uid://cbu07nmn3soew"
+path="res://.godot/imported/char_remy_bust.png-6f34aea10445af00a4b4383484ed13dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player/sprite_bex.png"
-dest_files=["res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"]
+source_file="res://art/dialogue/busts/char_remy_bust.png"
+dest_files=["res://.godot/imported/char_remy_bust.png-6f34aea10445af00a4b4383484ed13dc.ctex"]
 
 [params]
 

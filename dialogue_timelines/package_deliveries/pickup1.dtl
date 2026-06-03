@@ -1,7 +1,0 @@
-join bex left
-join cindy_suzy_lou right
-bex: Hi, I'm Bex! I'm here for the package.
-cindy_suzy_lou: Hi Bex! Glad you came!
-join delivery1 center [animation="Slide In Up" length="0.8"]
-cindy_suzy_lou: Here's the package I need delivered.
-[signal arg="package_pickup"]
