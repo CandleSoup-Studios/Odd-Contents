@@ -1,7 +1,7 @@
 extends NpcInteraction
 
 var npc_data = {
-	"name": "Great Aunt Lourde",
+	"name": "GreatAuntLourde",
 	"met": false,
 	"quest_role": Global.QuestRole.NONE
 }
@@ -14,5 +14,9 @@ func _input(event) -> void:
 			Global.current_quest_state = Global.QuestState.NOT_STARTED
 			
 			await Dialogic.timeline_ended
+			
+		elif Global.current_quest["quest_type"] == Global.QuestState.END:
+			get_tree().change_scene_to_file("res://levels/act1_end.tscn")
 		else: # delete if we don't implement 
+			
 			print("generic dialogue!")
