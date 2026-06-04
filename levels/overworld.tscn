@@ -50,6 +50,9 @@ size = Vector2(1440, 64)
 
 [sub_resource type="TileSet" id="TileSet_gsck2"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jc7pe"]
+atlas = ExtResource("8_qyxw2")
+
 [node name="Overworld" type="Node2D" unique_id=412805587]
 y_sort_enabled = true
 script = ExtResource("1_5848w")
@@ -180,7 +183,7 @@ tile_set = SubResource("TileSet_gsck2")
 
 [node name="Aunt" type="Sprite2D" parent="TileMap/HouseTop" unique_id=1201334748]
 position = Vector2(4432, 17408)
-texture = ExtResource("8_qyxw2")
+texture = SubResource("AtlasTexture_jc7pe")
 
 [node name="Shade" type="Sprite2D" parent="TileMap/HouseTop" unique_id=401477407]
 position = Vector2(10352, 14069)
