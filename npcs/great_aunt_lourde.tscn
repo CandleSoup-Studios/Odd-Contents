@@ -21,9 +21,12 @@ shape = SubResource("RectangleShape2D_qhffw")
 
 [node name="InteractionPrompt" type="TextureRect" parent="." unique_id=1785520458]
 visible = false
-offset_left = -592.0
+anchors_preset = -1
+anchor_left = -0.083000004
+anchor_right = -0.083000004
+offset_left = -566.104
 offset_top = -347.0
-offset_right = -182.0
+offset_right = -156.104
 offset_bottom = -122.0
 texture = ExtResource("2_i67id")
 
@@ -40,6 +43,40 @@ text = "Hi, I'm Great Aunt Lourde!
 [i]press [e] to talk[/i]"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ObjectiveMarker" type="RichTextLabel" parent="." unique_id=1692829816]
+visible = false
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.039
+anchor_right = 0.5
+anchor_bottom = -0.039
+offset_left = -179.0
+offset_top = -486.174
+offset_right = -114.0
+offset_bottom = -268.174
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/bold_font_size = 176
+bbcode_enabled = true
+text = "[b]![/b]"
+scroll_active = false
+
+[node name="ObjectiveMarkerBase" type="RichTextLabel" parent="ObjectiveMarker" unique_id=1167166001]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.039
+anchor_right = 0.5
+anchor_bottom = -0.039
+offset_left = -42.5
+offset_top = 8.502
+offset_right = 22.5
+offset_bottom = 226.502
+theme_override_colors/default_color = Color(0.9999998, 0.2022709, 0.24456564, 1)
+theme_override_font_sizes/bold_font_size = 176
+bbcode_enabled = true
+text = "[b]![/b]"
+scroll_active = false
 
 [connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
 [connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]
