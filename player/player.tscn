@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cxn67o40r3tfs"]
 
 [ext_resource type="Script" uid="uid://cnir75b02h5ly" path="res://player/player.gd" id="1_qavcc"]
-[ext_resource type="Texture2D" uid="uid://b1u62yw45os3m" path="res://art/player/sprite_bex.png" id="2_rkbax"]
+[ext_resource type="Texture2D" uid="uid://whnpygecq2lu" path="res://art/player/sprite_bex.png" id="2_rkbax"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hoe0r"]
 animations = [{
@@ -71,7 +71,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_knn7v"]
-size = Vector2(236, 593)
+size = Vector2(236, 414)
 
 [node name="Player" type="CharacterBody2D" unique_id=785949732 groups=["player"]]
 collision_layer = 2
@@ -84,5 +84,5 @@ sprite_frames = SubResource("SpriteFrames_hoe0r")
 animation = &"idle_back"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=816424107]
-position = Vector2(-7, -27.5)
+position = Vector2(-7, 62)
 shape = SubResource("RectangleShape2D_knn7v")

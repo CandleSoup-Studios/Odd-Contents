@@ -1,7 +1,9 @@
 [gd_resource type="TileSet" format=3 uid="uid://dcv88ddr30c6l"]
 
+[ext_resource type="Texture2D" uid="uid://hfbktmhnuc0e" path="res://art/world_objects/buildings/obj_house_aunt_bottom.png" id="1_56ekq"]
 [ext_resource type="Texture2D" uid="uid://bupjq18ty6hm2" path="res://art/tilesets/Tile_Floor.png" id="1_achf4"]
 [ext_resource type="Texture2D" uid="uid://ccb45mx2cc4pn" path="res://art/world_objects/buildings/Obj_GasStation.png" id="1_pg6ud"]
+[ext_resource type="Texture2D" uid="uid://bjh1mob8th10j" path="res://art/world_objects/buildings/obj_house_aunt_top.png" id="2_86wsc"]
 [ext_resource type="Texture2D" uid="uid://c5w356e1ftdko" path="res://art/tilesets/Tile_Objects.png" id="3_1ee5m"]
 [ext_resource type="Texture2D" uid="uid://bnjx0787svh10" path="res://art/world_objects/buildings/Obj_HouseAunt.png" id="3_on3bo"]
 [ext_resource type="Texture2D" uid="uid://bns87stlumnen" path="res://art/world_objects/buildings/Obj_HouseCindy.png" id="5_bc5bu"]
@@ -9,6 +11,20 @@
 [ext_resource type="Texture2D" uid="uid://rloi0uo0jaeh" path="res://art/world_objects/buildings/Obj_HouseShade.png" id="7_86wsc"]
 [ext_resource type="Texture2D" uid="uid://do43py8i5tdqr" path="res://art/world_objects/buildings/Obj_Harvey.png" id="8_167ns"]
 [ext_resource type="Texture2D" uid="uid://dbsfwlws6w5kq" path="res://art/world_objects/buildings/Obj_GeneralStore.png" id="9_id4y5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_167ns"]
+texture = ExtResource("1_56ekq")
+texture_region_size = Vector2i(112, 118)
+0:0/size_in_atlas = Vector2i(16, 10)
+0:0/0 = 0
+0:0/0/y_sort_origin = -575
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(709.7374, -82.802734, 751.1388, 230.66467, -733.39545, 212.92126, -721.56647, -100.54614)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_id4y5"]
+texture = ExtResource("2_86wsc")
+texture_region_size = Vector2i(112, 114)
+0:0/size_in_atlas = Vector2i(16, 7)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qn76h"]
 texture = ExtResource("1_pg6ud")
@@ -97,8 +113,10 @@ texture_region_size = Vector2i(110, 110)
 texture = ExtResource("3_on3bo")
 texture_region_size = Vector2i(120, 110)
 0:0/size_in_atlas = Vector2i(15, 18)
+0:0/next_alternative_id = 2
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-660.3965, -2.2489624, 707.2331, -77.18762, 707.2331, 929.7999, -46.83667, 1037.5242, -730.6514, 901.698)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-736.4447, -205.95483, 711.48035, -180.9906, 686.5161, 461.83813, -711.48047, 468.07922)
+0:0/1 = 1
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_brcmd"]
 texture = ExtResource("5_bc5bu")
@@ -132,8 +150,8 @@ texture_region_size = Vector2i(113, 110)
 
 [resource]
 tile_size = Vector2i(110, 110)
-physics_layer_0/collision_layer = 3
-physics_layer_0/collision_mask = 3
+physics_layer_0/collision_layer = 4
+physics_layer_0/collision_mask = 2
 sources/2 = SubResource("TileSetAtlasSource_ulrn6")
 sources/3 = SubResource("TileSetAtlasSource_on3bo")
 sources/4 = SubResource("TileSetAtlasSource_achf4")
@@ -143,3 +161,5 @@ sources/7 = SubResource("TileSetAtlasSource_6vp81")
 sources/8 = SubResource("TileSetAtlasSource_vw4pe")
 sources/9 = SubResource("TileSetAtlasSource_sipj4")
 sources/10 = SubResource("TileSetAtlasSource_qn76h")
+sources/0 = SubResource("TileSetAtlasSource_167ns")
+sources/1 = SubResource("TileSetAtlasSource_id4y5")
