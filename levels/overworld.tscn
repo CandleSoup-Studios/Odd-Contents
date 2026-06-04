@@ -216,7 +216,6 @@ limit_left = 0
 limit_top = 0
 limit_right = 33304
 limit_bottom = 22848
-position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=476775216]
