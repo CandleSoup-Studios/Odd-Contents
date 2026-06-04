@@ -94,6 +94,7 @@ glossary/default_case_sensitive=true
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
 
@@ -166,7 +167,7 @@ dialogue_interaction={
 
 2d_physics/layer_1="Ground"
 2d_physics/layer_2="Player"
-2d_physics/layer_3="Interactable"
+2d_physics/layer_3="Foreground"
 
 [physics]
 
@@ -174,5 +175,6 @@ dialogue_interaction={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 2d/snap/snap_2d_transforms_to_pixel=true
