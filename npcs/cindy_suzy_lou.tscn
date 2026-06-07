@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bk5o4df2vefse"]
+
+[ext_resource type="Texture2D" uid="uid://bgx3i2je7hwwp" path="res://art/npc_sprites/sprite_cindy.png" id="1_4jsjt"]
+[ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_6m2jr"]
+[ext_resource type="Script" uid="uid://dagryflfn6tyo" path="res://npcs/cindy_suzy_lou.gd" id="2_6m2jr"]
+
+[node name="CindySuzyLou" unique_id=318230135 instance=ExtResource("1_6m2jr")]
+texture = ExtResource("1_4jsjt")
+script = ExtResource("2_6m2jr")
+
+[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+text = "Hi, I'm Cindy Suzy Lou!
+[i]press [e] to talk[/i]"
