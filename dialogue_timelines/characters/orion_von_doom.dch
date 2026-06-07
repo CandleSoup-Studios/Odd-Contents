@@ -10,12 +10,31 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Neutral Orion Bust",
 &"description": "",
 &"display_name": "Orion von Doom",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Flicker Orion Bust": {
+"export_overrides": {
+"image": "\"res://art/dialogue/busts/char_orion_bust_flicker.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Neutral Orion Bust": {
+"export_overrides": {
+"image": "\"res://art/dialogue/busts/char_orion_bust.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

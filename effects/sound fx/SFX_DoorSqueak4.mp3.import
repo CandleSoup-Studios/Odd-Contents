@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bspbwcjewsjec"
+path="res://.godot/imported/SFX_DoorSqueak4.mp3-f90c10e4995dbc822c09504ac4386734.mp3str"
+
+[deps]
+
+source_file="res://effects/sound fx/SFX_DoorSqueak4.mp3"
+dest_files=["res://.godot/imported/SFX_DoorSqueak4.mp3-f90c10e4995dbc822c09504ac4386734.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

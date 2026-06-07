@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgq6i0tnjx5s8"
-path="res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"
+uid="uid://dka6lfavvmor3"
+path="res://.godot/imported/obj_box4.png-1966179105d6147cc35537219db12e4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/dialogue/busts/char_bex_bust.png"
-dest_files=["res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"]
+source_file="res://art/dialogue/deliveries/obj_box4.png"
+dest_files=["res://.godot/imported/obj_box4.png-1966179105d6147cc35537219db12e4b.ctex"]
 
 [params]
 

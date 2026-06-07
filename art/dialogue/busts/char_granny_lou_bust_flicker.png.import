@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgq6i0tnjx5s8"
-path="res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"
+uid="uid://d13t55skwlh8m"
+path="res://.godot/imported/char_granny_lou_bust_flicker.png-de21dbb267aeee1c6b067b300c47a2b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/dialogue/busts/char_bex_bust.png"
-dest_files=["res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"]
+source_file="res://art/dialogue/busts/char_granny_lou_bust_flicker.png"
+dest_files=["res://.godot/imported/char_granny_lou_bust_flicker.png-de21dbb267aeee1c6b067b300c47a2b0.ctex"]
 
 [params]
 

@@ -19,16 +19,34 @@
 &"portraits": {
 "Closed": {
 "export_overrides": {
-"image": "\"res://art/dialogue/deliveries/obj_delivery3.png\""
+"image": "\"res://art/dialogue/deliveries/obj_box1.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"Open": {
+"Knife": {
 "export_overrides": {
-"image": ""
+"image": "\"res://art/dialogue/deliveries/obj_knifealone.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Open-Empty": {
+"export_overrides": {
+"image": "\"res://art/dialogue/deliveries/obj_box2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Open-Partial Knife": {
+"export_overrides": {
+"image": "\"res://art/dialogue/deliveries/obj_box5.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -36,5 +54,5 @@
 "scene": ""
 }
 },
-&"scale": 0.25
+&"scale": 0.4
 }

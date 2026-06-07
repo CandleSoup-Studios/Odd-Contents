@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgq6i0tnjx5s8"
-path="res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"
+uid="uid://dxtrib1fsgiar"
+path="res://.godot/imported/char_harvey_bust_flicker.png-065babe7c95e41ad582b095a5f425c4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/dialogue/busts/char_bex_bust.png"
-dest_files=["res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"]
+source_file="res://art/dialogue/busts/char_harvey_bust_flicker.png"
+dest_files=["res://.godot/imported/char_harvey_bust_flicker.png-065babe7c95e41ad582b095a5f425c4e.ctex"]
 
 [params]
 
