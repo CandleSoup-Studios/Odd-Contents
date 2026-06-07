@@ -6,7 +6,7 @@ func _ready() -> void:
 	Global.current_quest = Global.quests_act_1.pop_front()
 
 	$CanvasLayer.visible = true
-	$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Granny![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
+	$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
 	
 	get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = true
 	
@@ -19,7 +19,7 @@ func _on_signal(signal_passed_in):
 			
 			if(Global.quests_act_1.size() > 0):
 				Global.current_quest = Global.quests_act_1.pop_front()
-				get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = true
+				get_node(Global.current_quest["npc"] + "/ObjectiveMarker").visible = true
 			else:
 				get_node("GreatAuntLourde/ObjectiveMarker").visible = true
 			
