@@ -10,14 +10,23 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Neutral",
+&"default_portrait": "Neutral Granny Bust",
 &"description": "",
 &"display_name": "Granny Lou",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(100, 90),
 &"portraits": {
-"Neutral": {
+"Flicker Granny Bust": {
+"export_overrides": {
+"image": "\"res://art/dialogue/busts/char_granny_lou_bust_flicker.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Neutral Granny Bust": {
 "export_overrides": {
 "image": "\"res://art/dialogue/busts/char_granny_lou_bust.png\""
 },

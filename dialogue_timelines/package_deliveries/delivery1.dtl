@@ -14,17 +14,19 @@ granny_lou: Why of course, dearie!
 [i]*Granny Lou elegantly signs her name as 'Granny Lou' with a heart at the end.[/i]
 join delivery1 center [animation="Slide In Up" length="0.8"]
 granny_lou: Now let's see what my sweet Cindy sent me.
+audio "res://effects/sound fx/SFX_Package_BearPaws.mp3"
 update delivery1 (Open) center [length="0.8"]
 granny_lou: Oh, bless her heart! This is just perfect!
 bex: HUH?????
 granny_lou: These will be perfect for my famous BearClaw Soup!
 granny_lou: It's Cindy's favorite, you know.
 granny_lou: She always wants me to make it for her birthday.
+granny_lou: You're welcome to try some too!
 leave delivery1 [animation="Slide Out Down" length="0.8"]
 [signal arg="package_delivered"]
-[style]
-granny_lou: You're welcome to try some too!
 granny_lou: We usually have a party by the lake.
+update granny_lou (Flicker Granny Bust)
 granny_lou: You know, so it doesn't feel so lonely.
+update granny_lou (Neutral Granny Bust)
 bex: I... I need to go.
 granny_lou: Have a lovely day, Bex, dear!

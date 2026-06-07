@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgq6i0tnjx5s8"
-path="res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"
+uid="uid://dbpdv60wikug8"
+path="res://.godot/imported/char_orion_bust.png-588581acc2e1d0f9e5be8ab38c9a18ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/dialogue/busts/char_bex_bust.png"
-dest_files=["res://.godot/imported/char_bex_bust.png-062be494cf83acd4de23bf5c2972e28e.ctex"]
+source_file="res://art/dialogue/busts/char_orion_bust.png"
+dest_files=["res://.godot/imported/char_orion_bust.png-588581acc2e1d0f9e5be8ab38c9a18ca.ctex"]
 
 [params]
 

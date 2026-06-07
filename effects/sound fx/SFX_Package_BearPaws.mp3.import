@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqs6j6xv7oyoe"
+path="res://.godot/imported/SFX_Package_BearPaws.mp3-a8b842306d78a30ac5bde9391281c711.mp3str"
+
+[deps]
+
+source_file="res://effects/sound fx/SFX_Package_BearPaws.mp3"
+dest_files=["res://.godot/imported/SFX_Package_BearPaws.mp3-a8b842306d78a30ac5bde9391281c711.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

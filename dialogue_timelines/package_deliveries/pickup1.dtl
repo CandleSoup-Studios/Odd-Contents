@@ -5,9 +5,9 @@ cindy_suzy_lou: Hiya! That's me! Wow, you actually came!
 bex: I did! Pickup for Granny Lou?
 join delivery1 center [animation="Slide In Up" length="0.8"]
 cindy_suzy_lou: I've got it right here!
-[signal arg="package_pickup"]
-leave delivery1 [animation="Slide In Up" length="0.8"]
 bex: Thanks! I'm Bex, by the way. I'm new in town.
+leave delivery1 [animation="Slide In Up" length="0.8"]
+[signal arg="package_pickup"]
 cindy_suzy_lou: I already know who you are.
 bex: You do....?
 cindy_suzy_lou: Yep! The lake told me.
@@ -22,7 +22,7 @@ bex: I'll do my best.... could you sign here for me, please?
 bex: Wow, that's an impressive signature. Very professional.
 cindy_suzy_lou: Thanks! Granny says good handwriting makes people trust you.
 cindy_suzy_lou: You trust me right?
-bex: .....Sure I do.
+bex: Sure I do.
 cindy_suzy_lou: Yay! You're way nicer than the last courier.
 cindy_suzy_lou: He was grumpy and smelled like cigarettes. Blegh!
 bex: What happened to him...?
@@ -32,3 +32,8 @@ bex: Well, I should get going now.
 bex: You, uh, stay safe out there.
 cindy_suzy_lou: Bye, Bex!
 cindy_suzy_lou: Tell Granny I said hiiiieee!
+audio "res://effects/sound fx/UIGlitch_Noise 007_VZ_GN.wav" [volume="-5.0"]
+update cindy_suzy_lou (Flicker Cindy Bust) [wait="true" z_index="0"]
+[wait time="0.5"]
+update cindy_suzy_lou (Neutral Cindy Bust) [length="0.1" wait="true"]
+bex: ....?

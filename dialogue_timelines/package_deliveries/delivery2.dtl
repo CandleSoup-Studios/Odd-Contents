@@ -24,7 +24,11 @@ harvey_jakes: Now let's see...
 update delivery2 (Open) center
 harvey_jakes: AHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 harvey_jakes: I KNEW IT! I KNEW IT!!!! THEY'RE WATCHING!!!!
+update harvey_jakes (Flicker Harvey Bust)
 harvey_jakes: [b][i]THEY'RE ALWAYS WATCHING!!!!!!!!!!!!!!!!![/i][/b]
+update harvey_jakes (Neutral Harvey Bust)
+[wait time="0.5"]
 leave harvey_jakes [animation="Slide To Right"]
+leave delivery2
 bex: OH GOD!!!!!
 bex: What is happening in this town?!?!?!

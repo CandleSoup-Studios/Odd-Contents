@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3bh65supqnab"
+path="res://.godot/imported/SFX_Package_Eyeballs.mp3-0b78163ef28bac0546b5bb689ac8f0c2.mp3str"
+
+[deps]
+
+source_file="res://effects/sound fx/SFX_Package_Eyeballs.mp3"
+dest_files=["res://.godot/imported/SFX_Package_Eyeballs.mp3-0b78163ef28bac0546b5bb689ac8f0c2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
