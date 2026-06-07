@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cfqea61v270jr"]
+
+[node name="Node2D" type="Node2D" unique_id=188552354]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1838732387]
+offset_left = -2544.0
+offset_top = -1056.0
+offset_right = 2528.0
+offset_bottom = 1024.0
+theme_override_font_sizes/normal_font_size = 160
+bbcode_enabled = true
+text = "End of Act 1"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=613729137]

@@ -37,16 +37,16 @@ directories/dch_directory={
 "waylon_santana": "res://dialogue_timelines/characters/waylon_santana.dch"
 }
 directories/dtl_directory={
-"act2/dialogue1": "res://dialogue_timelines/npc_interactions/act2/dialogue1.dtl",
 "act2/dialogue2": "res://dialogue_timelines/npc_interactions/act2/dialogue2.dtl",
 "act3/dialogue1": "res://dialogue_timelines/npc_interactions/act3/dialogue1.dtl",
 "delivery2": "res://dialogue_timelines/package_deliveries/delivery2.dtl",
 "delivery3": "res://dialogue_timelines/package_deliveries/delivery3.dtl",
-"npc_aunt_intro": "res://dialogue_timelines/npc_interactions/act1/npc_aunt_intro.dtl",
-"npc_cindy_pickup_1": "res://dialogue_timelines/package_deliveries/npc_cindy_pickup_1.dtl",
-"npc_granny_delivery_1": "res://dialogue_timelines/package_deliveries/npc_granny_delivery_1.dtl",
-"npc_santana_complete_1": "res://dialogue_timelines/npc_interactions/act1/npc_santana_complete_1.dtl",
-"npc_santana_start_1": "res://dialogue_timelines/npc_interactions/act1/npc_santana_start_1.dtl",
+"npc_cindysuzylou_package_pickup_1": "res://dialogue_timelines/package_deliveries/npc_cindysuzylou_package_pickup_1.dtl",
+"npc_grannylou_package_delivery_1": "res://dialogue_timelines/package_deliveries/npc_grannylou_package_delivery_1.dtl",
+"npc_greatauntlourde_intro_1": "res://dialogue_timelines/npc_interactions/act1/npc_greatauntlourde_intro_1.dtl",
+"npc_waylonsantana_complete_1": "res://dialogue_timelines/npc_interactions/act1/npc_waylonsantana_complete_1.dtl",
+"npc_waylonsantana_start_1": "res://dialogue_timelines/npc_interactions/act1/npc_waylonsantana_start_1.dtl",
+"npc_waylonsantana_start_2": "res://dialogue_timelines/npc_interactions/act2/npc_waylonsantana_start_2.dtl",
 "pickup2": "res://dialogue_timelines/package_deliveries/pickup2.dtl",
 "pickup3": "res://dialogue_timelines/package_deliveries/pickup3.dtl"
 }
@@ -94,7 +94,6 @@ glossary/default_case_sensitive=true
 
 [display]
 
-window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
 
