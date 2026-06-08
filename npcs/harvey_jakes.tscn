@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://buf5gsdkbx1me"]
+
+[ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_i70e8"]
+[ext_resource type="Texture2D" uid="uid://dwusqtrkq5ity" path="res://art/npc_sprites/sprite_harvey1.png" id="2_lcagb"]
+[ext_resource type="Texture2D" uid="uid://by8kb1qnbv3a3" path="res://art/npc_sprites/sprite_harvey2.png" id="3_46it0"]
+[ext_resource type="Script" uid="uid://cd80emb8o6gxi" path="res://npcs/harvey_jakes.gd" id="3_lcagb"]
+[ext_resource type="Texture2D" uid="uid://cogjkulg3pdib" path="res://art/npc_sprites/sprite_harvey3.png" id="4_5ic5f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_041ef"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lcagb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_46it0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5ic5f")
+}],
+"loop": false,
+"name": &"hello",
+"speed": 0.5
+}]
+
+[node name="HarveyJakes" unique_id=318230135 instance=ExtResource("1_i70e8")]
+texture = ExtResource("2_lcagb")
+script = ExtResource("3_lcagb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=641495748]
+sprite_frames = SubResource("SpriteFrames_041ef")
+animation = &"hello"
+
+[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+text = "Hi, I'm Harvey Jakes!
+[i]press [e] to talk[/i]"
+
+[node name="ObjectiveMarker" parent="." index="3" unique_id=1692829816]
+z_index = 3

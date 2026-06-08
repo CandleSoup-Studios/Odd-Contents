@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 [i]*knock knock knock*[/i]
 bex: Hello? Delivery for Harvey Jakes?
@@ -32,3 +33,6 @@ leave harvey_jakes [animation="Slide To Right"]
 leave delivery2
 bex: OH GOD!!!!!
 bex: What is happening in this town?!?!?!
+set {Global.hud_display_title} = "Check In"
+set {Global.hud_display_location} = "Shade Delivery Co."
+[signal arg="hud_update"]

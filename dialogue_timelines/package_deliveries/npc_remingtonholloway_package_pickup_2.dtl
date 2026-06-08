@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 bex: Good morning! Pickup for Har-
 join remington_holloway center [animation="Slide In Up"]
@@ -40,3 +41,6 @@ update remington_holloway (Neutral Remy Bust) [length="0.1" wait="true"]
 [wait time="1.0"]
 leave remington_holloway
 bex: Weird...
+set {Global.hud_display_title} = "Second Delivery"
+set {Global.hud_display_location} = "Harvey Jake's House"
+[signal arg="hud_update"]

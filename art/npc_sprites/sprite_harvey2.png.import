@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cukpfr2dna0nq"
-path="res://.godot/imported/sprite_gas_counter.png-445fdc6c3bd9c1d408c9cc22a801a215.ctex"
+uid="uid://by8kb1qnbv3a3"
+path="res://.godot/imported/sprite_harvey2.png-5bb8a846e8467106a042c60f0c2973b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/sprite_gas_counter.png"
-dest_files=["res://.godot/imported/sprite_gas_counter.png-445fdc6c3bd9c1d408c9cc22a801a215.ctex"]
+source_file="res://art/npc_sprites/sprite_harvey2.png"
+dest_files=["res://.godot/imported/sprite_harvey2.png-5bb8a846e8467106a042c60f0c2973b7.ctex"]
 
 [params]
 

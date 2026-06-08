@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join waylon_santana right
 waylon_santana: Morning, Bex. I trust you've come correct to work today.
@@ -17,3 +18,6 @@ bex: Not at all, sir.  I've just heard a lot about it, is all.
 waylon_santana: Yeah, the townsfolk here really have some kind of affinity to that stagnant, mosquito-ridden puddle.
 waylon_santana: I'm from Natlantic City so I never really gave a hoot. I'm just here to make money.
 waylon_santana: Alright kid, we've wasted too much time yapping. Get moving!
+set {Global.hud_display_title} = "...Again"
+set {Global.hud_display_location} = "General Store"
+[signal arg="hud_update"]

@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join waylon_santana right
 bex: Mr. Santana, you've gotta help! Something totally messed up happened again!
@@ -15,3 +16,6 @@ bex: ......
 bex: There's something seriously wrong with this town. And I'm going to find out what.
 waylon_santana: Well you can do it on your own time. I don't have anything else for you to do today so you can go on home.
 waylon_santana: No more funny business, ya hear?
+set {Global.hud_display_title} = "...Another Day Complete"
+set {Global.hud_display_location} = "Aunt Lourde's House"
+[signal arg="hud_update"]

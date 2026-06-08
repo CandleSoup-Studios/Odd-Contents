@@ -18,37 +18,37 @@ script = ExtResource("1_g2mvh")
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=399666480]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1592198483]
+[node name="TitleScreen" type="VBoxContainer" parent="HBoxContainer" unique_id=1592198483]
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Title" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1078278133]
+[node name="Title" type="Label" parent="HBoxContainer/TitleScreen" unique_id=1078278133]
 layout_mode = 2
 theme_override_font_sizes/font_size = 88
 text = "Odd Contents"
 
-[node name="Options" type="VBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1800729133]
+[node name="Options" type="VBoxContainer" parent="HBoxContainer/TitleScreen" unique_id=1800729133]
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
 theme_override_constants/separation = 7
 alignment = 1
 
-[node name="NewGame" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=1622619758]
+[node name="NewGame" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=1622619758]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "New Game"
 flat = true
 alignment = 0
 
-[node name="LoadGame" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=1097631217]
+[node name="LoadGame" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=1097631217]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Load Game"
 flat = true
 alignment = 0
 
-[node name="Settings" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=479577202]
+[node name="Settings" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=479577202]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Settings
@@ -56,7 +56,7 @@ text = "Settings
 flat = true
 alignment = 0
 
-[node name="Exit" type="Button" parent="HBoxContainer/VBoxContainer/Options" unique_id=1481454162]
+[node name="Exit" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=1481454162]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Exit
@@ -86,8 +86,8 @@ alignment = 2
 [node name="TitleScreenSceneTransitionAnimation" parent="." unique_id=2063913806 instance=ExtResource("2_dxpbd")]
 z_index = 1
 
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/NewGame" to="." method="_on_new_game_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/LoadGame" to="." method="_on_load_game_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Options/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/LoadGame" to="." method="_on_load_game_pressed"]
+[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="HBoxContainer/TheStudio/Credits" to="." method="_on_credits_pressed"]

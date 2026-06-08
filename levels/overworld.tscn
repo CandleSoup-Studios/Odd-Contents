@@ -24,6 +24,8 @@
 [ext_resource type="Texture2D" uid="uid://brvchp6kdbp0" path="res://art/world_objects/buildings/obj_building_store_top.png" id="16_n78bg"]
 [ext_resource type="Texture2D" uid="uid://cby3wm6021e4l" path="res://art/world_objects/buildings/obj_house_harvey_top.png" id="18_jc7pe"]
 [ext_resource type="PackedScene" uid="uid://xhuelwx6bvwn" path="res://npcs/granny_lou.tscn" id="23_jc7pe"]
+[ext_resource type="PackedScene" uid="uid://7hu60cld82ff" path="res://npcs/remington_holloway.tscn" id="24_3hrjb"]
+[ext_resource type="PackedScene" uid="uid://buf5gsdkbx1me" path="res://npcs/harvey_jakes.tscn" id="26_axpip"]
 
 [sub_resource type="TileSet" id="TileSet_jc7pe"]
 
@@ -222,7 +224,7 @@ limit_bottom = 22848
 position_smoothing_speed = 10.0
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=476775216]
-position = Vector2(3792, 19424)
+position = Vector2(3536, 19632)
 
 [node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
 z_index = 1
@@ -239,6 +241,14 @@ position = Vector2(16750, 14779)
 [node name="GrannyLou" parent="." unique_id=1455003559 instance=ExtResource("23_jc7pe")]
 z_index = 1
 position = Vector2(7088, 5232)
+
+[node name="RemingtonHolloway" parent="." unique_id=158141153 instance=ExtResource("24_3hrjb")]
+z_index = 1
+position = Vector2(14432, 9920)
+
+[node name="HarveyJakes" parent="." unique_id=2147348204 instance=ExtResource("26_axpip")]
+z_index = 1
+position = Vector2(25170, 11335)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1503371322]
 visible = false

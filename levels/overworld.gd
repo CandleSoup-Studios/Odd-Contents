@@ -1,12 +1,16 @@
 extends Node2D
 
+var quest_key = "quests_act_%d" % Global.story_act
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$TileMap/Player.global_position = $StartPosition.global_position
-	Global.current_quest = Global.quests_act_1.pop_front()
+	
+	if Global.story_act == 1:
+		Global.current_quest = Global.quests_act_1.pop_front()
 
-	$CanvasLayer.visible = true
-	$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
+		$CanvasLayer.visible = true
+		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
 	
 	get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = true
 	
@@ -16,13 +20,19 @@ func _on_signal(signal_passed_in):
 	match signal_passed_in:
 		"hud_update":
 			get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = false
-			
-			if(Global.quests_act_1.size() > 0):
-				Global.current_quest = Global.quests_act_1.pop_front()
+			print(quest_key)
+			if(Global[quest_key].size() > 0):
+				Global.current_quest = Global[quest_key].pop_front()
 				get_node(Global.current_quest["npc"] + "/ObjectiveMarker").visible = true
-			else:
-				get_node("GreatAuntLourde/ObjectiveMarker").visible = true
-			
+				
+			elif(Global[quest_key].size() == 0):
+					var key_parts = quest_key.split("_")
+					quest_key = "%s_%s_%d" % [key_parts[0], key_parts[1], Global.story_act]
+					print(quest_key)
+					Global.current_quest = Global[quest_key].pop_front()
+					
+					print(Global.current_quest)
+					
 			$CanvasLayer.visible = true
 			$CanvasLayer/HUD/Container/HUDLabel.text = "[i]" + Global.hud_display_title + "[/i]" + "[br][font_size=14][i]Head to " + Global.hud_display_location + "[/i][/font_size]"
 			#$CanvasLayer/HUD/HUDBackground/HUDLabelLocation.text = "[i]Head to " + Global.hud_display_location + "[/i]"

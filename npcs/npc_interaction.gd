@@ -27,14 +27,16 @@ func _input(event) -> void:
 		print(npc_name)
 		
 		if Global.current_quest["quest_type"] == Global.QuestState.END:
+				print("end of act")
 				Global.story_act += 1
+				print(Global.story_act)
+				get_tree().current_scene._on_signal("hud_update")
 				#Global.hud_display_title = "" should be done elsewhere, start day with NEW HUD prompt
 				#Global.hud_display_location = "" should be done elsewhere, start day with new HUD prompt
 				#Global.current_quest_state = Global.QuestState.INTRO
 				#Global.current_quest = {}
-				get_tree().change_scene_to_file("res://levels/act1_end.tscn")
-		
-		if Global.current_quest["npc"] == npc_name:
+				get_tree().change_scene_to_file("res://act_transitions/act_2_transition.tscn")
+		elif Global.current_quest["npc"] == npc_name:
 			print("inside quest??")
 			#print("npc_cindy_pickup_" + str(Global.story_act))
 		

@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://buup65q7yqdqy" path="res://npcs/great_aunt_lourde.gd" id="2_qhffw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhffw"]
-size = Vector2(612, 403)
+size = Vector2(612, 621)
 
 [node name="GreatAuntLourde" type="Sprite2D" unique_id=318230135]
 texture = ExtResource("1_ddhi6")

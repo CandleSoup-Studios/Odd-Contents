@@ -21,8 +21,8 @@ var quests_act_1 = [
 var quests_act_2 = [
 	#{"quest_type": QuestState.NOT_STARTED, "npc": "GreatAuntLourde"},
 	{"quest_type": QuestState.START, "npc": "WaylonSantana"},
-	{"quest_type": QuestState.PACKAGE_PICKUP, "npc": "CindySuzyLou"},
-	{"quest_type": QuestState.PACKAGE_DELIVERY, "npc": "GrannyLou"},
+	{"quest_type": QuestState.PACKAGE_PICKUP, "npc": "RemingtonHolloway"},
+	{"quest_type": QuestState.PACKAGE_DELIVERY, "npc": "HarveyJakes"},
 	{"quest_type": QuestState.COMPLETE, "npc": "WaylonSantana"},
 	{"quest_type": QuestState.END, "npc": "GreatAuntLourde"}
 ]
