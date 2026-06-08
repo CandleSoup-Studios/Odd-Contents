@@ -11,7 +11,7 @@ func _ready() -> void:
 
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
-	
+		
 	get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = true
 	
 	Dialogic.signal_event.connect(_on_signal)

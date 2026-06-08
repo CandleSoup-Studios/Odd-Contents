@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://2r6ugbgwm1si"]
+
+[ext_resource type="PackedScene" uid="uid://l8th65qe1iks" path="res://act_transitions/act_2_transition.tscn" id="1_cbu5e"]
+
+[node name="MarginContainer" unique_id=363057040 instance=ExtResource("1_cbu5e")]
+
+[node name="RichTextLabel" parent="HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(401747240) index="0" unique_id=1308670992]
+text = "Act 3"

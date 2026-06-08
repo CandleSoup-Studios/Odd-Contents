@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ffil1fnlxg82"]
+
+[ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_rod3a"]
+[ext_resource type="Texture2D" uid="uid://bb0orojlbqqeg" path="res://art/npc_sprites/sprite_lucille.png" id="2_jx1vl"]
+[ext_resource type="Script" uid="uid://dpq48ifpvq1my" path="res://npcs/lucille_pope.gd" id="3_jx1vl"]
+
+[node name="LucillePope" unique_id=318230135 instance=ExtResource("1_rod3a")]
+texture = ExtResource("2_jx1vl")
+script = ExtResource("3_jx1vl")
+
+[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+text = "Hi, I'm Lucille Pope!
+[i]press [e] to talk[/i]"

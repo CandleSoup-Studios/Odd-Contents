@@ -35,7 +35,10 @@ func _input(event) -> void:
 				#Global.hud_display_location = "" should be done elsewhere, start day with new HUD prompt
 				#Global.current_quest_state = Global.QuestState.INTRO
 				#Global.current_quest = {}
-				get_tree().change_scene_to_file("res://act_transitions/act_2_transition.tscn")
+				if Global.story_act == 2:
+					get_tree().change_scene_to_file("res://act_transitions/act_2_transition.tscn")
+				elif Global.story_act == 3:
+					get_tree().change_scene_to_file("res://act_transitions/act_3_transition.tscn")
 		elif Global.current_quest["npc"] == npc_name:
 			print("inside quest??")
 			#print("npc_cindy_pickup_" + str(Global.story_act))

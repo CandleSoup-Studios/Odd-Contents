@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join lucille_pope right
 lucille_pope: Good day, Bex! I've been expecting you.
@@ -34,3 +35,6 @@ update lucille_pope (Flicker Lucille Bust) [length="1.0" wait="true"]
 [wait time="0.5"]
 update lucille_pope (Neutral Lucille Bust) [length="0.1" wait="true"]
 bex: ....
+set {Global.hud_display_title} = "Not This"
+set {Global.hud_display_location} = "The Lake"
+[signal arg="hud_update"]

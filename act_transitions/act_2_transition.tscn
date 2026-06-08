@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://l8th65qe1iks"]
 
 [ext_resource type="PackedScene" uid="uid://bibot7a8xxw8j" path="res://animations/title_screen_scene_transition_animation.tscn" id="1_0t65e"]
-[ext_resource type="Script" uid="uid://cgelo0qloquoi" path="res://act_transitions/act_2_transition.gd" id="1_qnmy7"]
+[ext_resource type="Script" uid="uid://cgelo0qloquoi" path="res://act_transitions/act_transition.gd" id="1_qnmy7"]
 
 [node name="MarginContainer" type="MarginContainer" unique_id=363057040]
 anchors_preset = 15
