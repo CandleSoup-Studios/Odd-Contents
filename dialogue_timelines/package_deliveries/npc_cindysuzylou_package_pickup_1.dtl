@@ -8,7 +8,6 @@ join delivery1 center [animation="Slide In Up" length="0.8"]
 cindy_suzy_lou: I've got it right here!
 bex: Thanks! I'm Bex, by the way. I'm new in town.
 leave delivery1 [animation="Slide In Up" length="0.8"]
-[signal arg="package_pickup"]
 cindy_suzy_lou: I already know who you are.
 bex: You do....?
 cindy_suzy_lou: Yep! The lake told me.
@@ -40,4 +39,5 @@ update cindy_suzy_lou (Neutral Cindy Bust) [length="0.1" wait="true"]
 bex: ....?
 set {Global.hud_display_title} = "The First Delivery"
 set {Global.hud_display_location} = "Granny Lou's House"
+set {Global.has_package} = true
 [signal arg="hud_update"]

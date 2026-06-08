@@ -19,7 +19,6 @@ var quests_act_1 = [
 ]
 
 var quests_act_2 = [
-	#{"quest_type": QuestState.NOT_STARTED, "npc": "GreatAuntLourde"},
 	{"quest_type": QuestState.START, "npc": "WaylonSantana"},
 	{"quest_type": QuestState.PACKAGE_PICKUP, "npc": "RemingtonHolloway"},
 	{"quest_type": QuestState.PACKAGE_DELIVERY, "npc": "HarveyJakes"},
@@ -28,7 +27,6 @@ var quests_act_2 = [
 ]
 
 var quests_act_3 = [
-	#{"quest_type": QuestState.NOT_STARTED, "npc": "GreatAuntLourde"},
 	{"quest_type": QuestState.START, "npc": "WaylonSantana"},
 	{"quest_type": QuestState.PACKAGE_PICKUP, "npc": "LucillePope"},
 	{"quest_type": QuestState.PACKAGE_DELIVERY, "npc": "OrionVonDoom"},
@@ -39,8 +37,8 @@ var quests_act_3 = [
 var story_act = 1
 var hud_display_title = ""
 var hud_display_location = ""
-#var current_quest_state = QuestState.INTRO
 var current_quest = 	{"quest_type": QuestState.INTRO, "npc": "GreatAuntLourde"}
+var has_package = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1a6o0s2ijucy"
-path="res://.godot/imported/spritesheet_walking.png-48ee73b13c6d5b48a1a4000275cb40a4.ctex"
+uid="uid://bahscyt6gbqbp"
+path="res://.godot/imported/spritesheet_bex_walking.png-223285cf60f3cc6ffc6f4ef0351a520e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player/spritesheet_walking.png"
-dest_files=["res://.godot/imported/spritesheet_walking.png-48ee73b13c6d5b48a1a4000275cb40a4.ctex"]
+source_file="res://art/player/spritesheet_bex_walking.png"
+dest_files=["res://.godot/imported/spritesheet_bex_walking.png-223285cf60f3cc6ffc6f4ef0351a520e.ctex"]
 
 [params]
 

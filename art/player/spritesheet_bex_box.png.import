@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://whnpygecq2lu"
-path="res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"
+uid="uid://dvji8mf4e3688"
+path="res://.godot/imported/spritesheet_bex_box.png-7b5f370546a7c48e5befca2fcccd67fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player/sprite_bex.png"
-dest_files=["res://.godot/imported/sprite_bex.png-519349232d792047738864370939507a.ctex"]
+source_file="res://art/player/spritesheet_bex_box.png"
+dest_files=["res://.godot/imported/spritesheet_bex_box.png-7b5f370546a7c48e5befca2fcccd67fb.ctex"]
 
 [params]
 
