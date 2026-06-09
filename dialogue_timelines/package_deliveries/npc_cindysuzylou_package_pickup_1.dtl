@@ -1,0 +1,43 @@
+[signal arg="hud_hide"]
+join bex left
+join cindy_suzy_lou right
+bex: Hi there. I'm here to pick up a delivery from a Cindy Suzy Lou.
+cindy_suzy_lou: Hiya! That's me! Wow, you actually came!
+bex: I did! Pickup for Granny Lou?
+join delivery1 center [animation="Slide In Up" length="0.8"]
+cindy_suzy_lou: I've got it right here!
+bex: Thanks! I'm Bex, by the way. I'm new in town.
+leave delivery1 [animation="Slide In Up" length="0.8"]
+[signal arg="package_pickup"]
+cindy_suzy_lou: I already know who you are.
+bex: You do....?
+cindy_suzy_lou: Yep! The lake told me.
+cindy_suzy_lou: It gets lonely sometimes.
+cindy_suzy_lou: It's really happy that you're here.
+bex: Umm... okay.
+cindy_suzy_lou: Make sure you get the package to Granny today okay?
+cindy_suzy_lou: It's really really reaaally important that you do.
+cindy_suzy_lou: [i]*whispers*[/i] It's for my birthday.
+bex: I'll do my best.... could you sign here for me, please?
+[i]*Cindy signs the paper with her name, a smiley face, and a heart*[/i]
+bex: Wow, that's an impressive signature. Very professional.
+cindy_suzy_lou: Thanks! Granny says good handwriting makes people trust you.
+cindy_suzy_lou: You trust me right?
+bex: Sure I do.
+cindy_suzy_lou: Yay! You're way nicer than the last courier.
+cindy_suzy_lou: He was grumpy and smelled like cigarettes. Blegh!
+bex: What happened to him...?
+cindy_suzy_lou: The lake got lonely of course. [i]*giggle*[/i]
+bex: Right.
+bex: Well, I should get going now.
+bex: You, uh, stay safe out there.
+cindy_suzy_lou: Bye, Bex!
+cindy_suzy_lou: Tell Granny I said hiiiieee!
+audio "res://effects/sound fx/lakealone.mp3" [volume="-5.0"]
+update cindy_suzy_lou (Flicker Cindy Bust) [wait="true" z_index="0"]
+[wait time="0.5"]
+update cindy_suzy_lou (Neutral Cindy Bust) [length="0.1" wait="true"]
+bex: ....?
+set {Global.hud_display_title} = "The First Delivery"
+set {Global.hud_display_location} = "Granny Lou's House"
+[signal arg="hud_update"]

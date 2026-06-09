@@ -1,0 +1,25 @@
+[signal arg="hud_hide"]
+join bex left
+join waylon_santana right
+bex: Hi there! Are you Waylon?
+waylon_santana: That's Mr. Santana to you. Who's asking?
+bex: My name is Bex. I'm new in town and looking for a job.
+bex: My aunt told me you might be hiring new couriers.
+waylon_santana: Your aunt, huh? Ah, must be Lourde. I can see the resemblance.
+bex: Right, sir. She's my grandmother's sister.
+waylon_santana: Well since Lourde sent you, I can't say no. I could never say no to her, heheh.
+bex: .............
+waylon_santana: *ahem* Have you got any experience, kid?
+bex: I used to deliver pizzas in high school?
+waylon_santana: That's good enough. You can get started on your first delivery now.
+waylon_santana: Head on over to [b]Cindy Suzy Lou's House[/b] to pick up a package she wants delivered to [b]Granny Lou[/b].
+bex: Sounds good, Mr. Santana!
+bex: But wait, this town is incredibly small.
+bex: Why are we making deliveries that they could easily make themselves?
+waylon_santana: Rule numero uno of this business, kid. Don't ask a bunch of questions.
+waylon_santana: One thing I learned after moving to this dump is that people in this town are incredibly lazy.
+waylon_santana: It doesn't bother me at all because it keeps me in business.
+waylon_santana: Now get moving!
+set {Global.hud_display_title} = "The First Pickup"
+set {Global.hud_display_location} = "Cindy Suzy Lou's House"
+[signal arg="hud_update"]

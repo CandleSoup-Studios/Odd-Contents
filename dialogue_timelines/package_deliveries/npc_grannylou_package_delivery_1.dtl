@@ -1,0 +1,37 @@
+[signal arg="hud_hide"]
+join bex left
+join granny_lou right
+bex: Delivery for Granny Lou!
+granny_lou: Oh goodness gracious! A visitor!
+granny_lou: My, you must be Bex. I've heard so much about you.
+bex: You have?
+granny_lou: Of course! I've known your Aunt Lourde for years.
+granny_lou: And the lake hasn't stopped chattering about you since you've arrived.
+bex: The lake...?
+granny_lou: Yes, yes, the lake.
+granny_lou: It gets lonely, you know.
+bex: Cindy, uh, mentioned that too... could you sign here please?
+granny_lou: Why of course, dearie!
+[i]*Granny Lou elegantly signs her name as 'Granny Lou' with a heart at the end.[/i]
+join delivery1 center [animation="Slide In Up" length="0.8"]
+granny_lou: Now let's see what my sweet Cindy sent me.
+audio "res://effects/sound fx/SFX_Package_BearPaws.mp3"
+update delivery1 (Open) center [length="0.8"]
+granny_lou: Oh, bless her heart! This is just perfect!
+bex: HUH?????
+granny_lou: These will be perfect for my famous BearClaw Soup!
+granny_lou: It's Cindy's favorite, you know.
+granny_lou: She always wants me to make it for her birthday.
+granny_lou: You're welcome to try some too!
+leave delivery1 [animation="Slide Out Down" length="0.8"]
+[signal arg="package_delivered"]
+granny_lou: We usually have a party by the lake.
+audio "res://effects/sound fx/lakecreepyfast2.mp3"
+update granny_lou (Flicker Granny Bust)
+granny_lou: You know, so it doesn't feel so lonely.
+update granny_lou (Neutral Granny Bust)
+bex: I... I need to go.
+granny_lou: Have a lovely day, Bex, dear!
+set {Global.hud_display_title} = "Check In"
+set {Global.hud_display_location} = "Shade Delivery Co."
+[signal arg="hud_update"]
