@@ -1,10 +1,46 @@
-join bex left [animation="Bounce In"]
-join orion_von_doom center
-orion_von_doom: HAHA you've fallen into my trap.
-join delivery3 center [animation="Slide In Up" length="0.8"]
-orion_von_doom: Look in the box!
-bex: What if I don't?
-orion_von_doom: LOOK!
-join delivery3 (Open) center
-orion_von_doom: This is the end!
+join bex left
+join orion_von_doom right
+orion_von_doom: Greetings, Bex.
+bex: Evening, Mayor von Doom.
+orion_von_doom: Please. Call me Orion.
+bex: Orion... I've brought your groceries from Lucille. And this package.
+join delivery3 (Closed) center
 [signal arg="package_delivered"]
+orion_von_doom: Ah, wonderful. Thank you kindly.
+leave delivery3
+bex: It was no problem at all, really.
+orion_von_doom: You're a phenomenal courier, Bex. Do you know that?
+orion_von_doom: It's so difficult to find good couriers these days.
+orion_von_doom: Especially ones who do exactly as they're told. You have a commendable sense of duty.
+bex: I'm just doing my job, sir. Truly.
+orion_von_doom: You seem nervous. How come?
+bex: Ah, well you're the mayor after all. People tend to get nervous around mayors.
+orion_von_doom: Do they? I suppose I wouldn't know. We are quite isolated out here. It gets very... lonely.
+orion_von_doom: Have you taken a good look at the lake? It's beautiful, isn't it?
+bex: It's sight for sure. The townspeople mention it quite often. Why is that?
+orion_von_doom: You know, Bex... the lake is a living, breathing, entity just like you and I.
+orion_von_doom: It requires caretakers. As mere occupants of The Shade, we all must do our part to ensure the town continues to prosper.
+orion_von_doom: Do you know why couriers are so important, dear Bex?
+bex: Pray tell.
+orion_von_doom: Think about it. Couriers. They connect people. They carry gifts. Necessities. [i]Offerings.[/i]
+join delivery3 (Open) center
+orion_von_doom: With that being said, let's see what darling Lucille has brought for me today.
+update delivery3 (Open) center
+[wait time="1.0"]
+update delivery3 (Open-Partial Knife)
+[wait time="1.0"]
+audio "res://effects/sound fx/SFX_Package_Knife.mp3"
+update delivery3 (Knife)
+bex: Wh-what the hell?!
+bex: I can't do this anymore! I'm leaving! I quit!
+orion_von_doom: Not so fast, Bex.
+orion_von_doom: Spend your final moments knowing that you were necessary in keeping the balance of this realm.
+orion_von_doom: The lake gives and the lake takes.
+orion_von_doom: But most of all...
+bex: Wait, wait- No, please, no.
+audio "res://effects/sound fx/lakealone.mp3"
+update orion_von_doom (Flicker Orion Bust)
+orion_von_doom: [b]The lake hungers.[/b]
+audio "res://effects/sound fx/lakecreepy.mp3"
+audio "res://effects/sound fx/SFX_Package_Knife.mp3"
+leave --All-- [animation="Slide To Left"]

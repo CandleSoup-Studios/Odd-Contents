@@ -32,7 +32,7 @@ bex: Well, I should get going now.
 bex: You, uh, stay safe out there.
 cindy_suzy_lou: Bye, Bex!
 cindy_suzy_lou: Tell Granny I said hiiiieee!
-audio "res://effects/sound fx/UIGlitch_Noise 007_VZ_GN.wav" [volume="-5.0"]
+audio "res://effects/sound fx/lakealone.mp3" [volume="-5.0"]
 update cindy_suzy_lou (Flicker Cindy Bust) [wait="true" z_index="0"]
 [wait time="0.5"]
 update cindy_suzy_lou (Neutral Cindy Bust) [length="0.1" wait="true"]

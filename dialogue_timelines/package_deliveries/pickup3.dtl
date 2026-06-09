@@ -30,6 +30,7 @@ lucille_pope: The Lake told me of course.
 bex: I need to go. Could you sign here please?
 [i]Lucille signs her name in beautiful cursive as 'Lucille Pope'.[/i]
 lucille_pope: Farewell, my dear Bex. The light in me sees the light in you.
+audio "res://effects/sound fx/lakecreepyfast1.mp3"
 update lucille_pope (Flicker Lucille Bust) [length="1.0" wait="true"]
 [wait time="0.5"]
 update lucille_pope (Neutral Lucille Bust) [length="0.1" wait="true"]

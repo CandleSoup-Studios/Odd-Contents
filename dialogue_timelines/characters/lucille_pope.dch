@@ -15,7 +15,7 @@
 &"display_name": "Lucille Pope",
 &"mirror": false,
 &"nicknames": [""],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(30, 0),
 &"portraits": {
 "Flicker Lucille Bust": {
 "export_overrides": {

@@ -34,6 +34,7 @@ remington_holloway: And let him know that I'm..... remorseful.
 bex: .....
 remington_holloway: And Bex. One last thing.
 remington_holloway: It would be wise if you stayed away from the lake.
+audio "res://effects/sound fx/lakecreepy.mp3"
 update remington_holloway (Flicker Remy Bust) [length="1.0" wait="true"]
 [wait time="0.5"]
 update remington_holloway (Neutral Remy Bust) [length="0.1" wait="true"]

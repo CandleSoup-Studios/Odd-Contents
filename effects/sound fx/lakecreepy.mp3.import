@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csb8bhgri6qx6"
+path="res://.godot/imported/lakecreepy.mp3-0eb4bf46bc1a959b2531647dd5976e3b.mp3str"
+
+[deps]
+
+source_file="res://effects/sound fx/lakecreepy.mp3"
+dest_files=["res://.godot/imported/lakecreepy.mp3-0eb4bf46bc1a959b2531647dd5976e3b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

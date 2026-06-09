@@ -21,9 +21,11 @@ bex: Sign here please.
 join delivery2 center [animation="Slide In Up" length="0.8"]
 harvey_jakes: Now let's see...
 [signal arg="package_delivered"]
+audio "res://effects/sound fx/SFX_Package_Eyeballs.mp3"
 update delivery2 (Open) center
 harvey_jakes: AHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 harvey_jakes: I KNEW IT! I KNEW IT!!!! THEY'RE WATCHING!!!!
+audio "res://effects/sound fx/lakecreepy.mp3"
 update harvey_jakes (Flicker Harvey Bust)
 harvey_jakes: [b][i]THEY'RE ALWAYS WATCHING!!!!!!!!!!!!!!!!![/i][/b]
 update harvey_jakes (Neutral Harvey Bust)
