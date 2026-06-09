@@ -1,8 +1,8 @@
 class_name NpcInteraction
 
-extends Sprite2D
+extends StaticBody2D
 
-@onready var interaction_prompt = $InteractionPrompt
+@onready var interaction_prompt = $Sprite2D/InteractionPrompt
 var player_in_range = false;
 
 func _on_interaction_area_body_entered(body: Node2D) -> void:

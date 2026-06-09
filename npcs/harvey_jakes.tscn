@@ -46,15 +46,15 @@ animations = [{
 [node name="HarveyJakes" unique_id=318230135 instance=ExtResource("1_i70e8")]
 script = ExtResource("3_lcagb")
 
-[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_46it0")
 animation = &"hello"
 autoplay = ""
 frame_progress = 0.0
 
-[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Harvey Jakes!
 [i]press [e] to talk[/i]"
 
-[node name="ObjectiveMarker" parent="." index="3" unique_id=1692829816]
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1692829816]
 z_index = 3

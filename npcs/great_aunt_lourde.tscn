@@ -36,24 +36,31 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhffw"]
 size = Vector2(612, 621)
 
-[node name="GreatAuntLourde" type="Sprite2D" unique_id=318230135]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i67id"]
+size = Vector2(238, 43.25)
+
+[node name="GreatAuntLourde" type="StaticBody2D" unique_id=113746033]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("2_qhffw")
 
-[node name="IdleAnimation" type="AnimatedSprite2D" parent="." unique_id=1368786196]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=318230135]
+
+[node name="IdleAnimation" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_eyhke")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.82313365
 
-[node name="InteractionArea" type="Area2D" parent="." unique_id=1143388956]
+[node name="InteractionArea" type="Area2D" parent="Sprite2D" unique_id=1143388956]
 collision_layer = 4
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1324285685]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/InteractionArea" unique_id=1324285685]
 position = Vector2(-1, 200)
 shape = SubResource("RectangleShape2D_qhffw")
 
-[node name="InteractionPrompt" type="TextureRect" parent="." unique_id=1785520458]
+[node name="InteractionPrompt" type="TextureRect" parent="Sprite2D" unique_id=1785520458]
 visible = false
 anchors_preset = -1
 anchor_left = -0.083000004
@@ -64,7 +71,7 @@ offset_right = -156.104
 offset_bottom = -122.0
 texture = ExtResource("2_i67id")
 
-[node name="PromptLabel" type="RichTextLabel" parent="InteractionPrompt" unique_id=462666762]
+[node name="PromptLabel" type="RichTextLabel" parent="Sprite2D/InteractionPrompt" unique_id=462666762]
 layout_mode = 0
 offset_left = 4.0
 offset_right = 410.0
@@ -78,7 +85,8 @@ text = "Hi, I'm Great Aunt Lourde!
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ObjectiveMarker" type="RichTextLabel" parent="." unique_id=1692829816]
+[node name="ObjectiveMarker" type="RichTextLabel" parent="Sprite2D" unique_id=1692829816]
+visible = false
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = -274.0
@@ -94,7 +102,7 @@ text = "[b]![/b]"
 scroll_active = false
 metadata/_edit_use_anchors_ = true
 
-[node name="ObjectiveMarkerBase" type="RichTextLabel" parent="ObjectiveMarker" unique_id=1167166001]
+[node name="ObjectiveMarkerBase" type="RichTextLabel" parent="Sprite2D/ObjectiveMarker" unique_id=1167166001]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -112,5 +120,9 @@ text = "[b]![/b]"
 scroll_active = false
 metadata/_edit_use_anchors_ = true
 
-[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
-[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=290096745]
+position = Vector2(-4, -26.625)
+shape = SubResource("RectangleShape2D_i67id")
+
+[connection signal="body_entered" from="Sprite2D/InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="Sprite2D/InteractionArea" to="." method="_on_interaction_area_body_exited"]

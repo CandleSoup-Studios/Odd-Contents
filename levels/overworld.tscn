@@ -252,6 +252,7 @@ position = Vector2(7088, 5232)
 [node name="RemingtonHolloway" parent="." unique_id=158141153 instance=ExtResource("24_3hrjb")]
 z_index = 1
 position = Vector2(14432, 9920)
+script = null
 
 [node name="HarveyJakes" parent="." unique_id=2147348204 instance=ExtResource("26_axpip")]
 z_index = 1

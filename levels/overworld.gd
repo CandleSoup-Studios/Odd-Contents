@@ -12,18 +12,18 @@ func _ready() -> void:
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
 		
-	get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = true
+	get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = true
 	
 	Dialogic.signal_event.connect(_on_signal)
 
 func _on_signal(signal_passed_in):
 	match signal_passed_in:
 		"hud_update":
-			get_node(Global.current_quest.npc + "/ObjectiveMarker").visible = false
+			get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = false
 			print(quest_key)
 			if(Global[quest_key].size() > 0):
 				Global.current_quest = Global[quest_key].pop_front()
-				get_node(Global.current_quest["npc"] + "/ObjectiveMarker").visible = true
+				get_node(Global.current_quest["npc"] + "/Sprite2D/ObjectiveMarker").visible = true
 				
 			elif(Global[quest_key].size() == 0):
 					var key_parts = quest_key.split("_")
