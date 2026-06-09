@@ -220,7 +220,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_right",
-"speed": 6.0
+"speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
