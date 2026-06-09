@@ -1,12 +1,51 @@
 [gd_scene format=3 uid="uid://ffil1fnlxg82"]
 
 [ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_rod3a"]
-[ext_resource type="Texture2D" uid="uid://bb0orojlbqqeg" path="res://art/npc_sprites/sprite_lucille.png" id="2_jx1vl"]
 [ext_resource type="Script" uid="uid://dpq48ifpvq1my" path="res://npcs/lucille_pope.gd" id="3_jx1vl"]
+[ext_resource type="Texture2D" uid="uid://bnlsoupjyggtu" path="res://art/npc_sprites/spritesheet_lucille.png" id="3_v0xbb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4ku5"]
+atlas = ExtResource("3_v0xbb")
+region = Rect2(0, 0, 444, 738)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gopo"]
+atlas = ExtResource("3_v0xbb")
+region = Rect2(444, 0, 444, 738)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjhl5"]
+atlas = ExtResource("3_v0xbb")
+region = Rect2(888, 0, 444, 738)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bq6jn"]
+atlas = ExtResource("3_v0xbb")
+region = Rect2(1332, 0, 444, 738)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m0x0k"]
+animations = [{
+"frames": [{
+"duration": 30.0,
+"texture": SubResource("AtlasTexture_p4ku5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7gopo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjhl5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bq6jn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
 
 [node name="LucillePope" unique_id=318230135 instance=ExtResource("1_rod3a")]
-texture = ExtResource("2_jx1vl")
 script = ExtResource("3_jx1vl")
+
+[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+sprite_frames = SubResource("SpriteFrames_m0x0k")
+frame_progress = 0.47744843
 
 [node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Lucille Pope!

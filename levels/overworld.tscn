@@ -231,7 +231,7 @@ limit_bottom = 22848
 position_smoothing_speed = 10.0
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=476775216]
-position = Vector2(3455, 20064)
+position = Vector2(24032, 12112)
 
 [node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
 z_index = 1

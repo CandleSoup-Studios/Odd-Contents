@@ -1,4 +1,5 @@
 [signal arg="hud_hide"]
+set {Global.has_package} = false
 join bex left
 [i]*knock knock knock*[/i]
 bex: Hello? Delivery for Harvey Jakes?

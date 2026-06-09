@@ -1,12 +1,44 @@
 [gd_scene format=3 uid="uid://bwiqwml40a6xe"]
 
-[ext_resource type="Texture2D" uid="uid://cvp5857xpycmi" path="res://art/npc_sprites/sprite_santana.png" id="1_52yis"]
 [ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_j8v7f"]
+[ext_resource type="Texture2D" uid="uid://nv0uoqw4rjh0" path="res://art/npc_sprites/spritesheet_santana.png" id="3_j8v7f"]
 [ext_resource type="Script" uid="uid://cdldnvvagljx3" path="res://npcs/waylon_santana.gd" id="3_q0jan"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0jan"]
+atlas = ExtResource("3_j8v7f")
+region = Rect2(0, 0, 288, 602)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12wn5"]
+atlas = ExtResource("3_j8v7f")
+region = Rect2(288, 0, 288, 602)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cc7wj"]
+atlas = ExtResource("3_j8v7f")
+region = Rect2(576, 0, 288, 602)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tffkf"]
+animations = [{
+"frames": [{
+"duration": 20.0,
+"texture": SubResource("AtlasTexture_q0jan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12wn5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cc7wj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
 [node name="WaylonSantana" unique_id=318230135 instance=ExtResource("1_j8v7f")]
-texture = ExtResource("1_52yis")
 script = ExtResource("3_q0jan")
+
+[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+sprite_frames = SubResource("SpriteFrames_tffkf")
+frame_progress = 0.9171133
 
 [node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Waylon Santana!

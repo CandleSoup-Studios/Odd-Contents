@@ -37,4 +37,5 @@ update lucille_pope (Neutral Lucille Bust) [length="0.1" wait="true"]
 bex: ....
 set {Global.hud_display_title} = "Not This"
 set {Global.hud_display_location} = "The Lake"
+set {Global.has_package} = true
 [signal arg="hud_update"]

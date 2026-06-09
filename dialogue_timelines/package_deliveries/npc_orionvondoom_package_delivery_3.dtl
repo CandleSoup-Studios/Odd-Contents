@@ -1,4 +1,5 @@
 [signal arg="hud_hide"]
+set {Global.has_package} = false
 join bex left [animation="Bounce In"]
 join orion_von_doom center
 orion_von_doom: HAHA you've fallen into my trap.

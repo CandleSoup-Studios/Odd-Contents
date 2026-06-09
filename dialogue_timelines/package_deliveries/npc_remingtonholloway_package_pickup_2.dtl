@@ -43,4 +43,5 @@ leave remington_holloway
 bex: Weird...
 set {Global.hud_display_title} = "Second Delivery"
 set {Global.hud_display_location} = "Harvey Jake's House"
+set {Global.has_package} = true
 [signal arg="hud_update"]

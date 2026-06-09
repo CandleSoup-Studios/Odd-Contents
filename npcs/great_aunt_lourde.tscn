@@ -1,15 +1,49 @@
 [gd_scene format=3 uid="uid://xuwjymyenh6y"]
 
-[ext_resource type="Texture2D" uid="uid://b5fflncmhbwuw" path="res://art/npc_sprites/sprite_aunt.png" id="1_ddhi6"]
 [ext_resource type="Texture2D" uid="uid://di7elypk4q6oj" path="res://art/ui/cindy_dialogue.png" id="2_i67id"]
 [ext_resource type="Script" uid="uid://buup65q7yqdqy" path="res://npcs/great_aunt_lourde.gd" id="2_qhffw"]
+[ext_resource type="Texture2D" uid="uid://crsveugt8sy8n" path="res://art/npc_sprites/spritesheet_aunt.png" id="3_qhffw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbcb3"]
+atlas = ExtResource("3_qhffw")
+region = Rect2(0, 0, 346, 550)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ff7cl"]
+atlas = ExtResource("3_qhffw")
+region = Rect2(346, 0, 346, 550)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5du23"]
+atlas = ExtResource("3_qhffw")
+region = Rect2(692, 0, 346, 550)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eyhke"]
+animations = [{
+"frames": [{
+"duration": 20.0,
+"texture": SubResource("AtlasTexture_xbcb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ff7cl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5du23")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhffw"]
 size = Vector2(612, 621)
 
 [node name="GreatAuntLourde" type="Sprite2D" unique_id=318230135]
-texture = ExtResource("1_ddhi6")
 script = ExtResource("2_qhffw")
+
+[node name="IdleAnimation" type="AnimatedSprite2D" parent="." unique_id=1368786196]
+sprite_frames = SubResource("SpriteFrames_eyhke")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.82313365
 
 [node name="InteractionArea" type="Area2D" parent="." unique_id=1143388956]
 collision_layer = 4

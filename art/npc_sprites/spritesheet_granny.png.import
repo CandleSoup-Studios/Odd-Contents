@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uxcr6irnitwx"
-path="res://.godot/imported/sprite_harvey2.png-5bb8a846e8467106a042c60f0c2973b7.ctex"
+uid="uid://dwh1f2dm5hjkk"
+path="res://.godot/imported/spritesheet_granny.png-e432b7ee3c614db94e3a97bfa57d1d21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/sprite_harvey2.png"
-dest_files=["res://.godot/imported/sprite_harvey2.png-5bb8a846e8467106a042c60f0c2973b7.ctex"]
+source_file="res://art/npc_sprites/spritesheet_granny.png"
+dest_files=["res://.godot/imported/spritesheet_granny.png-e432b7ee3c614db94e3a97bfa57d1d21.ctex"]
 
 [params]
 

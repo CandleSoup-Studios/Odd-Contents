@@ -2,34 +2,55 @@
 
 [ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_i70e8"]
 [ext_resource type="Texture2D" uid="uid://dwusqtrkq5ity" path="res://art/npc_sprites/sprite_harvey1.png" id="2_lcagb"]
-[ext_resource type="Texture2D" uid="uid://by8kb1qnbv3a3" path="res://art/npc_sprites/sprite_harvey2.png" id="3_46it0"]
+[ext_resource type="Texture2D" uid="uid://uxcr6irnitwx" path="res://art/npc_sprites/sprite_harvey2.png" id="3_46it0"]
 [ext_resource type="Script" uid="uid://cd80emb8o6gxi" path="res://npcs/harvey_jakes.gd" id="3_lcagb"]
-[ext_resource type="Texture2D" uid="uid://cogjkulg3pdib" path="res://art/npc_sprites/sprite_harvey3.png" id="4_5ic5f"]
+[ext_resource type="Texture2D" uid="uid://ci56xlqeap1ib" path="res://art/npc_sprites/sprite_harvey3.png" id="4_5ic5f"]
+[ext_resource type="Texture2D" uid="uid://o308yvsnew2p" path="res://art/npc_sprites/sprite_harvey4.png" id="6_46it0"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_041ef"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_46it0"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_46it0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lcagb")
+}],
+"loop": false,
+"name": &"goodbye",
+"speed": 2.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_lcagb")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_46it0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_5ic5f")
 }],
 "loop": false,
 "name": &"hello",
-"speed": 0.5
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5ic5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_46it0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
 }]
 
 [node name="HarveyJakes" unique_id=318230135 instance=ExtResource("1_i70e8")]
-texture = ExtResource("2_lcagb")
 script = ExtResource("3_lcagb")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=641495748]
-sprite_frames = SubResource("SpriteFrames_041ef")
+[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+sprite_frames = SubResource("SpriteFrames_46it0")
 animation = &"hello"
+autoplay = ""
+frame_progress = 0.0
 
 [node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Harvey Jakes!
