@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cofila0q2eh83"
-path="res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"
+uid="uid://djvgirqodrd6"
+path="res://.godot/imported/Tile_Fence.png-fa4ec9b357e1bb4addc5322107d2b1cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/spritesheet_santana.png"
-dest_files=["res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"]
+source_file="res://art/world_objects/props/Tile_Fence.png"
+dest_files=["res://.godot/imported/Tile_Fence.png-fa4ec9b357e1bb4addc5322107d2b1cd.ctex"]
 
 [params]
 

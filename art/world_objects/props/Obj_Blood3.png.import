@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cofila0q2eh83"
-path="res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"
+uid="uid://dye4epc6itti3"
+path="res://.godot/imported/Obj_Blood3.png-9ed45722a03f45f42a5760eb44f3dfe8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/spritesheet_santana.png"
-dest_files=["res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"]
+source_file="res://art/world_objects/props/Obj_Blood3.png"
+dest_files=["res://.godot/imported/Obj_Blood3.png-9ed45722a03f45f42a5760eb44f3dfe8.ctex"]
 
 [params]
 

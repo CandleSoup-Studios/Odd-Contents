@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cofila0q2eh83"
-path="res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"
+uid="uid://blpgh7yu4yg6f"
+path="res://.godot/imported/lake.png-25db85ef8611805ce79ae4cf9f4aa779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/spritesheet_santana.png"
-dest_files=["res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"]
+source_file="res://art/scenes/lake.png"
+dest_files=["res://.godot/imported/lake.png-25db85ef8611805ce79ae4cf9f4aa779.ctex"]
 
 [params]
 

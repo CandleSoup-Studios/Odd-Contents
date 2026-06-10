@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cofila0q2eh83"
-path="res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"
+uid="uid://y8hrpyj3ing3"
+path="res://.godot/imported/Obj_Shade.png-7de07298835dd1a18491c756b396c993.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/spritesheet_santana.png"
-dest_files=["res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"]
+source_file="res://art/world_objects/props/Obj_Shade.png"
+dest_files=["res://.godot/imported/Obj_Shade.png-7de07298835dd1a18491c756b396c993.ctex"]
 
 [params]
 

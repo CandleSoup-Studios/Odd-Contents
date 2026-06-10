@@ -1,4 +1,4 @@
-extends MarginContainer
+extends Control
 
 @onready var SceneTransitionAnimation = $TitleScreenSceneTransitionAnimation/AnimationPlayer
 
@@ -11,6 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_continue_button_pressed() -> void:
+	#$ContinueButton.free()
 	SceneTransitionAnimation.play("fade_in")
 	await get_tree().create_timer(0.5).timeout
 	get_tree().change_scene_to_file("res://levels/overworld.tscn")

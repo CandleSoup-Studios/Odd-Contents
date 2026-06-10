@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cofila0q2eh83"
-path="res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"
+uid="uid://ddhqka00f47xf"
+path="res://.godot/imported/Obj_Flower1.png-29e7c02306742bc53e1b4cdc5d032e58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/npc_sprites/spritesheet_santana.png"
-dest_files=["res://.godot/imported/spritesheet_santana.png-62d44ebff1a1ae7daa88f028069b1678.ctex"]
+source_file="res://art/world_objects/nature/Obj_Flower1.png"
+dest_files=["res://.godot/imported/Obj_Flower1.png-29e7c02306742bc53e1b4cdc5d032e58.ctex"]
 
 [params]
 
