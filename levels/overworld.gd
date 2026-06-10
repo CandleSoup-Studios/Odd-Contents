@@ -11,7 +11,13 @@ func _ready() -> void:
 
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
-		
+	elif Global.story_act == 2:
+		$CanvasLayer.visible = true
+		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Another Day[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
+	elif Global.story_act == 3:
+		$CanvasLayer.visible = true
+		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Again...[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
+			
 	get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = true
 	
 	Dialogic.signal_event.connect(_on_signal)
