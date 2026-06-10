@@ -15,6 +15,7 @@ func _ready() -> void:
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Another Day[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
 	elif Global.story_act == 3:
+		$OrionVonDoom.visible = true
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Again...[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
 			

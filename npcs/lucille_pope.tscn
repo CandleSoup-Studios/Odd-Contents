@@ -43,10 +43,10 @@ animations = [{
 [node name="LucillePope" unique_id=318230135 instance=ExtResource("1_rod3a")]
 script = ExtResource("3_jx1vl")
 
-[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_m0x0k")
 frame_progress = 0.47744843
 
-[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Lucille Pope!
 [i]press [e] to talk[/i]"

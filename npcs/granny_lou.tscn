@@ -43,10 +43,10 @@ animations = [{
 [node name="GrannyLou" unique_id=318230135 instance=ExtResource("1_dupcw")]
 script = ExtResource("3_s3nyx")
 
-[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_ciqas")
 frame_progress = 0.91675144
 
-[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Granny Lou!
 [i]press [e] to talk[/i]"

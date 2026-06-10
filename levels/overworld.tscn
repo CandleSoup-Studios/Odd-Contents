@@ -255,13 +255,14 @@ position = Vector2(14384, 9856)
 
 [node name="HarveyJakes" parent="." unique_id=2147348204 instance=ExtResource("26_axpip")]
 z_index = 1
-position = Vector2(25170, 11335)
+position = Vector2(25175, 11340)
 
 [node name="LucillePope" parent="." unique_id=1418488629 instance=ExtResource("26_gsck2")]
 z_index = 1
 position = Vector2(20752, 11696)
 
 [node name="OrionVonDoom" parent="." unique_id=769475616 instance=ExtResource("28_fxxkd")]
+visible = false
 z_index = 1
 position = Vector2(28448, 3360)
 

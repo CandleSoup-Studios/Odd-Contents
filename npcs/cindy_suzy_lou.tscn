@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_6m2jr"]
 [ext_resource type="Script" uid="uid://dagryflfn6tyo" path="res://npcs/cindy_suzy_lou.gd" id="2_6m2jr"]
-[ext_resource type="Texture2D" uid="uid://bm4dmoethmksv" path="res://art/npc_sprites/spritesheet_cindy.png" id="3_02c80"]
+[ext_resource type="Texture2D" uid="uid://b4eclb1b7284k" path="res://art/npc_sprites/spritesheet_cindy.png" id="3_02c80"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lsksi"]
 atlas = ExtResource("3_02c80")
@@ -43,11 +43,11 @@ animations = [{
 [node name="CindySuzyLou" unique_id=318230135 instance=ExtResource("1_6m2jr")]
 script = ExtResource("2_6m2jr")
 
-[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_aq7co")
 frame = 2
 frame_progress = 0.11171725
 
-[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Cindy Suzy Lou!
 [i]press [e] to talk[/i]"

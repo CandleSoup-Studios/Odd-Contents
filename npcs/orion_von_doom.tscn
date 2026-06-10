@@ -29,10 +29,10 @@ animations = [{
 [node name="OrionVonDoom" unique_id=318230135 instance=ExtResource("1_eryau")]
 script = ExtResource("3_y45qw")
 
-[node name="IdleAnimation" parent="." index="0" unique_id=1368786196]
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_c1hhn")
 frame_progress = 0.6948499
 
-[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
+[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
 text = "Hi, I'm Orion von Doom!
 [i]press [e] to talk[/i]"
