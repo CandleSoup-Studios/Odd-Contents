@@ -44,6 +44,7 @@ directories/dtl_directory={
 "npc_lucillepope_package_pickup_3": "res://dialogue_timelines/package_deliveries/npc_lucillepope_package_pickup_3.dtl",
 "npc_orionvondoom_package_delivery_3": "res://dialogue_timelines/package_deliveries/npc_orionvondoom_package_delivery_3.dtl",
 "npc_remingtonholloway_package_pickup_2": "res://dialogue_timelines/package_deliveries/npc_remingtonholloway_package_pickup_2.dtl",
+"npc_remy_goaway": "res://dialogue_timelines/npc_interactions/generic/npc_remy_goaway.dtl",
 "npc_waylonsantana_complete_1": "res://dialogue_timelines/npc_interactions/act1/npc_waylonsantana_complete_1.dtl",
 "npc_waylonsantana_complete_2": "res://dialogue_timelines/npc_interactions/act2/npc_waylonsantana_complete_2.dtl",
 "npc_waylonsantana_start_1": "res://dialogue_timelines/npc_interactions/act1/npc_waylonsantana_start_1.dtl",

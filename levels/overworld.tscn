@@ -231,7 +231,7 @@ limit_bottom = 22848
 position_smoothing_speed = 10.0
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=476775216]
-position = Vector2(3328, 20032)
+position = Vector2(13552, 10624)
 
 [node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
 z_index = 1
@@ -248,10 +248,6 @@ position = Vector2(16750, 14779)
 [node name="GrannyLou" parent="." unique_id=1455003559 instance=ExtResource("23_jc7pe")]
 z_index = 1
 position = Vector2(7088, 5232)
-
-[node name="RemingtonHolloway" parent="." unique_id=113746033 instance=ExtResource("24_3hrjb")]
-z_index = 1
-position = Vector2(14384, 9856)
 
 [node name="HarveyJakes" parent="." unique_id=2147348204 instance=ExtResource("26_axpip")]
 z_index = 1
@@ -271,3 +267,7 @@ visible = false
 
 [node name="HUD" parent="CanvasLayer" unique_id=1778549976 instance=ExtResource("8_dwypl")]
 metadata/_edit_use_anchors_ = true
+
+[node name="RemingtonHolloway" parent="." unique_id=113746033 instance=ExtResource("24_3hrjb")]
+z_index = 1
+position = Vector2(14368, 9840)

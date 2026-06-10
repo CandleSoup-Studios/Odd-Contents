@@ -23,7 +23,6 @@ func _input(event) -> void:
 		super(event)
 		
 func _on_interaction_area_body_entered(body: Node2D) -> void:
-	#override parent, only wnat dialogue to show when u actually can talk to him
 	if Global.current_quest["npc"] == npc_data["name"]:
 		if body.is_in_group("player"):
 			interaction_prompt.visible = true
