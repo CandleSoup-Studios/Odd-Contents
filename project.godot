@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*uid://dfbeopvl8332c"
 Dialogic="*uid://ds2q0uclmolvu"
+TitleScreenSceneTransitionAnimation="*uid://bibot7a8xxw8j"
 
 [dialogic]
 
