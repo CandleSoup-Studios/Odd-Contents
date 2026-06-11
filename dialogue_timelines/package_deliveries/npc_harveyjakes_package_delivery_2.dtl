@@ -1,7 +1,9 @@
 [signal arg="hud_hide"]
+[signal arg="harvey_zoom_in"]
 set {Global.has_package} = false
-join bex left
 [i]*knock knock knock*[/i]
+[wait time="1.0"]
+join bex left
 bex: Hello? Delivery for Harvey Jakes?
 bex: ...Helloooo? Anybody home? Huh...
 join harvey_jakes right
@@ -34,6 +36,7 @@ leave harvey_jakes [animation="Slide To Right"]
 leave delivery2
 bex: OH GOD!!!!!
 bex: What is happening in this town?!?!?!
+[signal arg="harvey_zoom_out"]
 set {Global.hud_display_title} = "Check In"
 set {Global.hud_display_location} = "Shade Delivery Co."
 [signal arg="hud_update"]

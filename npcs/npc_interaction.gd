@@ -26,8 +26,8 @@ func zoom_camera(target_pos: Vector2, target_zoom: Vector2, duration := 0.5):
 	camera_zoom = overworld_camera.zoom
 	var tween = overworld_camera.create_tween()
 	
-	tween.tween_property(overworld_camera, "zoom", target_zoom, duration)
 	tween.tween_property(overworld_camera, "global_position", target_pos, duration)
+	tween.tween_property(overworld_camera, "zoom", target_zoom, duration)
 
 func zoom_out_camera():
 	zoom_camera(camera_position, camera_zoom, 0.4)

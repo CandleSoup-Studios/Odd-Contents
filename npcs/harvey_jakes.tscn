@@ -21,7 +21,7 @@ animations = [{
 "speed": 2.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 10.0,
 "texture": ExtResource("2_lcagb")
 }, {
 "duration": 1.0,
@@ -52,11 +52,11 @@ animation = &"hello"
 autoplay = ""
 frame_progress = 0.0
 
-[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=1718734868]
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=345255055]
+z_index = 3
 offset_top = -440.0
 offset_bottom = -281.0
 
-[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=345255055]
-z_index = 3
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1718734868]
 offset_top = -440.0
 offset_bottom = -281.0
