@@ -17,13 +17,9 @@ waylon_santana: Look, I don't really get it either. But the townspeople love him
 waylon_santana: He doesn't make me pay taxes on my business, so who am I to complain?
 waylon_santana: With that being said, I need you to head over to the [b]General Store[/b] and pick up the mayor's groceries from [b]Lucille Pope[/b].
 waylon_santana: After that, bring them to [b]Orion von Doom[/b] at [b]The Lake[/b].
-<<<<<<< HEAD:dialogue_timelines/npc_interactions/act3/dialogue1.dtl
-bex: [i]*gulp* The lake...?[/ii]
-=======
 [signal arg="player_left"]
-bex: *gulp* The lake...?
+bex: [i]*gulp* The lake...?[/i]
 [signal arg="npc_right"]
->>>>>>> main:dialogue_timelines/npc_interactions/act3/npc_waylonsantana_start_3.dtl
 waylon_santana: Yes, the lake. Will that be a problem?
 [signal arg="player_left"]
 bex: Not at all, sir.  I've just heard a lot about it, is all.
