@@ -75,7 +75,8 @@ func _input(event) -> void:
 			
 			$Sprite2D/ObjectiveMarker.visible = false
 			
-			Dialogic.start("npc_" + npc_name.to_lower() +"_" + str(Global.QuestState.keys()[Global.current_quest["quest_type"]]).to_lower() + "_" + str(Global.story_act))	
+			Global.dialogue_node = Dialogic.start("npc_" + npc_name.to_lower() +"_" + str(Global.QuestState.keys()[Global.current_quest["quest_type"]]).to_lower() + "_" + str(Global.story_act))
+			#add_child(Global.dialogue_node)	
 			await Dialogic.timeline_ended
 		else: # generic dialogue scenes
 			if npc_quest_triggered:

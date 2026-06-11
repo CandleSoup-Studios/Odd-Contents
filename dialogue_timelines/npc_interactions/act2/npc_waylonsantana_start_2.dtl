@@ -1,8 +1,11 @@
 [signal arg="hud_hide"]
 join bex left
 join waylon_santana right
+[signal arg="npc_right"]
 waylon_santana: Morning, Bex.
+[signal arg="player_left"]
 bex: Morning, sir.
+[signal arg="npc_right"]
 waylon_santana: I hope you've collected yourself after yesterday because I've got another delivery for you to make today.
 waylon_santana: Head over to the [b]Gas Station[/b] and pick up the package from [b]Remy[/b] and deliver it to [b]Harvey Jakes' House[/b].
 set {Global.hud_display_title} = "Let's Do This Again"

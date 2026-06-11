@@ -10,7 +10,7 @@ func _ready() -> void:
 		Global.current_quest = Global.quests_act_1.pop_front()
 
 		$CanvasLayer.visible = true
-		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
+		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Meet Aunt![/b][/i]" + "[br][i]Head to Great Aunt Lourde's House[/i]"
 	elif Global.story_act == 2:
 		print("READY KEY SIZE", Global[quest_key].size())
 		print("READY QUEST KEY", quest_key)
@@ -28,6 +28,7 @@ func _ready() -> void:
 	get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = false
 	
 	Dialogic.signal_event.connect(_on_signal)
+
 
 func _on_signal(signal_passed_in):
 	match signal_passed_in:
