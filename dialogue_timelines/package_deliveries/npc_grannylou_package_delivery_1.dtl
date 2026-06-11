@@ -36,6 +36,7 @@ granny_lou: She always wants me to make it for her birthday.
 granny_lou: You're welcome to try some too!
 leave delivery1 [animation="Slide Out Down" length="0.8"]
 granny_lou: We usually have a party by the lake.
+audio "res://effects/sound fx/lakecreepyfast2.mp3"
 update granny_lou (Flicker Granny Bust)
 granny_lou: You know, so it doesn't feel so lonely.
 update granny_lou (Neutral Granny Bust)

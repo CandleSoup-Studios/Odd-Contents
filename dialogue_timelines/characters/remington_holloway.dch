@@ -15,7 +15,7 @@
 &"display_name": "Remy",
 &"mirror": false,
 &"nicknames": [""],
-&"offset": Vector2(50, 50),
+&"offset": Vector2(80, 50),
 &"portraits": {
 "Flicker Remy Bust": {
 "export_overrides": {
