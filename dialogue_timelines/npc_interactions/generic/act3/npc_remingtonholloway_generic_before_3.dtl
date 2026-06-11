@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join remington_holloway (Flicker Remy Bust) center
+remington_holloway: Do you feel it?
+[signal arg="hud_show"]

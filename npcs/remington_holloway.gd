@@ -1,11 +1,15 @@
 extends NpcInteraction
 
 var npc_data = {
-	"name": "RemingtonHolloway"
+	"name": "RemingtonHolloway",
+	"quest_triggered": false
 }
 
 func get_npc_name() -> String:
 	return npc_data["name"]
+	
+func get_npc_quest_triggered() -> bool:
+	return npc_data["quest_triggered"]
 	
 func _ready():
 	$Sprite2D/IdleAnimation.animation_finished.connect(_on_idle_animation_finished)
@@ -18,9 +22,16 @@ func _input(event) -> void:
 	if player_in_range and Input.is_action_just_pressed("dialogue_interaction"):
 		if Global.current_quest["npc"] == npc_data["name"]:
 			$Sprite2D/IdleAnimation.play("surprise")
-		else:
-			Dialogic.start("npc_remy_goaway")	
+			super(event)
+		elif Global.story_act == 1:
+			Dialogic.start("npc_remingtonholloway_goaway")	
 			await Dialogic.timeline_ended
+		elif Global.story_act == 3:
+			Dialogic.start("npc_remingtonholloway_generic_before_3")
+			await Dialogic.timeline_ended
+		else:
+			super(event)
+
 		
 func _on_interaction_area_body_entered(body: Node2D) -> void:
 		if body.is_in_group("player"):

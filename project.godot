@@ -37,16 +37,43 @@ directories/dch_directory={
 "waylon_santana": "res://dialogue_timelines/characters/waylon_santana.dch"
 }
 directories/dtl_directory={
+"npc_cindysuzylou_generic_after_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_cindysuzylou_generic_after_1.dtl",
+"npc_cindysuzylou_generic_before_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_cindysuzylou_generic_before_1.dtl",
+"npc_cindysuzylou_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_cindysuzylou_generic_before_2.dtl",
+"npc_cindysuzylou_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_cindysuzylou_generic_before_3.dtl",
 "npc_cindysuzylou_package_pickup_1": "res://dialogue_timelines/package_deliveries/npc_cindysuzylou_package_pickup_1.dtl",
+"npc_grannylou_generic_after_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_grannylou_generic_after_1.dtl",
+"npc_grannylou_generic_before_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_grannylou_generic_before_1.dtl",
+"npc_grannylou_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_grannylou_generic_before_2.dtl",
+"npc_grannylou_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_grannylou_generic_before_3.dtl",
 "npc_grannylou_package_delivery_1": "res://dialogue_timelines/package_deliveries/npc_grannylou_package_delivery_1.dtl",
+"npc_greatauntlourde_generic_after_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_greatauntlourde_generic_after_1.dtl",
+"npc_greatauntlourde_generic_before_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_greatauntlourde_generic_before_1.dtl",
+"npc_greatauntlourde_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_greatauntlourde_generic_before_2.dtl",
+"npc_greatauntlourde_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_greatauntlourde_generic_before_3.dtl",
 "npc_greatauntlourde_intro_1": "res://dialogue_timelines/npc_interactions/act1/npc_greatauntlourde_intro_1.dtl",
+"npc_harveyjakes_generic_after_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_harveyjakes_generic_after_2.dtl",
+"npc_harveyjakes_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_harveyjakes_generic_before_2.dtl",
+"npc_harveyjakes_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_harveyjakes_generic_before_3.dtl",
 "npc_harveyjakes_package_delivery_2": "res://dialogue_timelines/package_deliveries/npc_harveyjakes_package_delivery_2.dtl",
+"npc_lucillepop_generic_after_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_lucillepop_generic_after_3.dtl",
+"npc_lucillepope_generic_before_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_lucillepope_generic_before_1.dtl",
+"npc_lucillepope_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_lucillepope_generic_before_2.dtl",
+"npc_lucillepope_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_lucillepope_generic_before_3.dtl",
 "npc_lucillepope_package_pickup_3": "res://dialogue_timelines/package_deliveries/npc_lucillepope_package_pickup_3.dtl",
 "npc_orionvondoom_package_delivery_3": "res://dialogue_timelines/package_deliveries/npc_orionvondoom_package_delivery_3.dtl",
+"npc_remingtonholloway_generic_after_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_remingtonholloway_generic_after_2.dtl",
+"npc_remingtonholloway_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_remingtonholloway_generic_before_2.dtl",
+"npc_remingtonholloway_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_remingtonholloway_generic_before_3.dtl",
+"npc_remingtonholloway_goaway": "res://dialogue_timelines/npc_interactions/generic/npc_remingtonholloway_goaway.dtl",
 "npc_remingtonholloway_package_pickup_2": "res://dialogue_timelines/package_deliveries/npc_remingtonholloway_package_pickup_2.dtl",
-"npc_remy_goaway": "res://dialogue_timelines/npc_interactions/generic/npc_remy_goaway.dtl",
 "npc_waylonsantana_complete_1": "res://dialogue_timelines/npc_interactions/act1/npc_waylonsantana_complete_1.dtl",
 "npc_waylonsantana_complete_2": "res://dialogue_timelines/npc_interactions/act2/npc_waylonsantana_complete_2.dtl",
+"npc_waylonsantana_generic_after_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_waylonsantana_generic_after_1.dtl",
+"npc_waylonsantana_generic_after_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_waylonsantana_generic_after_2.dtl",
+"npc_waylonsantana_generic_before_1": "res://dialogue_timelines/npc_interactions/generic/act1/npc_waylonsantana_generic_before_1.dtl",
+"npc_waylonsantana_generic_before_2": "res://dialogue_timelines/npc_interactions/generic/act2/npc_waylonsantana_generic_before_2.dtl",
+"npc_waylonsantana_generic_before_3": "res://dialogue_timelines/npc_interactions/generic/act3/npc_waylonsantana_generic_before_3.dtl",
 "npc_waylonsantana_start_1": "res://dialogue_timelines/npc_interactions/act1/npc_waylonsantana_start_1.dtl",
 "npc_waylonsantana_start_2": "res://dialogue_timelines/npc_interactions/act2/npc_waylonsantana_start_2.dtl",
 "npc_waylonsantana_start_3": "res://dialogue_timelines/npc_interactions/act3/npc_waylonsantana_start_3.dtl"
@@ -95,7 +122,6 @@ glossary/default_case_sensitive=true
 
 [display]
 
-window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
 

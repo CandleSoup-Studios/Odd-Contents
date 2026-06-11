@@ -46,22 +46,10 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ObjectiveMarker:modulate")
+tracks/0/path = NodePath("Sprite2D/InteractionPrompt:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D/InteractionPrompt:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -73,22 +61,10 @@ resource_name = "fade_out"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ObjectiveMarker:modulate")
+tracks/0/path = NodePath("Sprite2D/InteractionPrompt:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D/InteractionPrompt:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -122,6 +98,15 @@ collision_mask = 2
 position = Vector2(-1, 200)
 shape = SubResource("RectangleShape2D_qhffw")
 
+[node name="ObjectiveMarker" type="TextureRect" parent="Sprite2D" unique_id=345255055]
+visible = false
+offset_left = -82.0
+offset_top = -418.0
+offset_right = 86.282
+offset_bottom = -259.0
+texture = ExtResource("4_xbcb3")
+expand_mode = 1
+
 [node name="InteractionPrompt" type="TextureRect" parent="Sprite2D" unique_id=1718734868]
 visible = false
 modulate = Color(1, 1, 1, 0)
@@ -130,15 +115,6 @@ offset_top = -418.0
 offset_right = 86.28172
 offset_bottom = -259.0
 texture = ExtResource("3_xbcb3")
-expand_mode = 1
-
-[node name="ObjectiveMarker" type="TextureRect" parent="Sprite2D" unique_id=345255055]
-visible = false
-offset_left = -82.0
-offset_top = -418.0
-offset_right = 86.282
-offset_bottom = -259.0
-texture = ExtResource("4_xbcb3")
 expand_mode = 1
 
 [node name="ObjectiveMarker2" type="RichTextLabel" parent="Sprite2D" unique_id=1692829816]

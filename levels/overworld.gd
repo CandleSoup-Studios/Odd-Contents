@@ -12,14 +12,20 @@ func _ready() -> void:
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
 	elif Global.story_act == 2:
+		print("READY KEY SIZE", Global[quest_key].size())
+		print("READY QUEST KEY", quest_key)
+		Global.current_quest = Global[quest_key].pop_front()
+		print("READY current quest", Global.current_quest)
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Another Day[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
 	elif Global.story_act == 3:
+		Global.current_quest = Global[quest_key].pop_front()
 		$OrionVonDoom.visible = true
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Again...[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
-			
+	
 	get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = true
+	get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = false
 	
 	Dialogic.signal_event.connect(_on_signal)
 
@@ -29,22 +35,21 @@ func _on_signal(signal_passed_in):
 			get_node(Global.current_quest.npc + "/AnimationPlayer").play("fade_out")
 			await get_tree().create_timer(1).timeout
 			
+			print("curr npc obj mark: ", Global.current_quest.npc)
 			get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = false
-			print(quest_key)
+			get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = true
+			print("curr qk: " + str(quest_key))
+			print("quest key size: " + str(Global[quest_key].size()))
 			if(Global[quest_key].size() > 0):
 				Global.current_quest = Global[quest_key].pop_front()
 				get_node(Global.current_quest["npc"] + "/Sprite2D/ObjectiveMarker").visible = true
-				
-			elif(Global[quest_key].size() == 0):
-					var key_parts = quest_key.split("_")
-					quest_key = "%s_%s_%d" % [key_parts[0], key_parts[1], Global.story_act]
-					print(quest_key)
-					Global.current_quest = Global[quest_key].pop_front()
-					
-					print(Global.current_quest)
+				get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = false
+			
 					
 			$CanvasLayer.visible = true
 			$CanvasLayer/HUD/Container/HUDLabel.text = "[i]" + Global.hud_display_title + "[/i]" + "[br][font_size=14][i]Head to " + Global.hud_display_location + "[/i][/font_size]"
 			#$CanvasLayer/HUD/HUDBackground/HUDLabelLocation.text = "[i]Head to " + Global.hud_display_location + "[/i]"
 		"hud_hide":
 			$CanvasLayer.visible = false
+		"hud_show":
+			$CanvasLayer.visible = true
