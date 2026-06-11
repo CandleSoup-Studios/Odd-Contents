@@ -1,3 +1,4 @@
+[signal arg="hud_hide"]
 join bex left
 join orion_von_doom right
 [signal arg="npc_right"]
