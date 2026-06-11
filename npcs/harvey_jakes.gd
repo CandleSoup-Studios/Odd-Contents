@@ -33,12 +33,6 @@ func _input(event) -> void:
 		if Global.current_quest["npc"] == npc_data["name"]:
 			$Sprite2D/IdleAnimation.play("hello")
 		super(event)
-		
-func _on_interaction_area_body_entered(body: Node2D) -> void:
-	if Global.current_quest["npc"] == npc_data["name"]:
-		if body.is_in_group("player"):
-			interaction_prompt.visible = true
-			player_in_range = true
 	
 func _on_interaction_area_body_exited(body: Node2D) -> void:
 	super(body)

@@ -17,6 +17,7 @@ func _on_interaction_area_body_entered(body: Node2D) -> void:
 func _on_interaction_area_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		interaction_prompt.visible = false
+		$Sprite2D/InteractionPrompt.visible = false
 		player_in_range = false
 		
 func zoom_camera(target_pos: Vector2, target_zoom: Vector2, duration := 0.5):
@@ -71,6 +72,9 @@ func _input(event) -> void:
 				print("current npc for geneirc" + npc_name)
 				print("prev npc for geneirc" + Global.current_quest["prev_npc"])
 				set_npc_quest_trigger()
+			
+			$Sprite2D/ObjectiveMarker.visible = false
+			
 			Dialogic.start("npc_" + npc_name.to_lower() +"_" + str(Global.QuestState.keys()[Global.current_quest["quest_type"]]).to_lower() + "_" + str(Global.story_act))	
 			await Dialogic.timeline_ended
 		else: # generic dialogue scenes

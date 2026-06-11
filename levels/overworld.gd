@@ -10,19 +10,19 @@ func _ready() -> void:
 		Global.current_quest = Global.quests_act_1.pop_front()
 
 		$CanvasLayer.visible = true
-		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
+		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i]Meet Aunt![/i]" + "[br][font_size=14][i]Head to Great Aunt Lourde's House[/i][/font_size]"
 	elif Global.story_act == 2:
 		print("READY KEY SIZE", Global[quest_key].size())
 		print("READY QUEST KEY", quest_key)
 		Global.current_quest = Global[quest_key].pop_front()
 		print("READY current quest", Global.current_quest)
 		$CanvasLayer.visible = true
-		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Another Day[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
+		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Another Day[/b][/i]" + "[br][i]Head to Shade Delivery Co.[/i]"
 	elif Global.story_act == 3:
 		Global.current_quest = Global[quest_key].pop_front()
 		$OrionVonDoom.visible = true
 		$CanvasLayer.visible = true
-		$CanvasLayer/HUD/Container/HUDLabel.text = "[i]Again...[/i]" + "[br][font_size=14][i]Head to Shade Delivery Co.[/i][/font_size]"
+		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Again...[/b][/i]" + "[br][i]Head to Shade Delivery Co.[/i]"
 	
 	get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = true
 	get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = false
@@ -37,7 +37,7 @@ func _on_signal(signal_passed_in):
 			
 			print("curr npc obj mark: ", Global.current_quest.npc)
 			get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = false
-			get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = true
+			get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = false
 			print("curr qk: " + str(quest_key))
 			print("quest key size: " + str(Global[quest_key].size()))
 			if(Global[quest_key].size() > 0):
@@ -47,8 +47,7 @@ func _on_signal(signal_passed_in):
 			
 					
 			$CanvasLayer.visible = true
-			$CanvasLayer/HUD/Container/HUDLabel.text = "[i]" + Global.hud_display_title + "[/i]" + "[br][font_size=14][i]Head to " + Global.hud_display_location + "[/i][/font_size]"
-			#$CanvasLayer/HUD/HUDBackground/HUDLabelLocation.text = "[i]Head to " + Global.hud_display_location + "[/i]"
+			$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]" + Global.hud_display_title + "[/b][/i]" + "[br][i]Head to " + Global.hud_display_location + "[/i]"
 		"hud_hide":
 			$CanvasLayer.visible = false
 		"hud_show":

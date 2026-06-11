@@ -122,6 +122,7 @@ glossary/default_case_sensitive=true
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
 

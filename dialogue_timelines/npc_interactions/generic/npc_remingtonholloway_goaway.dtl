@@ -1,2 +1,3 @@
 [signal arg="hud_hide"]
 remington_holloway: Ah! [pause=1.0]...go away!
+[signal arg="hud_show"]
