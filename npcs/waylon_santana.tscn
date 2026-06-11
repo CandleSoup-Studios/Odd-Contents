@@ -40,10 +40,10 @@ script = ExtResource("3_q0jan")
 sprite_frames = SubResource("SpriteFrames_tffkf")
 frame_progress = 0.9171133
 
-[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=64572010]
-offset_top = -570.0
-offset_bottom = -537.75
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=1718734868]
+offset_top = -461.0
+offset_bottom = -302.0
 
-[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1633179120]
-offset_top = -570.0
-offset_bottom = -537.75
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=345255055]
+offset_top = -461.0
+offset_bottom = -302.0

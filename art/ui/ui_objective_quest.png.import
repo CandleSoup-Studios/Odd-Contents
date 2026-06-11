@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjw4f81ge0tiu"
-path="res://.godot/imported/ui_sparkles_quest.png-2eb414685c3c5ae2d281173acc75fb6a.ctex"
+uid="uid://dfykjoe7bgx5i"
+path="res://.godot/imported/ui_objective_quest.png-e817a6557f6501af92d6e0eef7a8ebce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/ui/ui_sparkles_quest.png"
-dest_files=["res://.godot/imported/ui_sparkles_quest.png-2eb414685c3c5ae2d281173acc75fb6a.ctex"]
+source_file="res://art/ui/ui_objective_quest.png"
+dest_files=["res://.godot/imported/ui_objective_quest.png-e817a6557f6501af92d6e0eef7a8ebce.ctex"]
 
 [params]
 

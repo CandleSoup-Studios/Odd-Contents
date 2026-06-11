@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://crsveugt8sy8n" path="res://art/npc_sprites/spritesheet_aunt.png" id="3_qhffw"]
 [ext_resource type="Texture2D" uid="uid://cxm3k6p5fir8d" path="res://art/ui/ui_dialogue_bubble.png" id="3_xbcb3"]
 [ext_resource type="FontFile" uid="uid://bh7bx3jmiw51o" path="res://fonts/Lato-Bold.ttf" id="4_ff7cl"]
-[ext_resource type="Texture2D" uid="uid://cjw4f81ge0tiu" path="res://art/ui/ui_sparkles_quest.png" id="5_5du23"]
+[ext_resource type="Texture2D" uid="uid://dfykjoe7bgx5i" path="res://art/ui/ui_objective_quest.png" id="4_xbcb3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xbcb3"]
 atlas = ExtResource("3_qhffw")
@@ -122,25 +122,23 @@ collision_mask = 2
 position = Vector2(-1, 200)
 shape = SubResource("RectangleShape2D_qhffw")
 
-[node name="InteractionPrompt" type="TextureRect" parent="Sprite2D" unique_id=64572010]
+[node name="InteractionPrompt" type="TextureRect" parent="Sprite2D" unique_id=1718734868]
 visible = false
 modulate = Color(1, 1, 1, 0)
-offset_left = -125.0
-offset_top = -534.0
-offset_right = -92.74802
-offset_bottom = -501.75
-scale = Vector2(8, 8)
+offset_left = -82.0
+offset_top = -418.0
+offset_right = 86.28172
+offset_bottom = -259.0
 texture = ExtResource("3_xbcb3")
 expand_mode = 1
 
-[node name="ObjectiveMarker" type="TextureRect" parent="Sprite2D" unique_id=1633179120]
+[node name="ObjectiveMarker" type="TextureRect" parent="Sprite2D" unique_id=345255055]
 visible = false
-offset_left = -125.0
-offset_top = -534.0
-offset_right = -92.74802
-offset_bottom = -501.75
-scale = Vector2(8, 8)
-texture = ExtResource("5_5du23")
+offset_left = -82.0
+offset_top = -418.0
+offset_right = 86.282
+offset_bottom = -259.0
+texture = ExtResource("4_xbcb3")
 expand_mode = 1
 
 [node name="ObjectiveMarker2" type="RichTextLabel" parent="Sprite2D" unique_id=1692829816]
@@ -166,7 +164,7 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5919232
-anchor_top = -0.039311916
+anchor_top = -0.03931196
 anchor_right = 0.5919232
 anchor_bottom = -0.03931196
 offset_left = -42.475006

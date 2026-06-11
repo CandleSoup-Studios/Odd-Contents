@@ -47,10 +47,14 @@ script = ExtResource("3_s3nyx")
 sprite_frames = SubResource("SpriteFrames_ciqas")
 frame_progress = 0.91675144
 
-[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=64572010]
-offset_top = -539.0
-offset_bottom = -506.75
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=1718734868]
+offset_left = -115.0
+offset_top = -415.0
+offset_right = 53.281723
+offset_bottom = -256.0
 
-[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1633179120]
-offset_top = -539.0
-offset_bottom = -506.75
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=345255055]
+offset_left = -115.0
+offset_top = -415.0
+offset_right = 53.281998
+offset_bottom = -256.0
