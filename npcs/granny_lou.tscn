@@ -47,6 +47,10 @@ script = ExtResource("3_s3nyx")
 sprite_frames = SubResource("SpriteFrames_ciqas")
 frame_progress = 0.91675144
 
-[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
-text = "Hi, I'm Granny Lou!
-[i]press [e] to talk[/i]"
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=64572010]
+offset_top = -539.0
+offset_bottom = -506.75
+
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1633179120]
+offset_top = -539.0
+offset_bottom = -506.75

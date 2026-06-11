@@ -26,6 +26,9 @@ func _ready() -> void:
 func _on_signal(signal_passed_in):
 	match signal_passed_in:
 		"hud_update":
+			get_node(Global.current_quest.npc + "/AnimationPlayer").play("fade_out")
+			await get_tree().create_timer(1).timeout
+			
 			get_node(Global.current_quest.npc + "/Sprite2D/ObjectiveMarker").visible = false
 			print(quest_key)
 			if(Global[quest_key].size() > 0):

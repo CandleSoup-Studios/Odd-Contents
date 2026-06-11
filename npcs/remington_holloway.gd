@@ -15,13 +15,10 @@ func _on_idle_animation_finished():
 	$Sprite2D/IdleAnimation.play("idle")
 	
 func _input(event) -> void:
-	print("out")
 	if player_in_range and Input.is_action_just_pressed("dialogue_interaction"):
-		print("outer")
 		if Global.current_quest["npc"] == npc_data["name"]:
 			$Sprite2D/IdleAnimation.play("surprise")
 		else:
-			print("inner")
 			Dialogic.start("npc_remy_goaway")	
 			await Dialogic.timeline_ended
 		

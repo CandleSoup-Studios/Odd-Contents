@@ -106,10 +106,17 @@ script = ExtResource("2_kx7ky")
 
 [node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
 sprite_frames = SubResource("SpriteFrames_nmac5")
-animation = &"surprise"
 autoplay = ""
 frame_progress = 0.0
 
-[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
-text = "Hi, I'm Remington Holloway!
-[i]press [e] to talk[/i]"
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=64572010]
+offset_left = -175.0
+offset_top = -558.0
+offset_right = -142.74802
+offset_bottom = -525.75
+
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1633179120]
+offset_left = -175.0
+offset_top = -558.0
+offset_right = -142.74802
+offset_bottom = -525.75

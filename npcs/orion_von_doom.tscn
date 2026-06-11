@@ -33,6 +33,14 @@ script = ExtResource("3_y45qw")
 sprite_frames = SubResource("SpriteFrames_c1hhn")
 frame_progress = 0.6948499
 
-[node name="PromptLabel" parent="Sprite2D/InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
-text = "Hi, I'm Orion von Doom!
-[i]press [e] to talk[/i]"
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=64572010]
+offset_left = -183.0
+offset_top = -584.0
+offset_right = -150.74802
+offset_bottom = -551.75
+
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1633179120]
+offset_left = -183.0
+offset_top = -584.0
+offset_right = -150.74802
+offset_bottom = -551.75
