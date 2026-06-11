@@ -16,11 +16,13 @@ func _ready() -> void:
 		print("READY QUEST KEY", quest_key)
 		Global.current_quest = Global[quest_key].pop_front()
 		print("READY current quest", Global.current_quest)
+		$TileMap/TileAct2.visible = true
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Another Day[/b][/i]" + "[br][i]Head to Shade Delivery Co.[/i]"
 	elif Global.story_act == 3:
 		Global.current_quest = Global[quest_key].pop_front()
 		$OrionVonDoom.visible = true
+		$TileMap/TileAct3.visible = true
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Again...[/b][/i]" + "[br][i]Head to Shade Delivery Co.[/i]"
 	
