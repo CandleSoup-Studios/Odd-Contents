@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c11lhwnqg13q"
+path="res://.godot/imported/lakealone.mp3-01c7b637314c37a03e5618efd572137f.mp3str"
+
+[deps]
+
+source_file="res://effects/sound fx/lakealone.mp3"
+dest_files=["res://.godot/imported/lakealone.mp3-01c7b637314c37a03e5618efd572137f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
