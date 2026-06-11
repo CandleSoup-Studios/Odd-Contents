@@ -293,7 +293,7 @@ position = Vector2(28752, 4192)
 shape = SubResource("RectangleShape2D_gd0nv")
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=476775216]
-position = Vector2(9449.116, 16489.71)
+position = Vector2(3851.539, 20210.947)
 
 [node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
 z_index = 1
