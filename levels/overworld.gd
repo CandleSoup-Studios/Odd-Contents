@@ -16,6 +16,10 @@ func _ready() -> void:
 		print("READY QUEST KEY", quest_key)
 		Global.current_quest = Global[quest_key].pop_front()
 		print("READY current quest", Global.current_quest)
+<<<<<<< HEAD
+		$TileMap/TileAct2Bg.visible = true
+=======
+>>>>>>> main
 		$TileMap/TileAct2.visible = true
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Another Day[/b][/i]" + "[br][i]Head to Shade Delivery Co.[/i]"
