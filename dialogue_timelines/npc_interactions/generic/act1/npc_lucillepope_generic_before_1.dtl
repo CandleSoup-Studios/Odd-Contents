@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join lucille_pope center
+lucille_pope: Did you see the bike over there in the window? It looks like it was made for you...
+[signal arg="hud_show"]

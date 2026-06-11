@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join lucille_pope (Flicker Lucille Bust) center
+lucille_pope: Do you hear it?
+[signal arg="hud_show"]

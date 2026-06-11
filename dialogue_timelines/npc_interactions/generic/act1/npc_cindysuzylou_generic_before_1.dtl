@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join cindy_suzy_lou center
+cindy_suzy_lou: Hm...[pause=1.0]I wonder what the lake is up to today?
+[signal arg="hud_show"]

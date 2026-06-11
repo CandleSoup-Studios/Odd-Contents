@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join lucille_pope center
+lucille_pope: We've been expecting you...
+[signal arg="hud_show"]

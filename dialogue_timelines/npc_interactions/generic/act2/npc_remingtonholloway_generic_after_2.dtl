@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join remington_holloway (Flicker Remy Bust) center
+remington_holloway: Ah! [pause=1.0]It is done!
+[signal arg="hud_show"]

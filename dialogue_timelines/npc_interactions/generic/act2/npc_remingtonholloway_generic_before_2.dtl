@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join remington_holloway center
+remington_holloway: Ah! [pause=1.0]Are you done yet?
+[signal arg="hud_show"]

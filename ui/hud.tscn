@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://cpxfiu0cd88ux"]
 
-[sub_resource type="Curve" id="Curve_pv4sj"]
-_data = [Vector2(0.33937827, 0.59070903), 0.0, 0.0, 0, 0]
-point_count = 1
+[ext_resource type="FontFile" uid="uid://eu8mio64d2xr" path="res://fonts/Lato-Regular.ttf" id="1_7ihmi"]
+[ext_resource type="FontFile" uid="uid://bh7bx3jmiw51o" path="res://fonts/Lato-Bold.ttf" id="2_en2x2"]
+[ext_resource type="FontFile" uid="uid://xad056qxr2mn" path="res://fonts/Lato-BoldItalic.ttf" id="3_1v5rv"]
+[ext_resource type="FontFile" uid="uid://coyqr6svoxkeh" path="res://fonts/Lato-Italic.ttf" id="4_q43x7"]
 
-[sub_resource type="CurveTexture" id="CurveTexture_rbyyf"]
-curve = SubResource("Curve_pv4sj")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pv4sj"]
+bg_color = Color(0.2509804, 0.21960784, 0.38039216, 1)
+corner_radius_top_left = 12
+corner_radius_bottom_left = 12
 
 [sub_resource type="Curve" id="Curve_rbyyf"]
 _data = [Vector2(0.64507776, 0.524879), 0.0, 0.0, 0, 0]
@@ -29,55 +32,48 @@ grow_vertical = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 
-[node name="HUDBackground" type="TextureRect" parent="." unique_id=519292585]
-visible = false
-layout_mode = 0
-offset_right = 256.0
-offset_bottom = 65.0
-texture = SubResource("CurveTexture_rbyyf")
-
-[node name="HUDLabelTitle" type="RichTextLabel" parent="." unique_id=1154894269]
-visible = false
-layout_mode = 0
-offset_left = 34.0
-offset_top = 5.0
-offset_right = 214.0
-offset_bottom = 39.0
-theme_override_font_sizes/normal_font_size = 24
-theme_override_font_sizes/italics_font_size = 24
-bbcode_enabled = true
-text = "The First Pickup"
-horizontal_alignment = 2
-vertical_alignment = 2
-
-[node name="HUDLabelLocation" type="RichTextLabel" parent="." unique_id=1552022625]
-visible = false
-layout_mode = 0
-offset_left = 4.0
-offset_top = 39.0
-offset_right = 214.0
-offset_bottom = 64.0
-theme_override_font_sizes/normal_font_size = 14
-theme_override_font_sizes/italics_font_size = 14
-bbcode_enabled = true
-text = "[i]Head to "
-horizontal_alignment = 2
-
 [node name="Container" type="MarginContainer" parent="." unique_id=2030680520]
 layout_mode = 1
-anchors_preset = -1
-offset_right = 230.0
-offset_bottom = 59.0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -245.0
+offset_top = -102.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="Container" unique_id=1505661726]
+modulate = Color(1, 1, 1, 0.9098039)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pv4sj")
+
+[node name="MarginContainer" type="MarginContainer" parent="Container" unique_id=339499722]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
+
+[node name="HUDLabel" type="RichTextLabel" parent="Container/MarginContainer" unique_id=1009866257]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_7ihmi")
+theme_override_fonts/bold_font = ExtResource("2_en2x2")
+theme_override_fonts/bold_italics_font = ExtResource("3_1v5rv")
+theme_override_fonts/italics_font = ExtResource("4_q43x7")
+theme_override_font_sizes/normal_font_size = 26
+theme_override_font_sizes/bold_font_size = 26
+theme_override_font_sizes/bold_italics_font_size = 26
+theme_override_font_sizes/italics_font_size = 16
+bbcode_enabled = true
+text = "sdfdsfsdfsdfdsfds"
+fit_content = true
+horizontal_alignment = 2
+vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="Container" unique_id=1382322192]
+visible = false
 layout_mode = 2
 texture = SubResource("CurveTexture_276te")
 expand_mode = 1
-
-[node name="HUDLabel" type="RichTextLabel" parent="Container" unique_id=1009866257]
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 24
-theme_override_font_sizes/italics_font_size = 24
-bbcode_enabled = true
-fit_content = true
-horizontal_alignment = 2

@@ -1,0 +1,67 @@
+[signal arg="hud_hide"]
+[signal arg="remy_zoom_in"]
+[signal arg="player_left"]
+bex: Good morning! Pickup for Har-
+[wait time="1.0"]
+join bex left
+join remington_holloway center [animation="Slide In Up"]
+[signal arg="npc_right"]
+remington_holloway: ...
+[signal arg="player_left"]
+bex: WHOA, WHOA, WHOA, HEY, HEY!
+bex: Chill out, dude! I'm just here to pick up a package!
+join remington_holloway right
+[signal arg="npc_right"]
+remington_holloway: My apologies.
+remington_holloway: I have social anxiety.
+remington_holloway: It makes me a bit... jumpy.
+[signal arg="player_left"]
+bex: Yeah, no kidding. What on earth's got you so anxious?
+[signal arg="npc_right"]
+remington_holloway: It's none of your concern.
+[signal arg="player_left"]
+bex: It's kind of my concern now since you're pointing a gun at my face!
+[signal arg="npc_right"]
+remington_holloway: That's fair, I suppose.
+remington_holloway: You're new in town, is that correct?
+[signal arg="player_left"]
+bex: Yes... I'm Bex. I'm from New Lark City.
+bex: I lost my job back in the city and my ex kicked me out, so I had to leave. My aunt let me move in with her, so I'm starting fresh here in The Shade.
+[signal arg="npc_right"]
+remington_holloway: Ah, makes sense. You still have the shimmer of innocence behind your eyes. I was like you once, Bex.
+remington_holloway: I was a hotshot software engineer in San Frisko. I had everything\: the money, the penthouse, the fancy cars, the expensive toys.
+remington_holloway: One nervous breakdown later, I lost it all.
+remington_holloway: I came to The Shade in search of a new life; A new direction in lieu of the suffocating existence of city life.
+remington_holloway: Sometimes I can't tell if it was the best mistake... or the worst mistake.
+remington_holloway: I arrived here and immediately betrayed the one person I trusted.
+[signal arg="player_left"]
+bex: Could that person possibly be... Harvey Jakes?
+[signal arg="npc_right"]
+remington_holloway: You're very intuitive, Bex. That's a good trait to have. Especially in this town.
+[signal arg="player_left"]
+bex: It was just a hunch.
+bex: I should probably get going... Can you sign here please?
+[signal arg="npc_right"]
+remington_holloway: Right, right. You've got a job to do.
+[i]*Remy signs his name as 'Remington H.'*[/i]
+join delivery2 center [animation="Slide In Up" length="0.8"]
+remington_holloway: Take this. Take it to him.
+[signal arg="package_pickup"]
+remington_holloway: And let him know that I'm..... remorseful.
+[signal arg="player_left"]
+bex: .....
+[signal arg="npc_right"]
+remington_holloway: And Bex. One last thing.
+remington_holloway: It would be wise if you stayed away from the lake.
+update remington_holloway (Flicker Remy Bust) [length="1.0" wait="true"]
+[wait time="0.5"]
+update remington_holloway (Neutral Remy Bust) [length="0.1" wait="true"]
+[wait time="1.0"]
+leave remington_holloway
+[signal arg="player_left"]
+bex: Weird...
+[signal arg="remy_zoom_out"]
+set {Global.hud_display_title} = "Second Delivery"
+set {Global.hud_display_location} = "Harvey Jake's House"
+set {Global.has_package} = true
+[signal arg="hud_update"]
