@@ -4,6 +4,8 @@ extends StaticBody2D
 
 @onready var interaction_prompt = $Sprite2D/InteractionPrompt
 var player_in_range = false;
+var camera_position: Vector2
+var camera_zoom: Vector2
 
 func _on_interaction_area_body_entered(body: Node2D) -> void:
 	print("entered!")
@@ -16,6 +18,19 @@ func _on_interaction_area_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		interaction_prompt.visible = false
 		player_in_range = false
+		
+func zoom_camera(target_pos: Vector2, target_zoom: Vector2, duration := 0.5):
+	var overworld = get_tree().current_scene
+	var overworld_camera = overworld.get_node("TileMap/Player/Camera2D")
+	camera_position = overworld_camera.global_position
+	camera_zoom = overworld_camera.zoom
+	var tween = overworld_camera.create_tween()
+	
+	tween.tween_property(overworld_camera, "zoom", target_zoom, duration)
+	tween.tween_property(overworld_camera, "global_position", target_pos, duration)
+
+func zoom_out_camera():
+	zoom_camera(camera_position, camera_zoom, 0.4)
 		
 func get_npc_name() -> String:
 	return ""

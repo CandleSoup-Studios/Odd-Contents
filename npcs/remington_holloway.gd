@@ -13,6 +13,14 @@ func get_npc_quest_triggered() -> bool:
 	
 func _ready():
 	$Sprite2D/IdleAnimation.animation_finished.connect(_on_idle_animation_finished)
+	Dialogic.signal_event.connect(_on_signal)
+	
+func _on_signal(signal_passed_in):
+	match signal_passed_in:
+		"remy_zoom_in":
+			zoom_camera(global_position, Vector2(0.8, 0.8), 0.4)
+		"remy_zoom_out":
+			zoom_camera(camera_position, camera_zoom, 0.4)
 	
 func _on_idle_animation_finished():
 	$Sprite2D/IdleAnimation.pause()
