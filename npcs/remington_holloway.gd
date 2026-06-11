@@ -31,7 +31,7 @@ func _input(event) -> void:
 		if Global.current_quest["npc"] == npc_data["name"]:
 			$Sprite2D/IdleAnimation.play("surprise")
 			super(event)
-		elif Global.story_act == 1:
+		elif Global.story_act == 1 or Global.current_quest["quest_type"] < 3:
 			Dialogic.start("npc_remingtonholloway_goaway")	
 			await Dialogic.timeline_ended
 		elif Global.story_act == 3:
@@ -39,11 +39,3 @@ func _input(event) -> void:
 			await Dialogic.timeline_ended
 		else:
 			super(event)
-
-		
-func _on_interaction_area_body_entered(body: Node2D) -> void:
-		if body.is_in_group("player"):
-			player_in_range = true
-			
-			if Global.current_quest["npc"] == npc_data["name"]:
-				interaction_prompt.visible = true

@@ -2,7 +2,7 @@ class_name NpcInteraction
 
 extends StaticBody2D
 
-@onready var interaction_prompt = $Sprite2D/InteractionPrompt
+@onready var interaction_prompt = $Sprite2D/InteractionPrompt2
 var player_in_range = false;
 var camera_position: Vector2
 var camera_zoom: Vector2

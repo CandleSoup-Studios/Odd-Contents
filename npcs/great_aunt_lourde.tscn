@@ -117,6 +117,15 @@ offset_bottom = -259.0
 texture = ExtResource("3_xbcb3")
 expand_mode = 1
 
+[node name="InteractionPrompt2" type="TextureRect" parent="Sprite2D" unique_id=1190713511]
+visible = false
+offset_left = -82.0
+offset_top = -418.0
+offset_right = 86.28172
+offset_bottom = -259.0
+texture = ExtResource("3_xbcb3")
+expand_mode = 1
+
 [node name="ObjectiveMarker2" type="RichTextLabel" parent="Sprite2D" unique_id=1692829816]
 visible = false
 anchors_preset = -1

@@ -48,14 +48,20 @@ sprite_frames = SubResource("SpriteFrames_aq7co")
 frame = 2
 frame_progress = 0.11171725
 
-[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=1718734868]
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=345255055]
 offset_left = -106.0
 offset_top = -370.0
 offset_right = 62.281998
 offset_bottom = -211.0
 
-[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=345255055]
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1718734868]
 offset_left = -106.0
 offset_top = -370.0
 offset_right = 62.281998
+offset_bottom = -211.0
+
+[node name="InteractionPrompt2" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="4" unique_id=1190713511]
+offset_left = -106.0
+offset_top = -370.0
+offset_right = 62.281723
 offset_bottom = -211.0

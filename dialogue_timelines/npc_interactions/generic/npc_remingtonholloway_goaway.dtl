@@ -1,3 +1,2 @@
 [signal arg="hud_hide"]
-join remington_holloway center [animation="Slide In Up" length="1.0"]
 remington_holloway: Ah! [pause=1.0]...go away!

@@ -60,3 +60,7 @@ offset_bottom = -281.0
 [node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1718734868]
 offset_top = -440.0
 offset_bottom = -281.0
+
+[node name="InteractionPrompt2" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="4" unique_id=1190713511]
+offset_top = -440.0
+offset_bottom = -281.0
