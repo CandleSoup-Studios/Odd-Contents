@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join great_aunt_lourde center
+great_aunt_lourde: Have a good day.
+[signal arg="hud_show"]

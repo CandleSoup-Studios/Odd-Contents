@@ -1,0 +1,57 @@
+[signal arg="hud_hide"]
+[signal arg="harvey_zoom_in"]
+set {Global.has_package} = false
+[i]*knock knock knock*[/i]
+[wait time="1.0"]
+join bex left
+[signal arg="player_left"]
+bex: Hello? Delivery for Harvey Jakes?
+bex: ...Helloooo? Anybody home? Huh...
+join harvey_jakes right
+[signal arg="npc_right"]
+harvey_jakes: Who are you? What do you want?
+[signal arg="player_left"]
+bex: I'm Bex with Shade Delivery Co. I've got a package for you.
+[signal arg="npc_right"]
+harvey_jakes: Who sent you? Did anyone see you? Were you followed?
+[signal arg="player_left"]
+bex: Sir, please...
+[signal arg="npc_right"]
+harvey_jakes: Are you ABSOLUTELY SURE you weren't followed?
+harvey_jakes: They're watching, you know. They're always watching.
+[signal arg="player_left"]
+bex: Who is they?
+[signal arg="npc_right"]
+harvey_jakes: The lake! And it's..... associates.
+[signal arg="player_left"]
+bex: What the...? Look, I have this package for you, okay? It's from Remy and he wants me to tell you that he's remorseful. Or something.
+[signal arg="npc_right"]
+harvey_jakes: Remy? That rat BASTARD. He can take this package and shove it up his-
+harvey_jakes: Wait... remorseful you say? He's sorry?
+harvey_jakes: I-I suppose he does have difficulty expressing himself. With his social anxiety and whatnot.
+harvey_jakes: Perhaps this is the first step to repairing what we had...
+[signal arg="player_left"]
+bex: Sign here please.
+[i]*Harvey signs his name with printed initials 'H.J.'*[/i]
+join delivery2 center [animation="Slide In Up" length="0.8"]
+[signal arg="npc_right"]
+harvey_jakes: Now let's see...
+[signal arg="package_delivered"]
+audio "res://effects/sound fx/SFX_Package_Eyeballs.mp3"
+update delivery2 (Open) center
+harvey_jakes: AHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+harvey_jakes: I KNEW IT! I KNEW IT!!!! THEY'RE WATCHING!!!!
+audio "res://effects/sound fx/lakecreepy.mp3"
+update harvey_jakes (Flicker Harvey Bust)
+harvey_jakes: [b][i]THEY'RE ALWAYS WATCHING!!!!!!!!!!!!!!!!![/i][/b]
+update harvey_jakes (Neutral Harvey Bust)
+[wait time="0.5"]
+leave harvey_jakes [animation="Slide To Right"]
+leave delivery2
+[signal arg="player_left"]
+bex: OH GOD!!!!!
+bex: What is happening in this town?!?!?!
+[signal arg="harvey_zoom_out"]
+set {Global.hud_display_title} = "Check In"
+set {Global.hud_display_location} = "Shade Delivery Co."
+[signal arg="hud_update"]

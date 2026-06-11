@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 func _on_new_game_pressed() -> void:
 	SceneTransitionAnimation.play("fade_in")
 	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file("res://levels/overworld.tscn")
+	get_tree().change_scene_to_file("res://act_transitions/act_1_transition.tscn")
 
 func _on_load_game_pressed() -> void:
 	#get_tree().change_scene_to_file("")

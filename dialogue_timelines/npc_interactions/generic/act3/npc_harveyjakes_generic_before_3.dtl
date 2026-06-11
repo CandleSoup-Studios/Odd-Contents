@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join harvey_jakes (Flicker Harvey Bust) center
+harvey_jakes: Do you see it?
+[signal arg="hud_show"]

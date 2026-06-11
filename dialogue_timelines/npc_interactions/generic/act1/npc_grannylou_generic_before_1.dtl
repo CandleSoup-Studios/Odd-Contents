@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join granny_lou center
+granny_lou: I wonder what Cindy is up to today...[pause=1.0] maybe she's at the lake.
+[signal arg="hud_show"]

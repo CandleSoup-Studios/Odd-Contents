@@ -115,6 +115,40 @@ enum AnimationsNewText {NONE, WIGGLE}
 @export_range(0.0, 10) var typing_sounds_volume_variance: float = 0.0
 @export var typing_sounds_ignore_characters: String = " .,!?"
 
+func _ready() -> void:
+	Dialogic.signal_event.connect(_on_dialogic_custom_event)
+	
+func _on_dialogic_custom_event(event_name: String):	
+	var holder = $Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder
+	var panel: PanelContainer = %NameLabelPanel
+	var name_label = panel.get_node_or_null("DialogicNode_NameLabel")
+	
+	var textbox = %DialogTextPanel
+
+	match event_name:
+		"npc_right":
+			print("npc label")
+			#holder.size_flags_horizontal = Control.SIZE_SHRINK_END
+			#holder.size_flags_stretch_ratio = 0
+			#panel.add_theme_constant_override("content_margin_right", 1000)
+			holder.size_flags_horizontal = Control.SIZE_SHRINK_END
+			holder.size_flags_stretch_ratio = 0
+			panel.set_anchor_and_offset(SIDE_LEFT, -0.018, -9)
+			panel.set_anchor_and_offset(SIDE_TOP, 0.0, -50)
+			panel.set_anchor_and_offset(SIDE_RIGHT, -0.018, 20)
+			panel.set_anchor_and_offset(SIDE_LEFT, 0.0, -18)
+			name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		"player_left":
+			print("player label")
+			holder.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+			holder.size_flags_stretch_ratio = 0
+			panel.set_anchor_and_offset(SIDE_LEFT, -0.062, 3)
+			panel.set_anchor_and_offset(SIDE_TOP, 0.0, -50)
+			panel.set_anchor_and_offset(SIDE_RIGHT, -0.062, 32)
+			panel.set_anchor_and_offset(SIDE_LEFT, 0.0, -18)
+			name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+
+
 
 func _apply_export_overrides() -> void:
 	if !is_inside_tree():

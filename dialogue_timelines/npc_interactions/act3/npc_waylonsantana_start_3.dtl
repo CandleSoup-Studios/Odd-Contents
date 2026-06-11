@@ -1,0 +1,36 @@
+[signal arg="hud_hide"]
+join bex left
+join waylon_santana right
+[signal arg="npc_right"]
+waylon_santana: Morning, Bex. I trust you've come correct to work today.
+waylon_santana: I've got an extra important delivery for you to make, so listen up. This one is for the town's mayor, Orion von Doom.
+[signal arg="player_left"]
+bex: Orion von... Doom?
+[signal arg="npc_right"]
+waylon_santana: I think he's foreign or something. But that's not the point.
+waylon_santana: They don't come into town that often, ironically. They're very uh, reclusive or something or another.
+[signal arg="player_left"]
+bex: What kind of mayor doesn't actually live in the town that they're mayor of?
+[signal arg="npc_right"]
+waylon_santana: You're a really judgmental person, you know that?
+waylon_santana: Look, I don't really get it either. But the townspeople love him and he's good at running the town, all things considered.
+waylon_santana: He doesn't make me pay taxes on my business, so who am I to complain?
+waylon_santana: With that being said, I need you to head over to the [b]General Store[/b] and pick up the mayor's groceries from [b]Lucille Pope[/b].
+waylon_santana: After that, bring them to [b]Orion von Doom[/b] at [b]The Lake[/b].
+<<<<<<< HEAD:dialogue_timelines/npc_interactions/act3/dialogue1.dtl
+bex: [i]*gulp* The lake...?[/ii]
+=======
+[signal arg="player_left"]
+bex: *gulp* The lake...?
+[signal arg="npc_right"]
+>>>>>>> main:dialogue_timelines/npc_interactions/act3/npc_waylonsantana_start_3.dtl
+waylon_santana: Yes, the lake. Will that be a problem?
+[signal arg="player_left"]
+bex: Not at all, sir.  I've just heard a lot about it, is all.
+[signal arg="npc_right"]
+waylon_santana: Yeah, the townsfolk here really have some kind of affinity to that stagnant, mosquito-ridden puddle.
+waylon_santana: I'm from Natlantic City so I never really gave a hoot. I'm just here to make money.
+waylon_santana: Alright kid, we've wasted too much time yapping. Get moving!
+set {Global.hud_display_title} = "...Again"
+set {Global.hud_display_location} = "General Store"
+[signal arg="hud_update"]

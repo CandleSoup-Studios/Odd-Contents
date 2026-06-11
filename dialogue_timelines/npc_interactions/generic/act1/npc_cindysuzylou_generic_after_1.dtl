@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join cindy_suzy_lou center
+cindy_suzy_lou: Thank you soooo very much!
+[signal arg="hud_show"]
