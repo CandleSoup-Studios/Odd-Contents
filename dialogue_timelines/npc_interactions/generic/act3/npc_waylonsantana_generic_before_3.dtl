@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join waylon_santana center
+waylon_santana: Hurry it up!
+[signal arg="hud_show"]

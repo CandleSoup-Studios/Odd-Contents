@@ -1,42 +1,40 @@
 extends CharacterBody2D
 
-const SPEED = 666.0
+const SPEED = 1500.0
 var screen_size
-#const JUMP_VELOCITY = -400.0
+var move := Vector2.ZERO
 
 func _ready() -> void: 
 	screen_size = get_viewport_rect().size
 	
+func update_movement() -> void:
+	move.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left") 
+	move.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up") 
+	
+func update_animation() -> void:
+	var direction := move.normalized()
+	
+	if move == 	Vector2.ZERO:
+		$AnimatedSprite2D.frame = 0
+		return
+	
+	if abs(direction.x) > abs(direction.y):
+		if direction.x > 0:
+			$AnimatedSprite2D.play("walking_right_package" if Global.has_package else "walking_right")	
+		else:
+			$AnimatedSprite2D.play("walking_left_package" if Global.has_package else "walking_left")
+	else:
+		if direction.y > 0:
+			$AnimatedSprite2D.play("walking_front_package" if Global.has_package else "walking_front")
+		else:
+			$AnimatedSprite2D.play("walking_back_package" if Global.has_package else "walking_back")
+	
 func _input(event) -> void:
-	if Input.is_action_pressed("move_right"):
-		$AnimatedSprite2D.play("walking_right")
-	if Input.is_action_pressed("move_down"):
-		$AnimatedSprite2D.play("walking_front")
-	if Input.is_action_pressed("move_left"):
-		$AnimatedSprite2D.play("walking_left")
-	if Input.is_action_pressed("move_up"):
-		$AnimatedSprite2D.play("walking_back")
-		
-	if Input.is_action_just_released("move_right"):
-		$AnimatedSprite2D.play("idle_right")
-	if Input.is_action_just_released("move_down"):
-		$AnimatedSprite2D.play("idle_front")
-	if Input.is_action_just_released("move_left"):
-		$AnimatedSprite2D.play("idle_left")
-	if Input.is_action_just_released("move_up"):
-		$AnimatedSprite2D.play("idle_back")
+	update_movement()
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	#if not is_on_floor():
-	#	velocity += get_gravity() * delta
-
-	# Handle jump.
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-	#	velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	velocity = direction * SPEED
 
+	update_animation()
 	move_and_slide()

@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join granny_lou center
+granny_lou: I'll have this ready for her tomorrow. It takes a while to cook!
+[signal arg="hud_show"]

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://h4tnsb8wegal"]
+
+[ext_resource type="PackedScene" uid="uid://l8th65qe1iks" path="res://act_transitions/act_2_transition.tscn" id="1_ejk3x"]
+
+[node name="Control" unique_id=208735768 instance=ExtResource("1_ejk3x")]
+
+[node name="Orion" parent="." index="7" unique_id=324867687]
+visible = false
+
+[node name="Lucille" parent="." index="12" unique_id=1727640842]
+visible = false
+
+[node name="Blood" parent="." index="17" unique_id=698019033]
+visible = false
+
+[node name="RichTextLabel" parent="." index="20" unique_id=1308670992]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel2" parent="." index="21" unique_id=1416181570]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel6" parent="." index="22" unique_id=2117987535]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel7" parent="." index="23" unique_id=1590963212]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel3" parent="." index="24" unique_id=1987529563]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel4" parent="." index="25" unique_id=1614979002]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel5" parent="." index="26" unique_id=870430581]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel8" parent="." index="27" unique_id=1489555941]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="RichTextLabel9" parent="." index="28" unique_id=63693376]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Cindy" parent="." index="29" unique_id=948976238]
+visible = false
