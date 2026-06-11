@@ -1,0 +1,31 @@
+[signal arg="hud_hide"]
+join bex left
+join waylon_santana right
+[signal arg="player_left"]
+bex: Mr. Santana, you've gotta help! Something totally messed up happened again!
+[signal arg="npc_right"]
+waylon_santana: What is it this time?
+[signal arg="player_left"]
+bex: It was Remy, the guy from the gas station! He pulled a gun on me and told me to take the package to Harvey and say he was sorry for something.
+bex: Harvey opened the box and- The box was full of EYEBALLS, Santana. [i]EYEBALLS!!!![/i]
+[signal arg="npc_right"]
+waylon_santana: Ah, it seems I neglected to mention rule number two. Don't get involved in any lovers' quarrels.
+[signal arg="player_left"]
+bex: The fact that I just had to deliver a box of eyeballs doesn't disturb you at all?
+[signal arg="npc_right"]
+waylon_santana: How many times have I got to explain to you that I don't care what's inside these here parcels, kid? All I care about is that the job gets done!
+waylon_santana: My last few couriers didn't last very long, but they sure didn't ask as many questions as you do.
+[signal arg="player_left"]
+bex: What happened to the other couriers?
+[signal arg="npc_right"]
+waylon_santana: They were a buncha lazy, inconsiderate bums, that's what. No-call, no-shows. Bailing on their lunch breaks and never coming back.
+waylon_santana: You young people have terrible work ethic, you know that?
+[signal arg="player_left"]
+bex: ......
+bex: There's something seriously wrong with this town. And I'm going to find out what.
+[signal arg="npc_right"]
+waylon_santana: Well you can do it on your own time. I don't have anything else for you to do today so you can go on home.
+waylon_santana: No more funny business, ya hear?
+set {Global.hud_display_title} = "...Another Day Complete"
+set {Global.hud_display_location} = "Aunt Lourde's House"
+[signal arg="hud_update"]

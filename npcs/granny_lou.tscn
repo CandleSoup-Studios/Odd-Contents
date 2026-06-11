@@ -1,13 +1,66 @@
 [gd_scene format=3 uid="uid://xhuelwx6bvwn"]
 
 [ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_dupcw"]
-[ext_resource type="Texture2D" uid="uid://drp6eav2l64em" path="res://art/npc_sprites/sprite_granny.png" id="2_s3nyx"]
+[ext_resource type="Texture2D" uid="uid://dwh1f2dm5hjkk" path="res://art/npc_sprites/spritesheet_granny.png" id="3_d7ju0"]
 [ext_resource type="Script" uid="uid://bydd04c47y6h3" path="res://npcs/granny_lou.gd" id="3_s3nyx"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5l7q"]
+atlas = ExtResource("3_d7ju0")
+region = Rect2(0, 0, 219, 538)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdedg"]
+atlas = ExtResource("3_d7ju0")
+region = Rect2(219, 0, 219, 538)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jylb"]
+atlas = ExtResource("3_d7ju0")
+region = Rect2(438, 0, 219, 538)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3orw"]
+atlas = ExtResource("3_d7ju0")
+region = Rect2(657, 0, 219, 538)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ciqas"]
+animations = [{
+"frames": [{
+"duration": 20.0,
+"texture": SubResource("AtlasTexture_e5l7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdedg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jylb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3orw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
 [node name="GrannyLou" unique_id=318230135 instance=ExtResource("1_dupcw")]
-texture = ExtResource("2_s3nyx")
 script = ExtResource("3_s3nyx")
 
-[node name="PromptLabel" parent="InteractionPrompt" parent_id_path=PackedInt32Array(1785520458) index="0" unique_id=462666762]
-text = "Hi, I'm Granny Lou!
-[i]press [e] to talk[/i]"
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
+sprite_frames = SubResource("SpriteFrames_ciqas")
+frame_progress = 0.91675144
+
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=345255055]
+offset_left = -115.0
+offset_top = -415.0
+offset_right = 53.281998
+offset_bottom = -256.0
+
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1718734868]
+offset_left = -115.0
+offset_top = -415.0
+offset_right = 53.281723
+offset_bottom = -256.0
+
+[node name="InteractionPrompt2" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="4" unique_id=1190713511]
+offset_left = -115.0
+offset_top = -415.0
+offset_right = 53.281723
+offset_bottom = -256.0

@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://4cpdk8qoaapb"]
+
+[ext_resource type="PackedScene" uid="uid://xuwjymyenh6y" path="res://npcs/great_aunt_lourde.tscn" id="1_kx7ky"]
+[ext_resource type="Script" uid="uid://64i57r3tyo5n" path="res://npcs/remington_holloway.gd" id="2_kx7ky"]
+[ext_resource type="Texture2D" uid="uid://bby7kdo1rxc7n" path="res://art/npc_sprites/spritesheet_remy_gascounter.png" id="4_5jsgw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ace1s"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(4430, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kx7ky"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(4873, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jsgw"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(0, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afbuf"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(443, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bl7a"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(886, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_20jtq"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(1329, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7j4a5"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(1772, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0awp"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(2215, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4eni"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(2658, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex0wv"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(3101, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycn64"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(3544, 0, 443, 630)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36gwb"]
+atlas = ExtResource("4_5jsgw")
+region = Rect2(3987, 0, 443, 630)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nmac5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ace1s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kx7ky")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 20.0,
+"texture": SubResource("AtlasTexture_5jsgw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afbuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bl7a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_20jtq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7j4a5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0awp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4eni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ex0wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycn64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36gwb")
+}],
+"loop": false,
+"name": &"surprise",
+"speed": 10.0
+}]
+
+[node name="RemingtonHolloway" unique_id=113746033 instance=ExtResource("1_kx7ky")]
+script = ExtResource("2_kx7ky")
+
+[node name="IdleAnimation" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="0" unique_id=1368786196]
+sprite_frames = SubResource("SpriteFrames_nmac5")
+animation = &"surprise"
+autoplay = ""
+frame_progress = 0.0
+
+[node name="ObjectiveMarker" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="2" unique_id=345255055]
+offset_left = -133.0
+offset_top = -443.0
+offset_right = 35.281998
+offset_bottom = -284.0
+
+[node name="InteractionPrompt" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="3" unique_id=1718734868]
+offset_left = -133.0
+offset_top = -443.0
+offset_right = 35.281998
+offset_bottom = -284.0
+
+[node name="InteractionPrompt2" parent="Sprite2D" parent_id_path=PackedInt32Array(318230135) index="4" unique_id=1190713511]
+offset_left = -133.0
+offset_top = -443.0
+offset_right = 35.281723
+offset_bottom = -284.0

@@ -1,0 +1,4 @@
+[signal arg="hud_hide"]
+join waylon_santana center
+waylon_santana: You better keep up the pace if you want to keep this job.
+[signal arg="hud_show"]
