@@ -6,6 +6,11 @@ var move := Vector2.ZERO
 
 func _ready() -> void: 
 	screen_size = get_viewport_rect().size
+	$AudioStreamPlayer2D.finished.connect(_on_finished)
+	$AudioStreamPlayer2D.play()
+	
+func _on_finished():
+	$AudioStreamPlayer2D.play()
 	
 func update_movement() -> void:
 	move.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left") 

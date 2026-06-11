@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://1yxykbja78lv" path="res://npcs/orion_von_doom.tscn" id="28_fxxkd"]
 [ext_resource type="Shader" uid="uid://cdjbqmw618cyp" path="res://levels/overworld.gdshader" id="29_fxxkd"]
 [ext_resource type="Texture2D" uid="uid://c1v7rxv0784mc" path="res://art/fog_texture.png" id="30_gd0nv"]
+[ext_resource type="AudioStream" uid="uid://bvbp6qdpy55aq" path="res://effects/sound fx/SFX_AmbientMusic.wav" id="32_gvf0k"]
 
 [sub_resource type="TileSet" id="TileSet_jc7pe"]
 
@@ -273,6 +274,11 @@ limit_top = 0
 limit_right = 33304
 limit_bottom = 22848
 position_smoothing_speed = 10.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="TileMap/Player" unique_id=1486025446]
+stream = ExtResource("32_gvf0k")
+volume_db = -10.692
+autoplay = true
 
 [node name="ObjSign" type="Sprite2D" parent="TileMap" unique_id=336384365]
 z_index = 1
