@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://buf5gsdkbx1me" path="res://npcs/harvey_jakes.tscn" id="26_axpip"]
 [ext_resource type="PackedScene" uid="uid://ffil1fnlxg82" path="res://npcs/lucille_pope.tscn" id="26_gsck2"]
 [ext_resource type="PackedScene" uid="uid://1yxykbja78lv" path="res://npcs/orion_von_doom.tscn" id="28_fxxkd"]
+[ext_resource type="Shader" uid="uid://cdjbqmw618cyp" path="res://levels/overworld.gdshader" id="29_fxxkd"]
 
 [sub_resource type="TileSet" id="TileSet_jc7pe"]
 
@@ -56,6 +57,13 @@ size = Vector2(1440, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jc7pe"]
 atlas = ExtResource("8_qyxw2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gd0nv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uay0b"]
+shader = ExtResource("29_fxxkd")
+shader_parameter/density = 0.25
+shader_parameter/speed = Vector2(0.02, 0.01)
 
 [node name="Overworld" type="Node2D" unique_id=412805587]
 y_sort_enabled = true
@@ -280,3 +288,14 @@ metadata/_edit_use_anchors_ = true
 [node name="RemingtonHolloway" parent="." unique_id=113746033 instance=ExtResource("24_3hrjb")]
 z_index = 1
 position = Vector2(14368, 9840)
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=192793734]
+visibility_layer = 2
+texture_filter = 3
+material = SubResource("ShaderMaterial_gd0nv")
+
+[node name="ColorRect" type="ColorRect" parent="Parallax2D" unique_id=1413864449]
+material = SubResource("ShaderMaterial_uay0b")
+offset_right = 3440.0
+offset_bottom = 1264.0
+mouse_filter = 2
