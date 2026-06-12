@@ -1,17 +1,193 @@
 [gd_scene format=3 uid="uid://cfqea61v270jr"]
 
-[node name="Node2D" type="Node2D" unique_id=188552354]
+[ext_resource type="Script" uid="uid://c8b2w7i6w4xs6" path="res://levels/act_1_end.gd" id="1_l8hio"]
+[ext_resource type="FontFile" uid="uid://eu8mio64d2xr" path="res://fonts/Lato-Regular.ttf" id="1_xs1au"]
+[ext_resource type="FontFile" uid="uid://bh7bx3jmiw51o" path="res://fonts/Lato-Bold.ttf" id="2_syd5l"]
+[ext_resource type="FontFile" uid="uid://cv3eh65mbihse" path="res://fonts/Lato-BlackItalic.ttf" id="3_l8hio"]
+[ext_resource type="FontFile" uid="uid://coyqr6svoxkeh" path="res://fonts/Lato-Italic.ttf" id="4_je24j"]
+[ext_resource type="FontFile" uid="uid://xad056qxr2mn" path="res://fonts/Lato-BoldItalic.ttf" id="5_eoans"]
+[ext_resource type="PackedScene" uid="uid://bibot7a8xxw8j" path="res://animations/title_screen_scene_transition_animation.tscn" id="7_je24j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eoans"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uta87"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_piiv3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control" unique_id=1940004881]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_l8hio")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=35991323]
+layout_mode = 0
+offset_left = -592.0
+offset_top = -336.0
+offset_right = 608.0
+offset_bottom = 352.0
+color = Color(0.10980392, 0.10980392, 0.10980392, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1838732387]
-offset_left = -2544.0
-offset_top = -1056.0
-offset_right = 2528.0
-offset_bottom = 1024.0
-theme_override_font_sizes/normal_font_size = 160
+layout_mode = 0
+offset_left = -2528.0
+offset_top = -1296.0
+offset_right = 2544.0
+offset_bottom = 784.0
+theme_override_fonts/normal_font = ExtResource("1_xs1au")
+theme_override_fonts/bold_font = ExtResource("2_syd5l")
+theme_override_fonts/bold_italics_font = ExtResource("3_l8hio")
+theme_override_fonts/italics_font = ExtResource("4_je24j")
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 80
+theme_override_font_sizes/bold_italics_font_size = 80
+theme_override_font_sizes/italics_font_size = 60
 bbcode_enabled = true
-text = "End of Act 1"
+text = "[b]Credits[/b]"
 scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1999931577]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = -368.0
+offset_top = -176.0
+offset_right = -28.0
+offset_bottom = -64.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_xs1au")
+theme_override_fonts/bold_italics_font = ExtResource("5_eoans")
+theme_override_fonts/italics_font = ExtResource("4_je24j")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 22
+bbcode_enabled = true
+text = "[b][i]Caleb Anderson[/i][/b]
+[i]Producer & level designer[/i]
+[i]Primary contributions: [/i]Management of project, overworld level design, sfx"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." unique_id=1557183308]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = -368.0
+offset_top = -32.0
+offset_right = -28.0
+offset_bottom = 112.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_xs1au")
+theme_override_fonts/bold_italics_font = ExtResource("5_eoans")
+theme_override_fonts/italics_font = ExtResource("4_je24j")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 22
+bbcode_enabled = true
+text = "[b][i]Lisa Koss[/i][/b]
+[i]Lead programmer & lead designer[/i]
+[i]Primary contributions:[/i] Implementation ongame structure/mechanics & design direction"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="." unique_id=2028815649]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = 96.0
+offset_top = -176.0
+offset_right = 436.0
+offset_bottom = -64.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_xs1au")
+theme_override_fonts/bold_italics_font = ExtResource("5_eoans")
+theme_override_fonts/italics_font = ExtResource("4_je24j")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 22
+bbcode_enabled = true
+text = "[b][i]John Bond[/i][/b]
+[i]Art lead & audio designer[/i]
+[i]Primary contributions: [/i]In game art assets, sfx, & overall art direction"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="." unique_id=666626318]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = 96.0
+offset_top = -32.0
+offset_right = 436.0
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_xs1au")
+theme_override_fonts/bold_italics_font = ExtResource("5_eoans")
+theme_override_fonts/italics_font = ExtResource("4_je24j")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 22
+bbcode_enabled = true
+text = "[b][i]Trinity Fuller[/i][/b]
+[i]Narrative designer & programmer[/i]
+[i]Primary contributions:[/i] Primary contributions: Creation of story narrative, characters, and game world with Dialogic implementation"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="." unique_id=1202669028]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = -368.0
+offset_top = 128.0
+offset_right = -28.0
+offset_bottom = 240.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_xs1au")
+theme_override_fonts/bold_italics_font = ExtResource("5_eoans")
+theme_override_fonts/italics_font = ExtResource("4_je24j")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 22
+bbcode_enabled = true
+text = "[b][i]Mina Marlo[/i][/b]
+[i]2D Concept & Character Artist[/i]
+[i]Primary contributions:[/i] Character concepts and in game character busts"
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=613729137]
+
+[node name="Control" type="Control" parent="." unique_id=1192181014]
+anchors_preset = 0
+offset_left = -576.0
+offset_top = -320.0
+offset_right = -560.0
+offset_bottom = -304.0
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="Control" unique_id=1366144701]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 75.0
+anchor_bottom = 40.0
+offset_right = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eoans")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uta87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_piiv3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/Button" unique_id=1098160696]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.58000004
+anchor_right = 0.998
+anchor_bottom = 0.99700004
+offset_top = 198.99997
+offset_right = 1.3060303
+offset_bottom = -8.050049
+mouse_filter = 2
+text = "Click to continue..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleScreenSceneTransitionAnimation" parent="." unique_id=2063913806 instance=ExtResource("7_je24j")]
+position = Vector2(-576, -320)
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
