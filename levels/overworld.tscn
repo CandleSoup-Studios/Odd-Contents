@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://brvchp6kdbp0" path="res://art/world_objects/buildings/obj_building_store_top.png" id="16_n78bg"]
 [ext_resource type="Texture2D" uid="uid://cby3wm6021e4l" path="res://art/world_objects/buildings/obj_house_harvey_top.png" id="18_jc7pe"]
 [ext_resource type="Texture2D" uid="uid://o4y5l8ly76gc" path="res://art/world_objects/props/OBJ_sign.png" id="20_3hrjb"]
+[ext_resource type="AudioStream" uid="uid://lyygwxqv61bd" path="res://effects/sound fx/anxious.mp3" id="21_lc5as"]
 [ext_resource type="PackedScene" uid="uid://xhuelwx6bvwn" path="res://npcs/granny_lou.tscn" id="23_jc7pe"]
 [ext_resource type="PackedScene" uid="uid://4cpdk8qoaapb" path="res://npcs/remington_holloway.tscn" id="24_3hrjb"]
 [ext_resource type="PackedScene" uid="uid://buf5gsdkbx1me" path="res://npcs/harvey_jakes.tscn" id="26_axpip"]
@@ -279,6 +280,11 @@ position_smoothing_speed = 10.0
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="TileMap/Player" unique_id=1486025446]
 stream = ExtResource("32_gvf0k")
 volume_db = -10.692
+autoplay = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="TileMap/Player" unique_id=206969724]
+stream = ExtResource("21_lc5as")
+volume_db = -5.831
 autoplay = true
 
 [node name="ObjSign" type="Sprite2D" parent="TileMap" unique_id=336384365]

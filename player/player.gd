@@ -3,14 +3,20 @@ extends CharacterBody2D
 const SPEED = 700.0
 var screen_size
 var move := Vector2.ZERO
-
+@onready var audio_player = $AudioStreamPlayer2D
+	
 func _ready() -> void: 
+	if Global.story_act == 3:
+		audio_player.stop()
+		audio_player = $AudioStreamPlayer2D2
+		
 	screen_size = get_viewport_rect().size
-	$AudioStreamPlayer2D.finished.connect(_on_finished)
-	$AudioStreamPlayer2D.play()
+	audio_player.finished.connect(_on_finished)
+	
+	audio_player.play()
 	
 func _on_finished():
-	$AudioStreamPlayer2D.play()
+	audio_player.play()
 	
 func update_movement() -> void:
 	move.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left") 
