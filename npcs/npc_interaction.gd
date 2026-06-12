@@ -44,7 +44,7 @@ func set_npc_quest_trigger() -> void:
 	get_node("/root/Overworld/" + Global.current_quest["prev_npc"]).npc_data["quest_triggered"] = true
 
 func _input(event) -> void:
-	if player_in_range and Input.is_action_just_pressed("dialogue_interaction"):
+	if player_in_range and Input.is_action_just_pressed("dialogue_interaction") and Global.can_dialogue:
 		var npc_name = get_npc_name()
 		var npc_quest_triggered = get_npc_quest_triggered()
 		print("npc_" + npc_name.to_lower() +"_" + str(Global.QuestState.keys()[Global.current_quest["quest_type"]]).to_lower() + "_" + str(Global.story_act))

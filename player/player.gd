@@ -38,8 +38,13 @@ func _input(event) -> void:
 	update_movement()
 
 func _physics_process(delta: float) -> void:
-	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	if not Global.can_move:
+		$AnimatedSprite2D.stop()
+		velocity = Vector2.ZERO # Optional: stops sliding momentum
+		move_and_slide()
+		return
+		
+	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")	
 	velocity = direction * SPEED
-
 	update_animation()
 	move_and_slide()

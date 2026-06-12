@@ -39,6 +39,8 @@ func _ready() -> void:
 func _on_signal(signal_passed_in):
 	match signal_passed_in:
 		"hud_update":
+			Global.can_dialogue = true
+			Global.can_move = true
 			get_node(Global.current_quest.npc + "/AnimationPlayer").play("fade_out")
 			await get_tree().create_timer(1).timeout
 			
@@ -56,8 +58,12 @@ func _on_signal(signal_passed_in):
 			$CanvasLayer.visible = true
 			$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]" + Global.hud_display_title + "[/b][/i]" + "[br][i]Head to " + Global.hud_display_location + "[/i]"
 		"hud_hide":
+			Global.can_dialogue = false
+			Global.can_move = false
 			$CanvasLayer.visible = false
 		"hud_show":
+			Global.can_dialogue = true
+			Global.can_move = true
 			$CanvasLayer.visible = true
 		"game_over":
 			SceneTransitionAnimation.play("fade_in")

@@ -120,6 +120,7 @@ flat = true
 alignment = 0
 
 [node name="LoadGame" type="Button" parent="Control/BoxContainer" unique_id=1097631217]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Load Game"
@@ -127,6 +128,7 @@ flat = true
 alignment = 0
 
 [node name="Settings" type="Button" parent="Control/BoxContainer" unique_id=479577202]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Settings

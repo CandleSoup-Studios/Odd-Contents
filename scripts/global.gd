@@ -34,12 +34,14 @@ var quests_act_3 = [
 	{"quest_type": QuestState.END, "npc": "GreatAuntLourde", "prev_npc": null}
 ]
 
-var story_act = 3
+var story_act = 1
 var hud_display_title = ""
 var hud_display_location = ""
 var current_quest = 	{"quest_type": QuestState.INTRO, "npc": "GreatAuntLourde", "prev_npc": null}
 var has_package = false
 var dialogue_node: Node = null;
+var can_move = true
+var can_dialogue = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
