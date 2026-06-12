@@ -64,3 +64,4 @@ orion_von_doom: [b]The lake hungers.[/b]
 audio "res://effects/sound fx/lakecreepy.mp3"
 audio "res://effects/sound fx/SFX_Package_Knife.mp3"
 leave --All-- [animation="Slide To Left"]
+[signal arg="game_over"]

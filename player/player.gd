@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 1500.0
+const SPEED = 700.0
 var screen_size
 var move := Vector2.ZERO
 

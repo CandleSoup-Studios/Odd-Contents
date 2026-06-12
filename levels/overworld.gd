@@ -1,6 +1,7 @@
 extends Node2D
 
 var quest_key = "quests_act_%d" % Global.story_act
+@onready var SceneTransitionAnimation = $TitleScreenSceneTransitionAnimation/AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -24,7 +25,7 @@ func _ready() -> void:
 	elif Global.story_act == 3:
 		Global.current_quest = Global[quest_key].pop_front()
 		$OrionVonDoom.visible = true
-		$TileMap/TileAct3Bg.visible
+		$TileMap/TileAct3Bg.visible = true
 		$TileMap/TileAct3.visible = true
 		$CanvasLayer.visible = true
 		$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]Again...[/b][/i]" + "[br][i]Head to Shade Delivery Co.[/i]"
@@ -58,3 +59,9 @@ func _on_signal(signal_passed_in):
 			$CanvasLayer.visible = false
 		"hud_show":
 			$CanvasLayer.visible = true
+		"game_over":
+			SceneTransitionAnimation.play("fade_in")
+			await SceneTransitionAnimation.animation_finished
+			get_tree().change_scene_to_file("res://levels/act1_end.tscn")
+			SceneTransitionAnimation.play("fade_out")
+			await SceneTransitionAnimation.animation_finished
