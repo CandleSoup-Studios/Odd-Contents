@@ -3,5 +3,6 @@ plugins:
 - jekyll-remote-theme
 
 show_downloads: false
+color-scheme: dark
 
 logo: "/art/scenes/logo_red.png"
