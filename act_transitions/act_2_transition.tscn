@@ -24,6 +24,10 @@
 [ext_resource type="Texture2D" uid="uid://d21g5xp5x17ld" path="res://art/world_objects/nature/Obj_Rock1.png" id="22_avcsk"]
 [ext_resource type="Texture2D" uid="uid://cofila0q2eh83" path="res://art/npc_sprites/spritesheet_santana.png" id="22_cgcbd"]
 [ext_resource type="Texture2D" uid="uid://b4eclb1b7284k" path="res://art/npc_sprites/spritesheet_cindy.png" id="23_joh6d"]
+[ext_resource type="Texture2D" uid="uid://ddhqka00f47xf" path="res://art/world_objects/nature/Obj_Flower1.png" id="25_ik3aq"]
+[ext_resource type="Texture2D" uid="uid://c6bvhk6r2iqwr" path="res://art/world_objects/nature/Obj_Grass1.png" id="26_du3kn"]
+[ext_resource type="Texture2D" uid="uid://bimowrrkhn0mq" path="res://art/world_objects/nature/Obj_Grass2.png" id="27_ji58s"]
+[ext_resource type="Texture2D" uid="uid://dkjc2k43d4gpv" path="res://art/world_objects/nature/Obj_Flower2.png" id="28_443mt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vl1k5"]
 atlas = ExtResource("6_ts46w")
@@ -610,8 +614,81 @@ scale = Vector2(0.366, 0.366)
 sprite_frames = SubResource("SpriteFrames_ji58s")
 autoplay = "default"
 
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=702528189]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 367.0
+offset_right = 799.0
+offset_bottom = 398.0
+texture = ExtResource("25_ik3aq")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=2117734092]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 462.0
+offset_right = 159.0
+offset_bottom = 493.0
+texture = ExtResource("25_ik3aq")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="." unique_id=1870918641]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 341.0
+offset_right = 393.0
+offset_bottom = 372.0
+texture = ExtResource("26_du3kn")
+expand_mode = 1
+
+[node name="TextureRect8" type="TextureRect" parent="." unique_id=1604669006]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 460.0
+offset_right = 733.0
+offset_bottom = 491.0
+texture = ExtResource("26_du3kn")
+expand_mode = 1
+
+[node name="TextureRect9" type="TextureRect" parent="." unique_id=1570645892]
+layout_mode = 0
+offset_left = -49.0
+offset_top = 489.0
+offset_right = -18.0
+offset_bottom = 520.0
+texture = ExtResource("26_du3kn")
+expand_mode = 1
+
+[node name="TextureRect14" type="TextureRect" parent="." unique_id=810854050]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 370.0
+offset_right = 277.0
+offset_bottom = 402.0
+texture = ExtResource("27_ji58s")
+expand_mode = 1
+
+[node name="TextureRect15" type="TextureRect" parent="." unique_id=745789934]
+layout_mode = 0
+offset_left = 564.0
+offset_top = 495.0
+offset_right = 596.0
+offset_bottom = 527.0
+texture = ExtResource("27_ji58s")
+expand_mode = 1
+
+[node name="TextureRect16" type="TextureRect" parent="." unique_id=1023133277]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 498.0
+offset_right = 694.0
+offset_bottom = 529.0
+texture = ExtResource("28_443mt")
+expand_mode = 1
+
 [node name="Control" type="Control" parent="." unique_id=1033400240]
 layout_mode = 1
+anchors_preset = 0
 offset_left = -121.0
 offset_top = -91.0
 offset_right = -116.0

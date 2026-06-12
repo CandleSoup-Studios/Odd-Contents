@@ -1,6 +1,6 @@
 extends MarginContainer
 
-@onready var SceneTransitionAnimation = $TitleScreenSceneTransitionAnimation/AnimationPlayer
+@onready var SceneTransitionAnimation = $Control/TitleScreenSceneTransitionAnimation/AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

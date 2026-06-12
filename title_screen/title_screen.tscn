@@ -1,54 +1,132 @@
 [gd_scene format=3 uid="uid://bjwj5sciktmb5"]
 
+[ext_resource type="Texture2D" uid="uid://blpgh7yu4yg6f" path="res://art/scenes/lake.png" id="1_fk0fn"]
 [ext_resource type="Script" uid="uid://3kcbvl4wl58" path="res://title_screen/title_screen.gd" id="1_g2mvh"]
 [ext_resource type="PackedScene" uid="uid://bibot7a8xxw8j" path="res://animations/title_screen_scene_transition_animation.tscn" id="2_dxpbd"]
+[ext_resource type="Texture2D" uid="uid://1qahqaxh30mo" path="res://art/world_objects/nature/Obj_Tree1.png" id="2_mag7y"]
+[ext_resource type="Texture2D" uid="uid://c5ba3h7s1a20b" path="res://art/world_objects/nature/Obj_Tree2.png" id="3_3d3o2"]
+[ext_resource type="Texture2D" uid="uid://33doddskdwg5" path="res://art/candlesoup.png" id="3_oqrgu"]
+[ext_resource type="Texture2D" uid="uid://cxakp3vx0emxm" path="res://art/world_objects/nature/Obj_Trees.png" id="4_47vnn"]
+[ext_resource type="Texture2D" uid="uid://dqhdyq3h1kbld" path="res://art/scenes/logo_white.png" id="5_fv0o7"]
+[ext_resource type="Texture2D" uid="uid://djvgirqodrd6" path="res://art/world_objects/props/Tile_Fence.png" id="5_u0nof"]
+[ext_resource type="Texture2D" uid="uid://cgyvdf6nrrlqr" path="res://art/scenes/logo_red.png" id="6_1oos5"]
+[ext_resource type="Texture2D" uid="uid://k6dtn0irs5n3" path="res://art/world_objects/nature/Obj_Bush.png" id="6_ilk26"]
+[ext_resource type="Texture2D" uid="uid://d21g5xp5x17ld" path="res://art/world_objects/nature/Obj_Rock1.png" id="7_8b01o"]
+[ext_resource type="Texture2D" uid="uid://bo840ild2eee7" path="res://art/world_objects/props/Obj_Blood2.png" id="7_u0nof"]
+[ext_resource type="Texture2D" uid="uid://dq75ikyv1sndb" path="res://art/world_objects/nature/Obj_LeafPile.png" id="8_sybbf"]
+[ext_resource type="Texture2D" uid="uid://c6bvhk6r2iqwr" path="res://art/world_objects/nature/Obj_Grass1.png" id="9_ilk26"]
+[ext_resource type="Texture2D" uid="uid://ddhqka00f47xf" path="res://art/world_objects/nature/Obj_Flower1.png" id="9_yfxkr"]
+[ext_resource type="Texture2D" uid="uid://dkjc2k43d4gpv" path="res://art/world_objects/nature/Obj_Flower2.png" id="10_r5mru"]
+[ext_resource type="Texture2D" uid="uid://bimowrrkhn0mq" path="res://art/world_objects/nature/Obj_Grass2.png" id="14_8b01o"]
+[ext_resource type="Texture2D" uid="uid://dvji8mf4e3688" path="res://art/player/spritesheet_bex_box.png" id="14_x5xg5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vl1k5"]
+atlas = ExtResource("14_x5xg5")
+region = Rect2(1188, 0, 396, 652)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mettq"]
+atlas = ExtResource("14_x5xg5")
+region = Rect2(1584, 0, 396, 652)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tporf"]
+atlas = ExtResource("14_x5xg5")
+region = Rect2(1188, 0, 396, 652)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0mjhn"]
+atlas = ExtResource("14_x5xg5")
+region = Rect2(1980, 0, 396, 652)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_141ow"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vl1k5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mettq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tporf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0mjhn")
+}],
+"loop": true,
+"name": &"loading",
+"speed": 4.0
+}]
 
 [node name="MarginContainer" type="MarginContainer" unique_id=771204177]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -83.0
+offset_right = 119.0
+offset_bottom = 82.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 120
 theme_override_constants/margin_top = 80
 theme_override_constants/margin_right = 120
 theme_override_constants/margin_bottom = 80
 script = ExtResource("1_g2mvh")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=399666480]
-layout_mode = 2
-
-[node name="TitleScreen" type="VBoxContainer" parent="HBoxContainer" unique_id=1592198483]
+[node name="Control" type="Control" parent="." unique_id=1043767721]
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Title" type="Label" parent="HBoxContainer/TitleScreen" unique_id=1078278133]
-layout_mode = 2
-theme_override_font_sizes/font_size = 88
-text = "Odd Contents"
-
-[node name="Options" type="VBoxContainer" parent="HBoxContainer/TitleScreen" unique_id=1800729133]
-layout_mode = 2
-size_flags_vertical = 3
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=961440870]
+layout_mode = 0
+offset_left = -11.152008
+offset_top = -3.444992
+offset_right = 1154.848
+offset_bottom = 659.555
 mouse_filter = 2
-theme_override_constants/separation = 7
+color = Color(0.26666668, 0.2627451, 0.4509804, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1782118520]
+modulate = Color(1, 1, 1, 0.2784314)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.128
+anchor_top = -0.16700001
+anchor_right = -0.128
+anchor_bottom = -0.16700001
+offset_left = 137.584
+offset_top = 107.05101
+offset_right = 1306.0552
+offset_bottom = 766.05096
+mouse_filter = 2
+texture = ExtResource("1_fk0fn")
+expand_mode = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="Control" unique_id=574988824]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 374.0
+offset_right = 1153.0
+offset_bottom = 471.0
+mouse_filter = 2
+theme_override_constants/separation = 68
 alignment = 1
 
-[node name="NewGame" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=1622619758]
+[node name="NewGame" type="Button" parent="Control/BoxContainer" unique_id=1622619758]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "New Game"
 flat = true
 alignment = 0
 
-[node name="LoadGame" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=1097631217]
+[node name="LoadGame" type="Button" parent="Control/BoxContainer" unique_id=1097631217]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Load Game"
 flat = true
 alignment = 0
 
-[node name="Settings" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=479577202]
+[node name="Settings" type="Button" parent="Control/BoxContainer" unique_id=479577202]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Settings
@@ -56,7 +134,7 @@ text = "Settings
 flat = true
 alignment = 0
 
-[node name="Exit" type="Button" parent="HBoxContainer/TitleScreen/Options" unique_id=1481454162]
+[node name="Exit" type="Button" parent="Control/BoxContainer" unique_id=1481454162]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Exit
@@ -64,30 +142,355 @@ text = "Exit
 flat = true
 alignment = 0
 
-[node name="TheStudio" type="VBoxContainer" parent="HBoxContainer" unique_id=782863240]
+[node name="TextureRect5" type="TextureRect" parent="Control" unique_id=228399101]
+layout_mode = 0
+offset_left = 37.0
+offset_top = -14.0
+offset_right = 200.0
+offset_bottom = 235.84424
+texture = ExtResource("2_mag7y")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Control" unique_id=967931367]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 64.0
+offset_right = 274.0
+offset_bottom = 255.4226
+texture = ExtResource("3_3d3o2")
+expand_mode = 1
+
+[node name="TextureRect8" type="TextureRect" parent="Control" unique_id=616452308]
+layout_mode = 0
+offset_left = 745.0
+offset_top = 3.0
+offset_right = 1155.6666
+offset_bottom = 227.0
+texture = ExtResource("4_47vnn")
+expand_mode = 1
+
+[node name="TextureRect9" type="TextureRect" parent="Control" unique_id=562018879]
+layout_mode = 0
+offset_left = 845.0
+offset_top = 55.606552
+offset_right = 967.0
+offset_bottom = 242.60657
+texture = ExtResource("2_mag7y")
+expand_mode = 1
+
+[node name="fence" type="TextureRect" parent="Control" unique_id=673165585]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 178.0
+offset_right = 85.07507
+offset_bottom = 264.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect10" type="TextureRect" parent="Control/fence" unique_id=1213566587]
+layout_mode = 0
+offset_left = 1112.0
+offset_right = 1255.0751
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Control/fence" unique_id=1299634357]
+layout_mode = 0
+offset_left = 691.0
+offset_right = 834.0751
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect9" type="TextureRect" parent="Control/fence" unique_id=992600832]
+layout_mode = 0
+offset_left = 973.0
+offset_right = 1116.0751
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Control/fence" unique_id=1674115290]
+layout_mode = 0
+offset_left = 556.0
+offset_right = 699.0751
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect8" type="TextureRect" parent="Control/fence" unique_id=1512646127]
+layout_mode = 0
+offset_left = 832.0
+offset_right = 975.0751
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="Control/fence" unique_id=988507682]
+layout_mode = 0
+offset_left = 278.0
+offset_right = 421.07507
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="Control/fence" unique_id=1252148204]
+layout_mode = 0
+offset_left = 417.0
+offset_right = 560.0751
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Control/fence" unique_id=243988325]
+layout_mode = 0
+offset_left = 139.0
+offset_right = 282.07507
+offset_bottom = 86.0
+texture = ExtResource("5_u0nof")
+expand_mode = 1
+
+[node name="TextureRect19" type="TextureRect" parent="Control" unique_id=907496794]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 438.0
+offset_right = 1163.6216
+offset_bottom = 504.0
+texture = ExtResource("7_u0nof")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control" unique_id=614343304]
+layout_mode = 0
+offset_left = -36.0
+offset_top = 474.0
+offset_right = 398.5
+offset_bottom = 711.0
+texture = ExtResource("4_47vnn")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control/TextureRect2" unique_id=1166062233]
+layout_mode = 0
+offset_left = 376.0
+offset_right = 810.5
+offset_bottom = 237.0
+texture = ExtResource("4_47vnn")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Control/TextureRect2" unique_id=415697414]
+layout_mode = 0
+offset_left = 754.0
+offset_right = 1188.5
+offset_bottom = 237.0
+texture = ExtResource("4_47vnn")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Control" unique_id=959596897]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 199.0
+offset_right = 249.71744
+offset_bottom = 267.0
+texture = ExtResource("6_ilk26")
+expand_mode = 1
+
+[node name="TextureRect16" type="TextureRect" parent="Control" unique_id=1125425573]
+layout_mode = 0
+offset_left = 1021.0
+offset_top = 360.0
+offset_right = 1050.0
+offset_bottom = 403.0
+texture = ExtResource("9_ilk26")
+expand_mode = 1
+
+[node name="TextureRect17" type="TextureRect" parent="Control" unique_id=85813877]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 318.0
+offset_right = 256.0
+offset_bottom = 361.0
+texture = ExtResource("9_ilk26")
+expand_mode = 1
+
+[node name="TextureRect18" type="TextureRect" parent="Control" unique_id=1951664135]
+layout_mode = 0
+offset_left = 762.0
+offset_top = 453.0
+offset_right = 791.0
+offset_bottom = 496.0
+texture = ExtResource("9_ilk26")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Control" unique_id=1826577619]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 263.0
+offset_right = 256.72
+offset_bottom = 286.0
+texture = ExtResource("7_8b01o")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Control/TextureRect7" unique_id=1034252492]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 191.0
+offset_right = 481.72
+offset_bottom = 214.0
+texture = ExtResource("7_8b01o")
+expand_mode = 1
+
+[node name="TextureRect10" type="TextureRect" parent="Control" unique_id=687746011]
+layout_mode = 0
+offset_left = 961.0
+offset_top = 233.0
+offset_right = 1074.3689
+offset_bottom = 283.0
+texture = ExtResource("8_sybbf")
+expand_mode = 1
+
+[node name="TextureRect11" type="TextureRect" parent="Control" unique_id=2062705688]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 357.0
+offset_right = 506.91595
+offset_bottom = 389.0
+texture = ExtResource("9_yfxkr")
+expand_mode = 1
+
+[node name="TextureRect13" type="TextureRect" parent="Control" unique_id=1269714051]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 465.0
+offset_right = 188.03738
+offset_bottom = 501.0
+texture = ExtResource("10_r5mru")
+expand_mode = 1
+
+[node name="TextureRect12" type="TextureRect" parent="Control" unique_id=1531179183]
+layout_mode = 0
+offset_left = 1083.0
+offset_top = 325.0
+offset_right = 1123.2856
+offset_bottom = 359.0
+texture = ExtResource("9_yfxkr")
+expand_mode = 1
+
+[node name="TextureRect14" type="TextureRect" parent="Control" unique_id=1123553679]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 318.0
+offset_right = 61.333344
+offset_bottom = 353.0
+texture = ExtResource("14_8b01o")
+expand_mode = 1
+
+[node name="TextureRect14" type="TextureRect" parent="Control/TextureRect14" unique_id=811063726]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 32.0
+offset_right = 678.3334
+offset_bottom = 67.0
+texture = ExtResource("14_8b01o")
+expand_mode = 1
+
+[node name="TextureRect15" type="TextureRect" parent="Control/TextureRect14" unique_id=1547037277]
+layout_mode = 0
+offset_left = 911.0
+offset_top = -29.0
+offset_right = 948.3334
+offset_bottom = 6.0
+texture = ExtResource("14_8b01o")
+expand_mode = 1
+
+[node name="TextureRect14" type="TextureRect" parent="Control/TextureRect14/TextureRect15" unique_id=1849843999]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 32.0
+offset_right = 678.3334
+offset_bottom = 67.0
+texture = ExtResource("14_8b01o")
+expand_mode = 1
+
+[node name="TextureRect15" type="TextureRect" parent="Control" unique_id=539766274]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 451.0
+offset_right = 363.33334
+offset_bottom = 486.0
+texture = ExtResource("14_8b01o")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="Control" unique_id=1039153480]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 4.0
+offset_right = 893.71
+offset_bottom = 400.0
+texture = ExtResource("6_1oos5")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control/TextureRect4" unique_id=1766939699]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -1.0
+offset_right = 657.7102
+offset_bottom = 395.0
+texture = ExtResource("5_fv0o7")
+expand_mode = 1
+
+[node name="Bex" type="AnimatedSprite2D" parent="Control" unique_id=1370061820]
+position = Vector2(119, 328.00003)
+scale = Vector2(0.3661616, 0.3661616)
+sprite_frames = SubResource("SpriteFrames_141ow")
+animation = &"loading"
+autoplay = "loading"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=399666480]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = 457.0
+offset_right = 1062.0
+offset_bottom = 626.0
+
+[node name="TheStudio" type="VBoxContainer" parent="Control/HBoxContainer" unique_id=782863240]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = -6
 alignment = 2
 
-[node name="StudioName" type="Label" parent="HBoxContainer/TheStudio" unique_id=1167445852]
+[node name="StudioName" type="Label" parent="Control/HBoxContainer/TheStudio" unique_id=1167445852]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "CandleSoup Studios"
 horizontal_alignment = 2
 
-[node name="Credits" type="Button" parent="HBoxContainer/TheStudio" unique_id=359475258]
+[node name="TextureRect" type="TextureRect" parent="Control/HBoxContainer/TheStudio/StudioName" unique_id=1418174393]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = -0.67600006
+anchor_right = 1.0
+anchor_bottom = -0.67600006
+offset_top = -0.01599884
+offset_right = 85.0
+offset_bottom = 84.98399
+texture = ExtResource("3_oqrgu")
+expand_mode = 1
+
+[node name="Credits" type="Button" parent="Control/HBoxContainer/TheStudio" unique_id=359475258]
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "Credits"
 flat = true
 alignment = 2
 
-[node name="TitleScreenSceneTransitionAnimation" parent="." unique_id=2063913806 instance=ExtResource("2_dxpbd")]
+[node name="TitleScreenSceneTransitionAnimation" parent="Control" unique_id=2063913806 instance=ExtResource("2_dxpbd")]
 z_index = 1
+position = Vector2(3, 4)
 
-[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/NewGame" to="." method="_on_new_game_pressed"]
-[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/LoadGame" to="." method="_on_load_game_pressed"]
-[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="HBoxContainer/TitleScreen/Options/Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="HBoxContainer/TheStudio/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Control/BoxContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Control/BoxContainer/LoadGame" to="." method="_on_load_game_pressed"]
+[connection signal="pressed" from="Control/BoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/BoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/TheStudio/Credits" to="." method="_on_credits_pressed"]

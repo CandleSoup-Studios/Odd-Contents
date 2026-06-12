@@ -1,32 +1,94 @@
 [gd_scene format=3 uid="uid://2r6ugbgwm1si"]
 
 [ext_resource type="PackedScene" uid="uid://l8th65qe1iks" path="res://act_transitions/act_2_transition.tscn" id="1_cbu5e"]
+[ext_resource type="Texture2D" uid="uid://dye4epc6itti3" path="res://art/world_objects/props/Obj_Blood3.png" id="2_chxy8"]
+[ext_resource type="Texture2D" uid="uid://bo840ild2eee7" path="res://art/world_objects/props/Obj_Blood2.png" id="3_vqmo1"]
+[ext_resource type="Texture2D" uid="uid://b20pack03qu4u" path="res://art/world_objects/props/Obj_Blood1.png" id="4_yvo8m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qv827"]
+load_path = "res://.godot/imported/char_orion_bust_flicker.png-52c818542dbc5cd5fb9f2eec00f3957c.ctex"
 
 [node name="Control" unique_id=208735768 instance=ExtResource("1_cbu5e")]
 
-[node name="RichTextLabel" parent="." index="20" unique_id=1308670992]
+[node name="Orion" parent="." index="7" unique_id=324867687]
+modulate = Color(1, 1, 1, 0.42352942)
+texture = SubResource("CompressedTexture2D_qv827")
+
+[node name="TextureRect17" type="TextureRect" parent="." index="8" unique_id=1239097734]
+layout_mode = 0
+offset_left = 748.0
+offset_top = 345.0
+offset_right = 934.6667
+offset_bottom = 430.0
+texture = ExtResource("2_chxy8")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(698019033) index="3" unique_id=1304532757]
+layout_mode = 0
+offset_left = -675.0
+offset_top = 89.0
+offset_right = -442.63965
+offset_bottom = 153.0
+texture = ExtResource("3_vqmo1")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(698019033) index="4" unique_id=643810809]
+layout_mode = 0
+offset_left = -420.0
+offset_top = 6.0
+offset_right = -216.6847
+offset_bottom = 62.0
+texture = ExtResource("3_vqmo1")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(698019033) index="5" unique_id=53435113]
+layout_mode = 0
+offset_left = -190.0
+offset_top = 99.0
+offset_right = 13.315308
+offset_bottom = 155.0
+texture = ExtResource("3_vqmo1")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(698019033) index="6" unique_id=2027230278]
+layout_mode = 0
+offset_left = -203.0
+offset_top = -141.0
+offset_right = -123.0
+offset_bottom = -61.0
+texture = ExtResource("4_yvo8m")
+expand_mode = 1
+
+[node name="RichTextLabel" parent="." index="21" unique_id=1308670992]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel2" parent="." index="21" unique_id=1416181570]
+[node name="RichTextLabel2" parent="." index="22" unique_id=1416181570]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel6" parent="." index="22" unique_id=2117987535]
+[node name="RichTextLabel6" parent="." index="23" unique_id=2117987535]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel7" parent="." index="23" unique_id=1590963212]
+[node name="RichTextLabel7" parent="." index="24" unique_id=1590963212]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel3" parent="." index="24" unique_id=1987529563]
+[node name="RichTextLabel3" parent="." index="25" unique_id=1987529563]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel4" parent="." index="25" unique_id=1614979002]
+[node name="RichTextLabel4" parent="." index="26" unique_id=1614979002]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel5" parent="." index="26" unique_id=870430581]
+[node name="RichTextLabel5" parent="." index="27" unique_id=870430581]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel8" parent="." index="27" unique_id=1489555941]
+[node name="RichTextLabel8" parent="." index="28" unique_id=1489555941]
 text = "[b][i]Act 3[/i][/b]"
 
-[node name="RichTextLabel9" parent="." index="28" unique_id=63693376]
+[node name="RichTextLabel9" parent="." index="29" unique_id=63693376]
 text = "[b][i]Act 3[/i][/b]"
+
+[node name="Control" parent="." index="32" unique_id=1033400240]
+visible = false
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 5.0
+offset_bottom = 2.0
