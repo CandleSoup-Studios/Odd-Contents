@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://dsodfy8ochnfa" path="res://art/world_objects/buildings/Obj_HouseGranny.png" id="6_56ekq"]
 [ext_resource type="Texture2D" uid="uid://8e2w0ee01uwu" path="res://art/world_objects/props/Obj_LampPost.png" id="6_id4y5"]
 [ext_resource type="Texture2D" uid="uid://rloi0uo0jaeh" path="res://art/world_objects/buildings/Obj_HouseShade.png" id="7_86wsc"]
+[ext_resource type="Texture2D" uid="uid://dolqf8mmb8am" path="res://art/tilesets/Tile_Grave1.png" id="7_brcmd"]
+[ext_resource type="Texture2D" uid="uid://bh6anw3uldnsa" path="res://art/tilesets/Tile_Grave2.png" id="8_1u65p"]
 [ext_resource type="Texture2D" uid="uid://do43py8i5tdqr" path="res://art/world_objects/buildings/Obj_Harvey.png" id="8_167ns"]
 [ext_resource type="Texture2D" uid="uid://dbsfwlws6w5kq" path="res://art/world_objects/buildings/Obj_GeneralStore.png" id="9_id4y5"]
 
@@ -52,6 +54,26 @@ texture = ExtResource("6_id4y5")
 texture_region_size = Vector2i(130, 113)
 0:0/size_in_atlas = Vector2i(2, 8)
 0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u7ebd"]
+texture = ExtResource("7_brcmd")
+texture_region_size = Vector2i(110, 110)
+1:0/0 = 0
+2:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a4woi"]
+texture = ExtResource("8_1u65p")
+texture_region_size = Vector2i(110, 110)
+1:0/0 = 0
+2:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ulrn6"]
 texture = ExtResource("3_1ee5m")
@@ -197,3 +219,5 @@ sources/1 = SubResource("TileSetAtlasSource_id4y5")
 sources/11 = SubResource("TileSetAtlasSource_6rqdt")
 sources/12 = SubResource("TileSetAtlasSource_8h8e0")
 sources/13 = SubResource("TileSetAtlasSource_3rbhi")
+sources/14 = SubResource("TileSetAtlasSource_u7ebd")
+sources/15 = SubResource("TileSetAtlasSource_a4woi")
