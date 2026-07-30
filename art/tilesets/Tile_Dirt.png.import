@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dolqf8mmb8am"
-path="res://.godot/imported/Tile_Grave1.png-c1e836812a9370fe56a7faa3edb6d592.ctex"
+uid="uid://lbodwi8uaorn"
+path="res://.godot/imported/Tile_Dirt.png-11feb6640d84340a5f4ad770d5ecf55e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tilesets/Tile_Grave1.png"
-dest_files=["res://.godot/imported/Tile_Grave1.png-c1e836812a9370fe56a7faa3edb6d592.ctex"]
+source_file="res://art/tilesets/Tile_Dirt.png"
+dest_files=["res://.godot/imported/Tile_Dirt.png-11feb6640d84340a5f4ad770d5ecf55e.ctex"]
 
 [params]
 
