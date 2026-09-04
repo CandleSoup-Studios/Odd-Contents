@@ -46,7 +46,7 @@ func _input(event) -> void:
 func _physics_process(delta: float) -> void:
 	if not Global.can_move:
 		$AnimatedSprite2D.stop()
-		velocity = Vector2.ZERO # Optional: stops sliding momentum
+		velocity = Vector2.ZERO #Optional: stops sliding momentum
 		move_and_slide()
 		return
 		

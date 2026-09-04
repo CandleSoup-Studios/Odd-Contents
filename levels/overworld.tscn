@@ -318,7 +318,7 @@ position = Vector2(5179, 10092)
 texture = ExtResource("20_3hrjb")
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=476775216]
-position = Vector2(23723, 20094)
+position = Vector2(3226, 20071)
 
 [node name="GreatAuntLourde" parent="." unique_id=318230135 instance=ExtResource("7_o8rqw")]
 z_index = 1

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://e7162i4ak526"]
+
+[ext_resource type="PackedScene" uid="uid://b2n8m7mmcs7rl" path="res://act_transitions/act_2_transition_scene.tscn" id="1_eiusb"]
+
+[node name="Control" unique_id=1906411691 instance=ExtResource("1_eiusb")]
+
+[node name="Orion" parent="." index="6" unique_id=1793048946]
+visible = false
+
+[node name="Lucille" parent="." index="10" unique_id=1643822106]
+visible = false
+
+[node name="Blood" parent="." index="15" unique_id=1368319382]
+visible = false
+
+[node name="Act Red Drop Shadow" parent="." index="18" unique_id=53707235]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline" parent="." index="19" unique_id=1495398191]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline7" parent="." index="20" unique_id=86430229]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline8" parent="." index="21" unique_id=261376102]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline2" parent="." index="22" unique_id=1774044162]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline3" parent="." index="23" unique_id=441332386]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline4" parent="." index="24" unique_id=940570570]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline5" parent="." index="25" unique_id=1578075711]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Outline6" parent="." index="26" unique_id=1378674953]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Act Text" parent="." index="27" unique_id=1014002960]
+text = "[b][i]Act 1[/i][/b]"
+
+[node name="Cindy" parent="." index="28" unique_id=177681234]
+visible = false

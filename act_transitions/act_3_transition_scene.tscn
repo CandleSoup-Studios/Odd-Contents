@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://dw44gn0rjmeql"]
+
+[ext_resource type="PackedScene" uid="uid://b2n8m7mmcs7rl" path="res://act_transitions/act_2_transition_scene.tscn" id="1_6uvdn"]
+[ext_resource type="Texture2D" uid="uid://dye4epc6itti3" path="res://art/world_objects/props/Obj_Blood3.png" id="2_cx4a4"]
+[ext_resource type="Texture2D" uid="uid://bo840ild2eee7" path="res://art/world_objects/props/Obj_Blood2.png" id="3_5l52c"]
+[ext_resource type="Texture2D" uid="uid://b20pack03qu4u" path="res://art/world_objects/props/Obj_Blood1.png" id="4_cgs0j"]
+
+[node name="Control" unique_id=1906411691 instance=ExtResource("1_6uvdn")]
+
+[node name="Tree Blood" type="TextureRect" parent="." index="7" unique_id=1287697462]
+layout_mode = 0
+offset_left = 854.0
+offset_top = 437.0
+offset_right = 1040.6667
+offset_bottom = 522.0
+texture = ExtResource("2_cx4a4")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(1368319382) index="3" unique_id=1809847366]
+layout_mode = 0
+offset_left = -672.0
+offset_top = 81.0
+offset_right = -439.63965
+offset_bottom = 145.0
+texture = ExtResource("3_5l52c")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(1368319382) index="4" unique_id=1431054052]
+layout_mode = 0
+offset_left = -411.0
+offset_top = 7.0
+offset_right = -207.6847
+offset_bottom = 63.0
+texture = ExtResource("3_5l52c")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(1368319382) index="5" unique_id=1898272547]
+layout_mode = 0
+offset_left = -161.0
+offset_top = 101.0
+offset_right = 42.315308
+offset_bottom = 157.0
+texture = ExtResource("3_5l52c")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="Blood" parent_id_path=PackedInt32Array(1368319382) index="6" unique_id=1579400308]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -142.0
+offset_right = -76.0
+offset_bottom = -62.0
+texture = ExtResource("4_cgs0j")
+expand_mode = 1
+
+[node name="Act Red Drop Shadow" parent="." index="19" unique_id=53707235]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline" parent="." index="20" unique_id=1495398191]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline7" parent="." index="21" unique_id=86430229]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline8" parent="." index="22" unique_id=261376102]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline2" parent="." index="23" unique_id=1774044162]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline3" parent="." index="24" unique_id=441332386]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline4" parent="." index="25" unique_id=940570570]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline5" parent="." index="26" unique_id=1578075711]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Outline6" parent="." index="27" unique_id=1378674953]
+text = "[b][i]Act 3[/i][/b]"
+
+[node name="Act Text" parent="." index="28" unique_id=1014002960]
+text = "[b][i]Act 3[/i][/b]"

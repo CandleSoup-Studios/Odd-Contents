@@ -35,7 +35,6 @@ func _ready() -> void:
 	
 	Dialogic.signal_event.connect(_on_signal)
 
-
 func _on_signal(signal_passed_in):
 	match signal_passed_in:
 		"hud_update":
@@ -53,7 +52,6 @@ func _on_signal(signal_passed_in):
 				Global.current_quest = Global[quest_key].pop_front()
 				get_node(Global.current_quest["npc"] + "/Sprite2D/ObjectiveMarker").visible = true
 				get_node(Global.current_quest["npc"] + "/Sprite2D/InteractionPrompt").visible = false
-			
 					
 			$CanvasLayer.visible = true
 			$CanvasLayer/HUD/Container/MarginContainer/HUDLabel.text = "[i][b]" + Global.hud_display_title + "[/b][/i]" + "[br][i]Head to " + Global.hud_display_location + "[/i]"

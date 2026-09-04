@@ -62,9 +62,9 @@ func _input(event) -> void:
 				get_tree().current_scene._on_signal("hud_update")
 
 				if Global.story_act == 2:
-					get_tree().change_scene_to_file("res://act_transitions/act_2_transition.tscn")
+					get_tree().change_scene_to_file("res://act_transitions/act_2_transition_scene.tscn")
 				elif Global.story_act == 3:
-					get_tree().change_scene_to_file("res://act_transitions/act_3_transition.tscn")
+					get_tree().change_scene_to_file("res://act_transitions/act_3_transition_scene.tscn")
 		elif Global.current_quest["npc"] == npc_name:
 			print("inside quest??")
 			#print("npc_cindy_pickup_" + str(Global.story_act))
