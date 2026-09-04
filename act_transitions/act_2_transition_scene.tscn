@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://bimowrrkhn0mq" path="res://art/world_objects/nature/Obj_Grass2.png" id="24_snc2j"]
 [ext_resource type="Texture2D" uid="uid://dkjc2k43d4gpv" path="res://art/world_objects/nature/Obj_Flower2.png" id="25_x7ccv"]
 [ext_resource type="PackedScene" uid="uid://bibot7a8xxw8j" path="res://animations/title_screen_scene_transition_animation.tscn" id="26_8ynoe"]
+[ext_resource type="AudioStream" uid="uid://lyygwxqv61bd" path="res://effects/sound fx/anxious.mp3" id="28_v0u13"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vl1k5"]
 atlas = ExtResource("13_xrioh")
@@ -770,3 +771,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TitleScreenSceneTransitionAnimation" parent="." unique_id=2063913806 instance=ExtResource("26_8ynoe")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1917955714]
+stream = ExtResource("28_v0u13")
+autoplay = true
