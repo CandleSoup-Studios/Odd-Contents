@@ -1,7 +1,5 @@
 extends Control
 
-@onready var SceneTransitionAnimation = $TitleScreenSceneTransitionAnimation/AnimationPlayer
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -11,8 +9,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_continue_button_pressed() -> void:
-	SceneTransitionAnimation.play("fade_in")
-	await SceneTransitionAnimation.animation_finished
-	get_tree().change_scene_to_file("res://levels/overworld.tscn")
-	SceneTransitionAnimation.play("fade_out")
-	await SceneTransitionAnimation.animation_finished
+	TitleScreenSceneTransitionAnimation.change_scene("res://levels/overworld.tscn")

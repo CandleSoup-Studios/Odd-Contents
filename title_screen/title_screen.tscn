@@ -448,7 +448,6 @@ animation = &"loading"
 autoplay = "loading"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=399666480]
-visible = false
 layout_mode = 0
 offset_left = 3.0
 offset_top = 457.0

@@ -45,3 +45,6 @@ text = "[b][i]Act 1[/i][/b]"
 
 [node name="Cindy" parent="." index="28" unique_id=177681234]
 visible = false
+
+[node name="Button" parent="Control" parent_id_path=PackedInt32Array(1187532989) index="0" unique_id=188100693]
+mouse_filter = 1
